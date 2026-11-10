@@ -1,0 +1,41 @@
+{
+  "schema": "opinion-config/v1",
+  "text": {
+    "provider": "openai",
+    "model": "gpt-4.1",
+    "key_env": "OPENAI_API_KEY"
+  },
+  "voice": {
+    "provider": "openai",
+    "model": "gpt-4o-mini-tts",
+    "voice": "alloy",
+    "key_env": "OPENAI_API_KEY",
+    "speed": 1,
+    "instructions": "用自然清晰的普通话解释观点。语气平实，句群连贯。转折处短暂停顿，避免逐字重读、播报腔和夸张煽情。"
+  },
+  "alignment": {
+    "provider": "faster-whisper",
+    "model": "base",
+    "allow_download": false,
+    "min_coverage": 0.94,
+    "threads": 4
+  },
+  "image": {
+    "provider": "openai",
+    "model": "gpt-image-1",
+    "key_env": "OPENAI_API_KEY",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "style": {
+    "id": "opinion-explainer/v1",
+    "image_prompt": "仅用于需要原创比喻的局部插画。画面简洁、主体明确、浅纸色与深墨砖红协调。无文字、数字、标志或水印。不生成伪新闻照片，不模仿具体频道人物。"
+  },
+  "audio": {
+    "lufs": -18
+  },
+  "render": {
+    "fps": 30,
+    "timeout": 3600
+  }
+}

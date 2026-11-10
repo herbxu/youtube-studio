@@ -1,0 +1,72 @@
+[
+  {
+    "episode": "01",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 120.035,
+    "normalized_correlation": 0.4484
+  },
+  {
+    "episode": "02",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 502.947,
+    "normalized_correlation": 0.6689
+  },
+  {
+    "episode": "03",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 853.324,
+    "normalized_correlation": 0.5291
+  },
+  {
+    "episode": "04",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 1168.0365,
+    "normalized_correlation": 0.9444
+  },
+  {
+    "episode": "05",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 1457.054,
+    "normalized_correlation": 0.4622
+  },
+  {
+    "episode": "06",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 1896.19,
+    "normalized_correlation": 0.4962
+  },
+  {
+    "episode": "07",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 2215.799,
+    "normalized_correlation": 0.6196
+  },
+  {
+    "episode": "08",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 2490.808,
+    "normalized_correlation": 0.661
+  },
+  {
+    "episode": "09",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 2865.287,
+    "normalized_correlation": 0.5029
+  },
+  {
+    "episode": "10",
+    "source_start": 120,
+    "sample_duration": 10,
+    "compilation_start": 3119.362,
+    "normalized_correlation": 0.8205
+  }
+]

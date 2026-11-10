@@ -1,0 +1,22 @@
+{
+  "schema": "opinion-pronunciations/v1",
+  "entries": [
+    {
+      "text": "ROIC",
+      "spoken": "投入资本回报率",
+      "usage": "需确认本句确实使用该含义"
+    },
+    {
+      "text": "LUFS",
+      "spoken": "综合响度单位",
+      "usage": "仅技术说明"
+    },
+    {
+      "text": "去重",
+      "spoken": "去重",
+      "pinyin": "qù chóng",
+      "usage": "统计去除重复项时，重读 chóng（二声）。合成若误读，可仅在配音输入中用同音字“虫”，字幕写“去重”。"
+    }
+  ],
+  "note": "建议读法，按本期上下文人工选择，回填 spoken_text；不自动全局替换"
+}

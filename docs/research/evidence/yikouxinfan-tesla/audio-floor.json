@@ -1,0 +1,374 @@
+[
+  {
+    "start": 0,
+    "p05_20ms_rms_dbfs": -51.4,
+    "p50_20ms_rms_dbfs": -14.8,
+    "fraction_below_minus50": 0.055
+  },
+  {
+    "start": 15,
+    "p05_20ms_rms_dbfs": -52.9,
+    "p50_20ms_rms_dbfs": -15.2,
+    "fraction_below_minus50": 0.085
+  },
+  {
+    "start": 30,
+    "p05_20ms_rms_dbfs": -51.3,
+    "p50_20ms_rms_dbfs": -17.2,
+    "fraction_below_minus50": 0.056
+  },
+  {
+    "start": 45,
+    "p05_20ms_rms_dbfs": -48.7,
+    "p50_20ms_rms_dbfs": -18.5,
+    "fraction_below_minus50": 0.044
+  },
+  {
+    "start": 60,
+    "p05_20ms_rms_dbfs": -42.5,
+    "p50_20ms_rms_dbfs": -16.8,
+    "fraction_below_minus50": 0.003
+  },
+  {
+    "start": 75,
+    "p05_20ms_rms_dbfs": -36.7,
+    "p50_20ms_rms_dbfs": -15.4,
+    "fraction_below_minus50": 0.0
+  },
+  {
+    "start": 90,
+    "p05_20ms_rms_dbfs": -47.1,
+    "p50_20ms_rms_dbfs": -17.2,
+    "fraction_below_minus50": 0.036
+  },
+  {
+    "start": 105,
+    "p05_20ms_rms_dbfs": -54.1,
+    "p50_20ms_rms_dbfs": -16.1,
+    "fraction_below_minus50": 0.072
+  },
+  {
+    "start": 120,
+    "p05_20ms_rms_dbfs": -57.1,
+    "p50_20ms_rms_dbfs": -18.8,
+    "fraction_below_minus50": 0.109
+  },
+  {
+    "start": 135,
+    "p05_20ms_rms_dbfs": -58.5,
+    "p50_20ms_rms_dbfs": -17.2,
+    "fraction_below_minus50": 0.105
+  },
+  {
+    "start": 150,
+    "p05_20ms_rms_dbfs": -59.9,
+    "p50_20ms_rms_dbfs": -17.5,
+    "fraction_below_minus50": 0.104
+  },
+  {
+    "start": 165,
+    "p05_20ms_rms_dbfs": -62.4,
+    "p50_20ms_rms_dbfs": -17.9,
+    "fraction_below_minus50": 0.115
+  },
+  {
+    "start": 180,
+    "p05_20ms_rms_dbfs": -63.6,
+    "p50_20ms_rms_dbfs": -17.5,
+    "fraction_below_minus50": 0.113
+  },
+  {
+    "start": 195,
+    "p05_20ms_rms_dbfs": -60.0,
+    "p50_20ms_rms_dbfs": -17.3,
+    "fraction_below_minus50": 0.089
+  },
+  {
+    "start": 210,
+    "p05_20ms_rms_dbfs": -54.1,
+    "p50_20ms_rms_dbfs": -16.3,
+    "fraction_below_minus50": 0.071
+  },
+  {
+    "start": 225,
+    "p05_20ms_rms_dbfs": -62.9,
+    "p50_20ms_rms_dbfs": -17.7,
+    "fraction_below_minus50": 0.119
+  },
+  {
+    "start": 240,
+    "p05_20ms_rms_dbfs": -52.5,
+    "p50_20ms_rms_dbfs": -17.1,
+    "fraction_below_minus50": 0.064
+  },
+  {
+    "start": 255,
+    "p05_20ms_rms_dbfs": -58.0,
+    "p50_20ms_rms_dbfs": -16.7,
+    "fraction_below_minus50": 0.087
+  },
+  {
+    "start": 270,
+    "p05_20ms_rms_dbfs": -57.5,
+    "p50_20ms_rms_dbfs": -17.9,
+    "fraction_below_minus50": 0.105
+  },
+  {
+    "start": 285,
+    "p05_20ms_rms_dbfs": -57.3,
+    "p50_20ms_rms_dbfs": -17.2,
+    "fraction_below_minus50": 0.112
+  },
+  {
+    "start": 300,
+    "p05_20ms_rms_dbfs": -62.3,
+    "p50_20ms_rms_dbfs": -18.2,
+    "fraction_below_minus50": 0.116
+  },
+  {
+    "start": 315,
+    "p05_20ms_rms_dbfs": -58.3,
+    "p50_20ms_rms_dbfs": -16.4,
+    "fraction_below_minus50": 0.093
+  },
+  {
+    "start": 330,
+    "p05_20ms_rms_dbfs": -60.9,
+    "p50_20ms_rms_dbfs": -17.5,
+    "fraction_below_minus50": 0.115
+  },
+  {
+    "start": 345,
+    "p05_20ms_rms_dbfs": -64.4,
+    "p50_20ms_rms_dbfs": -17.5,
+    "fraction_below_minus50": 0.119
+  },
+  {
+    "start": 360,
+    "p05_20ms_rms_dbfs": -62.4,
+    "p50_20ms_rms_dbfs": -16.2,
+    "fraction_below_minus50": 0.125
+  },
+  {
+    "start": 375,
+    "p05_20ms_rms_dbfs": -52.3,
+    "p50_20ms_rms_dbfs": -16.8,
+    "fraction_below_minus50": 0.06
+  },
+  {
+    "start": 390,
+    "p05_20ms_rms_dbfs": -58.2,
+    "p50_20ms_rms_dbfs": -18.0,
+    "fraction_below_minus50": 0.125
+  },
+  {
+    "start": 405,
+    "p05_20ms_rms_dbfs": -63.1,
+    "p50_20ms_rms_dbfs": -16.4,
+    "fraction_below_minus50": 0.115
+  },
+  {
+    "start": 420,
+    "p05_20ms_rms_dbfs": -59.5,
+    "p50_20ms_rms_dbfs": -16.6,
+    "fraction_below_minus50": 0.105
+  },
+  {
+    "start": 435,
+    "p05_20ms_rms_dbfs": -49.9,
+    "p50_20ms_rms_dbfs": -18.5,
+    "fraction_below_minus50": 0.051
+  },
+  {
+    "start": 450,
+    "p05_20ms_rms_dbfs": -38.4,
+    "p50_20ms_rms_dbfs": -18.8,
+    "fraction_below_minus50": 0.0
+  },
+  {
+    "start": 465,
+    "p05_20ms_rms_dbfs": -57.9,
+    "p50_20ms_rms_dbfs": -18.8,
+    "fraction_below_minus50": 0.133
+  },
+  {
+    "start": 480,
+    "p05_20ms_rms_dbfs": -58.9,
+    "p50_20ms_rms_dbfs": -17.1,
+    "fraction_below_minus50": 0.101
+  },
+  {
+    "start": 495,
+    "p05_20ms_rms_dbfs": -65.1,
+    "p50_20ms_rms_dbfs": -18.7,
+    "fraction_below_minus50": 0.145
+  },
+  {
+    "start": 510,
+    "p05_20ms_rms_dbfs": -55.9,
+    "p50_20ms_rms_dbfs": -16.3,
+    "fraction_below_minus50": 0.088
+  },
+  {
+    "start": 525,
+    "p05_20ms_rms_dbfs": -56.2,
+    "p50_20ms_rms_dbfs": -16.9,
+    "fraction_below_minus50": 0.111
+  },
+  {
+    "start": 540,
+    "p05_20ms_rms_dbfs": -63.9,
+    "p50_20ms_rms_dbfs": -17.5,
+    "fraction_below_minus50": 0.108
+  },
+  {
+    "start": 555,
+    "p05_20ms_rms_dbfs": -64.6,
+    "p50_20ms_rms_dbfs": -17.0,
+    "fraction_below_minus50": 0.14
+  },
+  {
+    "start": 570,
+    "p05_20ms_rms_dbfs": -65.3,
+    "p50_20ms_rms_dbfs": -18.2,
+    "fraction_below_minus50": 0.115
+  },
+  {
+    "start": 585,
+    "p05_20ms_rms_dbfs": -41.0,
+    "p50_20ms_rms_dbfs": -17.9,
+    "fraction_below_minus50": 0.029
+  },
+  {
+    "start": 600,
+    "p05_20ms_rms_dbfs": -41.3,
+    "p50_20ms_rms_dbfs": -17.6,
+    "fraction_below_minus50": 0.012
+  },
+  {
+    "start": 615,
+    "p05_20ms_rms_dbfs": -47.8,
+    "p50_20ms_rms_dbfs": -18.0,
+    "fraction_below_minus50": 0.047
+  },
+  {
+    "start": 630,
+    "p05_20ms_rms_dbfs": -60.1,
+    "p50_20ms_rms_dbfs": -17.3,
+    "fraction_below_minus50": 0.092
+  },
+  {
+    "start": 645,
+    "p05_20ms_rms_dbfs": -61.6,
+    "p50_20ms_rms_dbfs": -18.9,
+    "fraction_below_minus50": 0.112
+  },
+  {
+    "start": 660,
+    "p05_20ms_rms_dbfs": -59.1,
+    "p50_20ms_rms_dbfs": -16.5,
+    "fraction_below_minus50": 0.108
+  },
+  {
+    "start": 675,
+    "p05_20ms_rms_dbfs": -54.2,
+    "p50_20ms_rms_dbfs": -16.5,
+    "fraction_below_minus50": 0.071
+  },
+  {
+    "start": 690,
+    "p05_20ms_rms_dbfs": -68.5,
+    "p50_20ms_rms_dbfs": -18.5,
+    "fraction_below_minus50": 0.131
+  },
+  {
+    "start": 705,
+    "p05_20ms_rms_dbfs": -59.5,
+    "p50_20ms_rms_dbfs": -16.6,
+    "fraction_below_minus50": 0.097
+  },
+  {
+    "start": 720,
+    "p05_20ms_rms_dbfs": -58.8,
+    "p50_20ms_rms_dbfs": -17.5,
+    "fraction_below_minus50": 0.112
+  },
+  {
+    "start": 735,
+    "p05_20ms_rms_dbfs": -62.6,
+    "p50_20ms_rms_dbfs": -19.1,
+    "fraction_below_minus50": 0.121
+  },
+  {
+    "start": 750,
+    "p05_20ms_rms_dbfs": -59.1,
+    "p50_20ms_rms_dbfs": -18.5,
+    "fraction_below_minus50": 0.107
+  },
+  {
+    "start": 765,
+    "p05_20ms_rms_dbfs": -64.0,
+    "p50_20ms_rms_dbfs": -17.3,
+    "fraction_below_minus50": 0.104
+  },
+  {
+    "start": 780,
+    "p05_20ms_rms_dbfs": -68.3,
+    "p50_20ms_rms_dbfs": -18.4,
+    "fraction_below_minus50": 0.156
+  },
+  {
+    "start": 795,
+    "p05_20ms_rms_dbfs": -64.3,
+    "p50_20ms_rms_dbfs": -18.1,
+    "fraction_below_minus50": 0.131
+  },
+  {
+    "start": 810,
+    "p05_20ms_rms_dbfs": -57.6,
+    "p50_20ms_rms_dbfs": -18.4,
+    "fraction_below_minus50": 0.092
+  },
+  {
+    "start": 825,
+    "p05_20ms_rms_dbfs": -57.5,
+    "p50_20ms_rms_dbfs": -17.5,
+    "fraction_below_minus50": 0.084
+  },
+  {
+    "start": 840,
+    "p05_20ms_rms_dbfs": -48.0,
+    "p50_20ms_rms_dbfs": -19.6,
+    "fraction_below_minus50": 0.032
+  },
+  {
+    "start": 855,
+    "p05_20ms_rms_dbfs": -52.7,
+    "p50_20ms_rms_dbfs": -17.9,
+    "fraction_below_minus50": 0.064
+  },
+  {
+    "start": 870,
+    "p05_20ms_rms_dbfs": -62.0,
+    "p50_20ms_rms_dbfs": -17.4,
+    "fraction_below_minus50": 0.121
+  },
+  {
+    "start": 885,
+    "p05_20ms_rms_dbfs": -56.7,
+    "p50_20ms_rms_dbfs": -16.4,
+    "fraction_below_minus50": 0.091
+  },
+  {
+    "start": 900,
+    "p05_20ms_rms_dbfs": -64.8,
+    "p50_20ms_rms_dbfs": -16.8,
+    "fraction_below_minus50": 0.107
+  },
+  {
+    "start": 915,
+    "p05_20ms_rms_dbfs": -36.0,
+    "p50_20ms_rms_dbfs": -17.9,
+    "fraction_below_minus50": 0.015
+  }
+]

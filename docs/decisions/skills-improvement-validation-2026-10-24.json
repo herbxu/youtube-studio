@@ -1,0 +1,345 @@
+{
+  "date": "2026-10-24",
+  "unit_tests": {
+    "passed": 44
+  },
+  "browser": {
+    "passed": true,
+    "synthetic_timing": true,
+    "voice_review": false,
+    "checks": [
+      {
+        "before": [
+          {
+            "id": "world-company-context-company",
+            "opacity": 0,
+            "x": 822,
+            "y": 440.79998779296875,
+            "width": 276,
+            "height": 248.4000244140625,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 0.92
+          }
+        ],
+        "after": [
+          {
+            "id": "world-company-context-company",
+            "opacity": 1,
+            "x": 810,
+            "y": 430,
+            "width": 300,
+            "height": 270,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 1
+          }
+        ],
+        "reversed": [
+          {
+            "id": "world-company-context-company",
+            "opacity": 0,
+            "x": 822,
+            "y": 440.79998779296875,
+            "width": 276,
+            "height": 248.4000244140625,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 0.92
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "id": "world-company-context-context-0",
+            "opacity": 1,
+            "x": 140,
+            "y": 210,
+            "width": 304,
+            "height": 55,
+            "border": "rgb(153, 64, 39)",
+            "scaleX": 1
+          },
+          {
+            "id": "world-company-context-context-1",
+            "opacity": 0,
+            "x": 140,
+            "y": 210,
+            "width": 532,
+            "height": 55,
+            "border": "rgb(153, 64, 39)",
+            "scaleX": 1
+          }
+        ],
+        "after": [
+          {
+            "id": "world-company-context-context-0",
+            "opacity": 0,
+            "x": 140,
+            "y": 210,
+            "width": 304,
+            "height": 55,
+            "border": "rgb(153, 64, 39)",
+            "scaleX": 1
+          },
+          {
+            "id": "world-company-context-context-1",
+            "opacity": 1,
+            "x": 140,
+            "y": 210,
+            "width": 532,
+            "height": 55,
+            "border": "rgb(153, 64, 39)",
+            "scaleX": 1
+          }
+        ],
+        "reversed": [
+          {
+            "id": "world-company-context-context-0",
+            "opacity": 1,
+            "x": 140,
+            "y": 210,
+            "width": 304,
+            "height": 55,
+            "border": "rgb(153, 64, 39)",
+            "scaleX": 1
+          },
+          {
+            "id": "world-company-context-context-1",
+            "opacity": 0,
+            "x": 140,
+            "y": 210,
+            "width": 532,
+            "height": 55,
+            "border": "rgb(153, 64, 39)",
+            "scaleX": 1
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "id": "world-debt-relation-company",
+            "opacity": 0,
+            "x": 822,
+            "y": 420.79998779296875,
+            "width": 276,
+            "height": 248.4000244140625,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 0.92
+          },
+          {
+            "id": "world-debt-relation-obligation",
+            "opacity": 0,
+            "x": 1432,
+            "y": 420.79998779296875,
+            "width": 276,
+            "height": 248.4000244140625,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 0.92
+          }
+        ],
+        "after": [
+          {
+            "id": "world-debt-relation-company",
+            "opacity": 1,
+            "x": 810,
+            "y": 410,
+            "width": 300,
+            "height": 270,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 1
+          },
+          {
+            "id": "world-debt-relation-obligation",
+            "opacity": 1,
+            "x": 1420,
+            "y": 410,
+            "width": 300,
+            "height": 270,
+            "border": "rgb(174, 61, 47)",
+            "scaleX": 1
+          }
+        ],
+        "reversed": [
+          {
+            "id": "world-debt-relation-company",
+            "opacity": 0,
+            "x": 822,
+            "y": 420.79998779296875,
+            "width": 276,
+            "height": 248.4000244140625,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 0.92
+          },
+          {
+            "id": "world-debt-relation-obligation",
+            "opacity": 0,
+            "x": 1432,
+            "y": 420.79998779296875,
+            "width": 276,
+            "height": 248.4000244140625,
+            "border": "rgb(32, 39, 36)",
+            "scaleX": 0.92
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "id": "s-evidence-mark-1",
+            "opacity": 0,
+            "x": 1058.390625,
+            "y": 398.390625,
+            "width": 0,
+            "height": 53.1875,
+            "border": "rgb(174, 61, 47)",
+            "scaleX": 0
+          },
+          {
+            "id": "s-evidence-explanation-1",
+            "opacity": 0,
+            "x": 160,
+            "y": 672,
+            "width": 1500,
+            "height": 69,
+            "border": "rgb(32, 39, 36) rgb(32, 39, 36) rgb(32, 39, 36) rgb(174, 61, 47)",
+            "scaleX": 1
+          }
+        ],
+        "after": [
+          {
+            "id": "s-evidence-mark-1",
+            "opacity": 1,
+            "x": 1058.390625,
+            "y": 398.390625,
+            "width": 656,
+            "height": 53.1875,
+            "border": "rgb(174, 61, 47)",
+            "scaleX": 1
+          },
+          {
+            "id": "s-evidence-explanation-1",
+            "opacity": 1,
+            "x": 160,
+            "y": 660,
+            "width": 1500,
+            "height": 69,
+            "border": "rgb(32, 39, 36) rgb(32, 39, 36) rgb(32, 39, 36) rgb(174, 61, 47)",
+            "scaleX": 1
+          }
+        ],
+        "reversed": [
+          {
+            "id": "s-evidence-mark-1",
+            "opacity": 0,
+            "x": 1058.390625,
+            "y": 398.390625,
+            "width": 0,
+            "height": 53.1875,
+            "border": "rgb(174, 61, 47)",
+            "scaleX": 0
+          },
+          {
+            "id": "s-evidence-explanation-1",
+            "opacity": 0,
+            "x": 160,
+            "y": 672,
+            "width": 1500,
+            "height": 69,
+            "border": "rgb(32, 39, 36) rgb(32, 39, 36) rgb(32, 39, 36) rgb(174, 61, 47)",
+            "scaleX": 1
+          }
+        ]
+      }
+    ],
+    "geometry_samples": 9
+  },
+  "skills": {
+    "youtube-media": {
+      "ok": true,
+      "output": "Skill is valid!",
+      "errors": ""
+    },
+    "youtube-produce": {
+      "ok": true,
+      "output": "Skill is valid!",
+      "errors": ""
+    },
+    "youtube-visuals": {
+      "ok": true,
+      "output": "Skill is valid!",
+      "errors": ""
+    },
+    "youtube-voice": {
+      "ok": true,
+      "output": "Skill is valid!",
+      "errors": ""
+    },
+    "youtube-write": {
+      "ok": true,
+      "output": "Skill is valid!",
+      "errors": ""
+    }
+  },
+  "library": {
+    "ok": true,
+    "assets": [
+      {
+        "id": "cafe-service",
+        "status": "ready",
+        "path": "examples/competition-continuity/media/footage/cafe-service.mp4",
+        "recovery": {
+          "source": "https://www.pexels.com/video/barista-serving-a-coffee-8935798/",
+          "method": "从原来源恢复或请用户提供备份，再核对本哈希；公告截图按本期 provenance 的页码和裁切坐标重建"
+        }
+      },
+      {
+        "id": "soft-click",
+        "status": "ready",
+        "path": "examples/competition-continuity/media/sfx/click-soft.mp3",
+        "recovery": {
+          "source": "examples/competition-continuity/media/sfx/CREDITS.md",
+          "method": "从原来源恢复或请用户提供备份，再核对本哈希；公告截图按本期 provenance 的页码和裁切坐标重建"
+        }
+      },
+      {
+        "id": "xiaomi-proceeds",
+        "status": "ready",
+        "path": "episodes/20260913-企业再融资-增发和发债/media/evidence/xiaomi-use-of-proceeds.png",
+        "recovery": {
+          "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0325/2025032500008_c.pdf",
+          "method": "从原来源恢复或请用户提供备份，再核对本哈希；公告截图按本期 provenance 的页码和裁切坐标重建"
+        }
+      }
+    ]
+  },
+  "hyperframes": {
+    "version": "0.8.171",
+    "ok": true,
+    "errors": 0,
+    "warnings": 5,
+    "warning_code": "nested_structure_needs_subcomposition",
+    "runtime": true,
+    "layout": true,
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": true,
+      "samples": [
+        4.722,
+        23.611,
+        42.5,
+        61.389,
+        80.278
+      ],
+      "checked": 38,
+      "passed": 38
+    },
+    "motion_enabled": false
+  },
+  "delivery_status": "blocked_voice_service_not_configured",
+  "layout_only": true,
+  "synthetic_duration_s": 85
+}

@@ -1,0 +1,4 @@
+faster-whisper==1.2.1
+opencc-python-reimplemented==0.1.7
+fonttools==4.62.1
+numpy==2.2.3

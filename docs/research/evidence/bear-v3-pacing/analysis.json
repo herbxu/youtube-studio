@@ -1,0 +1,153 @@
+{
+  "voice_units": [
+    {
+      "unit": "u-sample-1",
+      "hanzi": 64,
+      "seconds": 14.48,
+      "hanzi_per_min_including_pauses": 265.2
+    },
+    {
+      "unit": "u-sample-2",
+      "hanzi": 57,
+      "seconds": 10.96,
+      "hanzi_per_min_including_pauses": 312.0
+    },
+    {
+      "unit": "u-sample-3",
+      "hanzi": 68,
+      "seconds": 16.08,
+      "hanzi_per_min_including_pauses": 253.7
+    },
+    {
+      "unit": "u-sample-4",
+      "hanzi": 69,
+      "seconds": 14.88,
+      "hanzi_per_min_including_pauses": 278.2
+    },
+    {
+      "unit": "u-sample-5",
+      "hanzi": 54,
+      "seconds": 12.72,
+      "hanzi_per_min_including_pauses": 254.7
+    },
+    {
+      "unit": "u-sample-6",
+      "hanzi": 78,
+      "seconds": 17.2,
+      "hanzi_per_min_including_pauses": 272.1
+    }
+  ],
+  "shots": [
+    {
+      "id": "s-sample-1",
+      "start": 0.0,
+      "seconds": 7.8,
+      "events": [
+        {
+          "target": "marker",
+          "at": 4.68,
+          "settled_hold_s": 2.72
+        }
+      ]
+    },
+    {
+      "id": "s-opening-question",
+      "start": 7.8,
+      "seconds": 6.680000000000001,
+      "events": []
+    },
+    {
+      "id": "s-sample-2",
+      "start": 14.48,
+      "seconds": 5.039999999999999,
+      "events": [
+        {
+          "target": "marker",
+          "at": 17.44,
+          "settled_hold_s": 1.68
+        }
+      ]
+    },
+    {
+      "id": "s-buying-reason",
+      "start": 19.52,
+      "seconds": 5.920000000000002,
+      "events": []
+    },
+    {
+      "id": "s-sample-3",
+      "start": 25.44,
+      "seconds": 16.079999999999995,
+      "events": [
+        {
+          "target": "income",
+          "at": 28.64,
+          "settled_hold_s": 12.48
+        },
+        {
+          "target": "price",
+          "at": 35.260000000000005,
+          "settled_hold_s": 5.86
+        },
+        {
+          "target": "rate",
+          "at": 39.74,
+          "settled_hold_s": 1.38
+        }
+      ]
+    },
+    {
+      "id": "s-sample-4",
+      "start": 41.519999999999996,
+      "seconds": 14.880000000000003,
+      "events": [
+        {
+          "target": "price",
+          "at": 43.8,
+          "settled_hold_s": 12.2
+        },
+        {
+          "target": "rate",
+          "at": 51.44,
+          "settled_hold_s": 4.56
+        }
+      ]
+    },
+    {
+      "id": "s-sample-5",
+      "start": 56.4,
+      "seconds": 12.720000000000006,
+      "events": [
+        {
+          "target": "income",
+          "at": 59.519999999999996,
+          "settled_hold_s": 9.2
+        },
+        {
+          "target": "rate",
+          "at": 61.16,
+          "settled_hold_s": 7.56
+        }
+      ]
+    },
+    {
+      "id": "s-sample-6",
+      "start": 69.12,
+      "seconds": 5.819999999999993,
+      "events": [
+        {
+          "target": "marker",
+          "at": 73.72,
+          "settled_hold_s": 0.82
+        }
+      ]
+    },
+    {
+      "id": "s-closing-action",
+      "start": 74.94,
+      "seconds": 11.38000000000001,
+      "events": []
+    }
+  ],
+  "finding": "首25.44秒四个阅读任务；算式稳定后1.38秒换景；结尾复盘强调后0.82秒换景。音轨无BGM。截图证明阅读时间，不证明主观听感。"
+}

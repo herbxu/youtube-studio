@@ -1,0 +1,88 @@
+{
+  "schema": "opinion-script/v1",
+  "title": "新架构技术验证",
+  "sources": [],
+  "units": [
+    {
+      "id": "u-question",
+      "text": "我们做选择的时候，可以先问自己一个问题。这个选择，到底解决了什么？",
+      "shots": [
+        {
+          "id": "s-art",
+          "kind": "illustration",
+          "cue": "",
+          "purpose": "验证位图、运镜与字幕独立",
+          "asset": "media/fixture.png",
+          "provenance": {
+            "kind": "test-fixture",
+            "source": "本地生成的工程测试图，不作为正式插画"
+          },
+          "motion": "push",
+          "focus": [
+            0.6,
+            0.4
+          ],
+          "headline": "先问一个问题"
+        },
+        {
+          "id": "s-claim",
+          "kind": "claim",
+          "cue": "这个选择",
+          "purpose": "验证关键判断出现",
+          "headline": "这个选择，解决了什么？"
+        }
+      ]
+    },
+    {
+      "id": "u-compare",
+      "text": "我们可以把两种选择放在一起比较。再看这张图，持有的数量没有变，总数却变大了。",
+      "shots": [
+        {
+          "id": "s-pair",
+          "kind": "comparison",
+          "cue": "",
+          "purpose": "验证概念对比",
+          "labels": [
+            "当前选择",
+            "另一种选择"
+          ]
+        },
+        {
+          "id": "s-quantity",
+          "kind": "quantity",
+          "cue": "持有的数量",
+          "purpose": "验证同源公式的数量和比例动画",
+          "owned": 10,
+          "before": 100,
+          "after": 120,
+          "hypothetical": true,
+          "change_cue": "总数却变大了"
+        }
+      ]
+    },
+    {
+      "id": "u-flow",
+      "text": "先看问题，再找证据，最后形成自己的判断。画面帮助理解，声音表达观点。",
+      "shots": [
+        {
+          "id": "s-flow",
+          "kind": "flow",
+          "cue": "",
+          "purpose": "验证三步关系",
+          "labels": [
+            "问题",
+            "证据",
+            "判断"
+          ]
+        },
+        {
+          "id": "s-ending",
+          "kind": "claim",
+          "cue": "画面帮助理解",
+          "purpose": "验证结尾及尾音",
+          "headline": "画面帮助理解，声音表达观点"
+        }
+      ]
+    }
+  ]
+}

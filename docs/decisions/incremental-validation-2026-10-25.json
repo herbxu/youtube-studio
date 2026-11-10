@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-25",
+  "episode": "episodes/20260913-企业再融资-增发和发债",
+  "tests": 63,
+  "window_equivalence_checks": 6,
+  "warm_stage_seconds": {
+    "script": 0.11,
+    "voice": 0.598,
+    "align": 0.435,
+    "assets": 0.12,
+    "compose": 0.675,
+    "render": 4.03,
+    "verify": 4.728
+  },
+  "warm_total_stage_seconds": 10.696,
+  "audio_only": {
+    "test": "actual episode narration gain -1dB; no BGM; temporary output only",
+    "seconds": 6.73,
+    "rendered": 0,
+    "reused": 6,
+    "mux_seconds": 2.596,
+    "video_stream_unchanged": true
+  },
+  "browser_preview": {
+    "url": "http://127.0.0.1:3017/#project/composition",
+    "clips": 54,
+    "runtime_errors": []
+  },
+  "movie_sha256": "7dbc5c11f201286ea04668522826316e7893d290532236ec7194d8cb59d31dac",
+  "subjective_review": "pending",
+  "music": "候选已核验免署名条款，下载受403限制，未试听或添加"
+}

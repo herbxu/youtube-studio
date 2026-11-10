@@ -1,0 +1,105 @@
+[
+  {
+    "from": "20260808-你唯一可以依靠的梯子",
+    "to": "episodes/20260808-你唯一可以依靠的梯子",
+    "files": 3,
+    "bytes": 30751
+  },
+  {
+    "from": "20260405-普通人该不该长期持有",
+    "to": "episodes/20260405-普通人该不该长期持有",
+    "files": 1,
+    "bytes": 7962
+  },
+  {
+    "from": "20260829-竞争优势",
+    "to": "episodes/20260829-竞争优势",
+    "files": 269,
+    "bytes": 2634568903
+  },
+  {
+    "from": "20260913-企业再融资-增发和发债",
+    "to": "episodes/20260913-企业再融资-增发和发债",
+    "files": 52,
+    "bytes": 32498452
+  },
+  {
+    "from": "20260815-腾讯2026Q2财报分析",
+    "to": "episodes/20260815-腾讯2026Q2财报分析",
+    "files": 5,
+    "bytes": 79916
+  },
+  {
+    "from": "20260725-投资中最简单的事",
+    "to": "episodes/20260725-投资中最简单的事",
+    "files": 3,
+    "bytes": 34943
+  },
+  {
+    "from": "skills/youtube-produce/scripts/studio",
+    "to": "src/youtube_studio",
+    "files": 12,
+    "bytes": 151362
+  },
+  {
+    "from": "skills/youtube-produce/scripts/produce.py",
+    "to": "src/youtube_studio/cli.py",
+    "files": 1,
+    "bytes": 2797
+  },
+  {
+    "from": "studio/config.example.json",
+    "to": "config/default.json",
+    "files": 1,
+    "bytes": 1227
+  },
+  {
+    "from": "studio/fonts",
+    "to": "resources/fonts",
+    "files": 2,
+    "bytes": 17776688
+  },
+  {
+    "from": "studio/requirements.txt",
+    "to": "requirements.txt",
+    "files": 1,
+    "bytes": 75
+  },
+  {
+    "from": "studio/package.json",
+    "to": "package.json",
+    "files": 1,
+    "bytes": 244
+  },
+  {
+    "from": "studio/package-lock.json",
+    "to": "package-lock.json",
+    "files": 1,
+    "bytes": 63187
+  },
+  {
+    "from": "studio/node_modules",
+    "to": "node_modules",
+    "files": null,
+    "bytes": null,
+    "note": "Generated dependency directory moved without a file inventory."
+  },
+  {
+    "from": "studio/.smoke",
+    "to": "build/smoke",
+    "files": 99,
+    "bytes": 25526334
+  },
+  {
+    "from": "legacy",
+    "to": "archive/legacy",
+    "files": 129,
+    "bytes": 978350
+  },
+  {
+    "from": "reports",
+    "to": "archive/reports",
+    "files": 4008,
+    "bytes": 43162761
+  }
+]

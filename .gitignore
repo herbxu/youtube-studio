@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+__pycache__/
+*.egg-info/
+*.log
+.cache/
+.media/
+.run.lock
+state.json
+build/
+dist/
+.pytest_cache/

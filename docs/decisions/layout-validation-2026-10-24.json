@@ -1,0 +1,1182 @@
+{
+  "date": "2026-10-24",
+  "scope": "flat directory migration; existing recordings; no new video render or subjective listening",
+  "unit_tests": {
+    "passed": 37
+  },
+  "skills_validated": 5,
+  "markdown_links_checked": 92,
+  "broken_markdown_links": 0,
+  "input_references_verified": {
+    "episodes/20260829-竞争优势": 62,
+    "examples/competition-continuity": 9
+  },
+  "doctor_before_dependency_cleanup": {
+    "formal_episode": "passed",
+    "example": "passed"
+  },
+  "compose": {
+    "status": "prepared",
+    "through": "compose",
+    "input_signature": "2a41dd7e6f9a05a8be8c2ccbeaee74949704a863ac8c90c3cedb808bcf0c9052",
+    "stages": {
+      "script": {
+        "status": "succeeded",
+        "result": {
+          "units": 3,
+          "canonical": "script.json"
+        }
+      },
+      "voice": {
+        "status": "succeeded",
+        "result": {
+          "master": "/Users/herbxu/Desktop/github/youtube/examples/competition-continuity/build/voice.master.wav",
+          "duration": 35.76,
+          "segments": 3
+        }
+      },
+      "align": {
+        "status": "succeeded",
+        "result": {
+          "duration": 35.76,
+          "shots": 4,
+          "captions": 19,
+          "min_coverage": 1.0
+        }
+      },
+      "assets": {
+        "status": "succeeded",
+        "result": {
+          "visual_assets": 1,
+          "audio_tracks": 2
+        }
+      },
+      "compose": {
+        "status": "succeeded",
+        "result": {
+          "project": "/Users/herbxu/Desktop/github/youtube/examples/competition-continuity/build/composition",
+          "framework": "HyperFrames"
+        }
+      }
+    }
+  },
+  "hyperframes": {
+    "ok": true,
+    "strict": false,
+    "browserSkipped": false,
+    "lint": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 2,
+      "infoCount": 0,
+      "findings": [
+        {
+          "code": "studio_missing_editable_id",
+          "severity": "warning",
+          "message": "<div class=\"footage-credit\" data-start=\"0.0\" data-track-index=\"31\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+          "selector": "[data-composition-id]",
+          "dataAttributes": {},
+          "sourceFile": "/Users/herbxu/Desktop/github/youtube/examples/competition-continuity/build/composition/index.html",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "time": 0,
+          "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+        },
+        {
+          "code": "nested_structure_needs_subcomposition",
+          "severity": "warning",
+          "message": "<section id=\"street\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+          "selector": "#street",
+          "dataAttributes": {},
+          "sourceFile": "/Users/herbxu/Desktop/github/youtube/examples/competition-continuity/build/composition/index.html",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "time": 0,
+          "fixHint": "Move <section id=\"street\"> and its contents into a sub-composition file and mount it with data-composition-src."
+        }
+      ],
+      "filesScanned": 1
+    },
+    "runtime": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": []
+    },
+    "layout": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 1,
+      "infoCount": 1,
+      "findings": [
+        {
+          "code": "container_overflow",
+          "severity": "warning",
+          "time": 25.827,
+          "selector": "#street-world",
+          "message": "Element extends outside a clipping layout container.",
+          "rect": {
+            "left": -60,
+            "top": -30,
+            "right": 2090.4,
+            "bottom": 1179.6,
+            "width": 2150.4,
+            "height": 1209.6
+          },
+          "containerSelector": "div.canvas",
+          "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+          "containerRect": {
+            "left": 0,
+            "top": 0,
+            "right": 1920,
+            "bottom": 1080,
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": {
+            "left": 60,
+            "right": 170.4,
+            "top": 30,
+            "bottom": 99.6
+          },
+          "dataAttributes": {},
+          "sourceFile": "index.html",
+          "bbox": {
+            "x": -60,
+            "y": -30,
+            "width": 2150.4,
+            "height": 1209.6
+          },
+          "firstSeen": 25.827,
+          "lastSeen": 33.773,
+          "occurrences": 3,
+          "heldMs": 0,
+          "times": [
+            25.827,
+            29.8,
+            33.773
+          ]
+        },
+        {
+          "code": "panel_out_of_canvas",
+          "severity": "info",
+          "time": 25.827,
+          "selector": "div.street-ground",
+          "message": "Painted panel extends outside the composition canvas.",
+          "rect": {
+            "left": 74.4,
+            "top": 664.4,
+            "right": 1956,
+            "bottom": 667.76,
+            "width": 1881.6,
+            "height": 3.36
+          },
+          "containerSelector": "#root",
+          "text": "",
+          "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+          "containerRect": {
+            "left": 0,
+            "top": 0,
+            "right": 1920,
+            "bottom": 1080,
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": {
+            "right": 36
+          },
+          "dataAttributes": {},
+          "sourceFile": "index.html",
+          "bbox": {
+            "x": 74.4,
+            "y": 664.4,
+            "width": 1881.6,
+            "height": 3.36
+          },
+          "firstSeen": 25.827,
+          "lastSeen": 33.773,
+          "occurrences": 3,
+          "heldMs": 0,
+          "times": [
+            25.827,
+            29.8,
+            33.773
+          ]
+        }
+      ],
+      "duration": 35.76,
+      "samples": [
+        1.987,
+        5.96,
+        9.933,
+        13.907,
+        17.88,
+        21.853,
+        25.827,
+        29.8,
+        33.773
+      ],
+      "transitionSamples": [],
+      "transitionSamplesDropped": 0,
+      "tolerance": 2,
+      "totalIssueCount": 2,
+      "truncated": false
+    },
+    "motion": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": false,
+      "samples": 0
+    },
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": true,
+      "samples": [
+        1.987,
+        9.933,
+        17.88,
+        25.827,
+        33.773
+      ],
+      "checked": 35,
+      "passed": 35
+    },
+    "hdr": {
+      "autoPromotion": null,
+      "inspection": "available"
+    },
+    "snapshots": {
+      "enabled": false,
+      "files": [],
+      "times": [],
+      "findingFiles": []
+    },
+    "saved": {
+      "id": "7ea20d53-8917-471b-8574-c685f6e91db7",
+      "revision": null,
+      "report": "/Users/herbxu/Desktop/github/youtube/examples/competition-continuity/build/composition/.hyperframes/artifacts/checks/7ea20d53-8917-471b-8574-c685f6e91db7.json",
+      "attribution": "unversioned"
+    },
+    "_meta": {
+      "version": "0.8.171",
+      "latestVersion": "0.8.191",
+      "updateAvailable": true
+    }
+  },
+  "browser": {
+    "passed": true,
+    "measured_flow_reveals": [
+      {
+        "scene": "street",
+        "action": "customer-diversion",
+        "before": {
+          "shops": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "customers": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "product": {
+            "opacity": 0,
+            "x": 0,
+            "y": 0
+          },
+          "features": [
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "after": {
+          "shops": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "customers": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            }
+          ],
+          "product": {
+            "opacity": 0,
+            "x": 0,
+            "y": 0
+          },
+          "features": [
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "reversed": {
+          "shops": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "customers": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "product": {
+            "opacity": 0,
+            "x": 0,
+            "y": 0
+          },
+          "features": [
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      },
+      {
+        "scene": "street",
+        "action": "copy",
+        "early": {
+          "shops": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "customers": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            }
+          ],
+          "product": {
+            "opacity": 0,
+            "x": 0,
+            "y": 0
+          },
+          "features": [
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "moving": {
+          "shops": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "customers": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            }
+          ],
+          "product": {
+            "opacity": 0.4169,
+            "x": -314.8992,
+            "y": 0
+          },
+          "features": [
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "late": {
+          "shops": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "customers": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            }
+          ],
+          "product": {
+            "opacity": 1,
+            "x": 0,
+            "y": 0
+          },
+          "features": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        "back": {
+          "shops": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "customers": [
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 324,
+              "y": 30
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 648,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            },
+            {
+              "opacity": 1,
+              "x": 972,
+              "y": -55
+            }
+          ],
+          "product": {
+            "opacity": 0,
+            "x": 0,
+            "y": 0
+          },
+          "features": [
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "opacity": 0,
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      },
+      {
+        "footage": {
+          "muted": true,
+          "start": 0,
+          "duration": 6.616500000000009,
+          "nestedTimed": false
+        }
+      }
+    ],
+    "caption_boxes": [
+      {
+        "id": "caption-0",
+        "left": 767,
+        "right": 1153,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-1",
+        "left": 683,
+        "right": 1237,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-2",
+        "left": 809,
+        "right": 1111,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-3",
+        "left": 725,
+        "right": 1195,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-4",
+        "left": 725,
+        "right": 1195,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-5",
+        "left": 767,
+        "right": 1153,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-6",
+        "left": 662,
+        "right": 1258,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-7",
+        "left": 767,
+        "right": 1153,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-8",
+        "left": 830,
+        "right": 1090,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-9",
+        "left": 683,
+        "right": 1237,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-10",
+        "left": 767,
+        "right": 1153,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-11",
+        "left": 725,
+        "right": 1195,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-12",
+        "left": 830,
+        "right": 1090,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-13",
+        "left": 767,
+        "right": 1153,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-14",
+        "left": 830,
+        "right": 1090,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-15",
+        "left": 809,
+        "right": 1111,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-16",
+        "left": 830,
+        "right": 1090,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-17",
+        "left": 746,
+        "right": 1174,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      },
+      {
+        "id": "caption-18",
+        "left": 746,
+        "right": 1174,
+        "top": 923.203125,
+        "bottom": 1001.796875,
+        "inside": true
+      }
+    ],
+    "note": "Browser geometry and reverse-seek checks only; inspect actual exported frames separately."
+  },
+  "rerendered": false,
+  "external_generation_requests": 0,
+  "dependency_policy": "Dependencies restored only for verification, removed again after checks; reinstall per README before running."
+}

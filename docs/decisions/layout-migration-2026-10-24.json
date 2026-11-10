@@ -1,0 +1,3004 @@
+{
+  "schema": "repository-layout-migration/v1",
+  "date": "2026-10-24",
+  "authorization": "用户：采用，批准删除旧工程",
+  "note": "路径迁移未重新渲染；旧 QA、审阅和来源记录保留原始路径与哈希，使用本表解析历史位置。后续必要的路径编辑另记。 验证依赖与本轮生成的 build/cache 已再次清理，运行前需重装依赖。",
+  "moved": [
+    {
+      "old": "episodes/20261024-竞争优势-表达样片/production/build/frames/ending.jpg",
+      "new": "docs/decisions/evidence/20261024-竞争优势-表达样片/ending.jpg",
+      "bytes": 13661,
+      "sha256_before": "43b3448244feffdb97e3fd308b184899097592ee6af040576d48fea351a7739a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "43b3448244feffdb97e3fd308b184899097592ee6af040576d48fea351a7739a"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-表达样片/production/build/frames/s-closing-room-transition-after.jpg",
+      "new": "docs/decisions/evidence/20261024-竞争优势-表达样片/s-closing-room-transition-after.jpg",
+      "bytes": 60688,
+      "sha256_before": "bc482d595432ef8feabdbb253765f20452eea36315936028e03b9ac894333c29",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bc482d595432ef8feabdbb253765f20452eea36315936028e03b9ac894333c29"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-表达样片/production/review.json",
+      "new": "docs/decisions/evidence/20261024-竞争优势-表达样片/review.json",
+      "bytes": 1453,
+      "sha256_before": "d16538e4706668d99911e2741f03be4299d640e0d94e86d25006e4eb50042cfd",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d16538e4706668d99911e2741f03be4299d640e0d94e86d25006e4eb50042cfd"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-杂志拼贴样片/production/build/text-motion-contact.jpg",
+      "new": "docs/decisions/evidence/20261024-竞争优势-杂志拼贴样片/text-motion-contact.jpg",
+      "bytes": 143799,
+      "sha256_before": "f165b218c06dc75a8c4ac741ad518af1c65aa40e98b1acbec4086cac136f385d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f165b218c06dc75a8c4ac741ad518af1c65aa40e98b1acbec4086cac136f385d"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-杂志拼贴样片/production/build/contact-sheet-before-text-motion.jpg",
+      "new": "docs/decisions/evidence/20261024-竞争优势-杂志拼贴样片/contact-sheet-before-text-motion.jpg",
+      "bytes": 505339,
+      "sha256_before": "14725e31b38caefda09c64f5bc46702175c3561ad7c6b0cd317c28eedeba7b13",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "14725e31b38caefda09c64f5bc46702175c3561ad7c6b0cd317c28eedeba7b13"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-杂志拼贴样片/production/review.json",
+      "new": "docs/decisions/evidence/20261024-竞争优势-杂志拼贴样片/review.json",
+      "bytes": 3087,
+      "sha256_before": "072c7271f6379f623ad921ca66d7f0323a0b30a1d5e6a06c75a030ab2de8c369",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "072c7271f6379f623ad921ca66d7f0323a0b30a1d5e6a06c75a030ab2de8c369"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-杂志拼贴样片/production/media/photos/provenance.json",
+      "new": "docs/decisions/evidence/20261024-竞争优势-杂志拼贴样片/provenance.json",
+      "bytes": 955,
+      "sha256_before": "df496a0303dcadd4b1e6bfc9f999ec2b1e5e22054d5a6acc710f9abf47e35e57",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "df496a0303dcadd4b1e6bfc9f999ec2b1e5e22054d5a6acc710f9abf47e35e57"
+    },
+    {
+      "old": "episodes/20260405-普通人该不该长期持有/scripts/script.md",
+      "new": "episodes/20260405-普通人该不该长期持有/source/scripts/script.md",
+      "bytes": 7962,
+      "sha256_before": "48aae2b7cb0238bab45112b06199bfec7a140ed0dec9dca8ccc6336b8f68e290",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "48aae2b7cb0238bab45112b06199bfec7a140ed0dec9dca8ccc6336b8f68e290"
+    },
+    {
+      "old": "episodes/20260725-投资中最简单的事/scripts/content.md",
+      "new": "episodes/20260725-投资中最简单的事/source/scripts/content.md",
+      "bytes": 12579,
+      "sha256_before": "8951609f6f6b0fb833014afab9551c7f6b5fae46f6a5b5a3d8f314c6d7fec50f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8951609f6f6b0fb833014afab9551c7f6b5fae46f6a5b5a3d8f314c6d7fec50f"
+    },
+    {
+      "old": "episodes/20260725-投资中最简单的事/scripts/youtube_description.md",
+      "new": "episodes/20260725-投资中最简单的事/source/scripts/youtube_description.md",
+      "bytes": 1835,
+      "sha256_before": "8b0277393c3367d5f2cd3464464df64352522446ae07307e540db83ead263b2e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8b0277393c3367d5f2cd3464464df64352522446ae07307e540db83ead263b2e"
+    },
+    {
+      "old": "episodes/20260725-投资中最简单的事/scripts/录音.srt",
+      "new": "episodes/20260725-投资中最简单的事/source/scripts/录音.srt",
+      "bytes": 20529,
+      "sha256_before": "966cdb0192165fa5e25435af68b8091ba58387e773889602afd07be1d2cef30b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "966cdb0192165fa5e25435af68b8091ba58387e773889602afd07be1d2cef30b"
+    },
+    {
+      "old": "episodes/20260808-你唯一可以依靠的梯子/scripts/content.md",
+      "new": "episodes/20260808-你唯一可以依靠的梯子/source/scripts/content.md",
+      "bytes": 12868,
+      "sha256_before": "5115c0111e9fc96ff3d4b3a4763b0c0ab5ac57f8ca5aa340434d6098e2ee918f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5115c0111e9fc96ff3d4b3a4763b0c0ab5ac57f8ca5aa340434d6098e2ee918f"
+    },
+    {
+      "old": "episodes/20260808-你唯一可以依靠的梯子/scripts/youtube_description.md",
+      "new": "episodes/20260808-你唯一可以依靠的梯子/source/scripts/youtube_description.md",
+      "bytes": 1491,
+      "sha256_before": "bc42a727a4169c93aaa63ec9f9e37466c5a0c3a298d1f2e27d9e99b8a3eb8862",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bc42a727a4169c93aaa63ec9f9e37466c5a0c3a298d1f2e27d9e99b8a3eb8862"
+    },
+    {
+      "old": "episodes/20260808-你唯一可以依靠的梯子/scripts/录音_final.srt",
+      "new": "episodes/20260808-你唯一可以依靠的梯子/source/scripts/录音_final.srt",
+      "bytes": 16392,
+      "sha256_before": "443c75e41b7e56c112e8c3e442c5b3807135719167a4699dc261cfbbc071b052",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "443c75e41b7e56c112e8c3e442c5b3807135719167a4699dc261cfbbc071b052"
+    },
+    {
+      "old": "episodes/20260815-腾讯2026Q2财报分析/scripts/content.aligned.md",
+      "new": "episodes/20260815-腾讯2026Q2财报分析/source/scripts/content.aligned.md",
+      "bytes": 8849,
+      "sha256_before": "62e658da675989378f480658829825eec02f4eb3f29b0ccea978f73f343e005d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "62e658da675989378f480658829825eec02f4eb3f29b0ccea978f73f343e005d"
+    },
+    {
+      "old": "episodes/20260815-腾讯2026Q2财报分析/scripts/content.md",
+      "new": "episodes/20260815-腾讯2026Q2财报分析/source/scripts/content.md",
+      "bytes": 8591,
+      "sha256_before": "55362994530bfa54fef09eea3004730ecde5bc7ad74d46efd7dcb1ddd81d53cd",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "55362994530bfa54fef09eea3004730ecde5bc7ad74d46efd7dcb1ddd81d53cd"
+    },
+    {
+      "old": "episodes/20260815-腾讯2026Q2财报分析/scripts/youtube_description.md",
+      "new": "episodes/20260815-腾讯2026Q2财报分析/source/scripts/youtube_description.md",
+      "bytes": 1790,
+      "sha256_before": "a76308fbb1602f181251e4912e9866adaa5d2d4f38aeb7e47afcc2f130b013b7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a76308fbb1602f181251e4912e9866adaa5d2d4f38aeb7e47afcc2f130b013b7"
+    },
+    {
+      "old": "episodes/20260815-腾讯2026Q2财报分析/scripts/录音_final.srt",
+      "new": "episodes/20260815-腾讯2026Q2财报分析/source/scripts/录音_final.srt",
+      "bytes": 14193,
+      "sha256_before": "4e695a4b1cc277ea71775b7fece3f940a7e97b904bc0d89eaa49529cda4b89a0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4e695a4b1cc277ea71775b7fece3f940a7e97b904bc0d89eaa49529cda4b89a0"
+    },
+    {
+      "old": "episodes/20260815-腾讯2026Q2财报分析/specs/beats.plan.json",
+      "new": "episodes/20260815-腾讯2026Q2财报分析/source/planning/beats.plan.json",
+      "bytes": 46493,
+      "sha256_before": "2dcb5965b1af4ef645fc542441beb79cc4c270af7879c32d80d28697de1b0da3",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2dcb5965b1af4ef645fc542441beb79cc4c270af7879c32d80d28697de1b0da3"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/scripts/content.aligned.md",
+      "new": "episodes/20260829-竞争优势/source/scripts/content.aligned.md",
+      "bytes": 8693,
+      "sha256_before": "c55af579a39e861d58d91ced9226af9d0d32485c2ea20cdb2310069624e6f3bd",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c55af579a39e861d58d91ced9226af9d0d32485c2ea20cdb2310069624e6f3bd"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/scripts/content.md",
+      "new": "episodes/20260829-竞争优势/source/scripts/content.md",
+      "bytes": 8544,
+      "sha256_before": "e22ec9386894db14dd6f88b0db31feda344f1a3409eee668d9c8e157fba1da8d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e22ec9386894db14dd6f88b0db31feda344f1a3409eee668d9c8e157fba1da8d"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/scripts/youtube_description.md",
+      "new": "episodes/20260829-竞争优势/source/scripts/youtube_description.md",
+      "bytes": 3169,
+      "sha256_before": "0295e0abed21ad62a63a405b1d53bae790a69583554aa8112cd435b363f08f8b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0295e0abed21ad62a63a405b1d53bae790a69583554aa8112cd435b363f08f8b"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/scripts/录音_final.srt",
+      "new": "episodes/20260829-竞争优势/source/scripts/录音_final.srt",
+      "bytes": 15792,
+      "sha256_before": "40bf8e31cbf69ef52b2bfcf134fbeda3866f5da6081a18f11ea02640babc8e0b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "40bf8e31cbf69ef52b2bfcf134fbeda3866f5da6081a18f11ea02640babc8e0b"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/specs/beats.plan.json",
+      "new": "episodes/20260829-竞争优势/source/planning/beats.plan.json",
+      "bytes": 75366,
+      "sha256_before": "11613ca55550889e8e951e2745ce45d62f3490c2f595ee7d0aeaf7fdfd382d95",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "11613ca55550889e8e951e2745ce45d62f3490c2f595ee7d0aeaf7fdfd382d95"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/specs/image-prompts.json",
+      "new": "episodes/20260829-竞争优势/source/planning/image-prompts.json",
+      "bytes": 19573,
+      "sha256_before": "574170d5ecfb133cfb269214f41dc177251d324395e3b2a6995731d3d1e26961",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "574170d5ecfb133cfb269214f41dc177251d324395e3b2a6995731d3d1e26961"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/scripts/chunks.json",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/scripts/chunks.json",
+      "bytes": 20225,
+      "sha256_before": "b231e325c8c36d4bb8aee76435e3afd06bd3814d3a9fa161d6617d094843f748",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b231e325c8c36d4bb8aee76435e3afd06bd3814d3a9fa161d6617d094843f748"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/scripts/content.aligned.md",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/scripts/content.aligned.md",
+      "bytes": 9243,
+      "sha256_before": "a5fe6142fb5abef3f19f6c724bef0bda894d3b54b56e5f044bb61e4622cf2525",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a5fe6142fb5abef3f19f6c724bef0bda894d3b54b56e5f044bb61e4622cf2525"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/scripts/content.md",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/scripts/content.md",
+      "bytes": 8991,
+      "sha256_before": "7e1d69af0e3e5d1e1ba99cb01336d400115af093e2d11b909079d5496c2b89d0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7e1d69af0e3e5d1e1ba99cb01336d400115af093e2d11b909079d5496c2b89d0"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/scripts/tts.srt",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/scripts/tts.srt",
+      "bytes": 13479,
+      "sha256_before": "2be3263635a63e3b7e5b661620da67a533e235ce2671e66c0fd2fcc8ffcedab4",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2be3263635a63e3b7e5b661620da67a533e235ce2671e66c0fd2fcc8ffcedab4"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/specs/beats.plan.json",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/planning/beats.plan.json",
+      "bytes": 78809,
+      "sha256_before": "98146bd2d4380f57b977c1fc5460e085a0aac57ec4b8cae1e6b71d6743234265",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "98146bd2d4380f57b977c1fc5460e085a0aac57ec4b8cae1e6b71d6743234265"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/specs/image-prompts.json",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/planning/image-prompts.json",
+      "bytes": 17949,
+      "sha256_before": "1ecb8f1f2f8c5df810983c0f6a5bdec8a9b4393c49321e1eb427d227bc08622e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1ecb8f1f2f8c5df810983c0f6a5bdec8a9b4393c49321e1eb427d227bc08622e"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/report.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/report.json",
+      "bytes": 3608,
+      "sha256_before": "42c5eedf58b6fa5c8f5af5cfb2ce8c4bc900f10ae89bcef63b6b23e20f022232",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "42c5eedf58b6fa5c8f5af5cfb2ce8c4bc900f10ae89bcef63b6b23e20f022232"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-adapt.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-adapt.raw-alignment.json",
+      "bytes": 10264,
+      "sha256_before": "4b975a48b0c0481804fb27a739738d272fc6a0aaffbbda3c89432dfee15f0630",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4b975a48b0c0481804fb27a739738d272fc6a0aaffbbda3c89432dfee15f0630"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-adapt.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-adapt.wav",
+      "bytes": 1982396,
+      "sha256_before": "6e5ffb18a329e5c5319afe5480e077988de796b900f598b8b8a67c45a1f945c7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "6e5ffb18a329e5c5319afe5480e077988de796b900f598b8b8a67c45a1f945c7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-adapt.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-adapt.words.json",
+      "bytes": 11157,
+      "sha256_before": "ea7e3c145e048a1bd40ec32760db5faacfedfe72b61f452fb26bdd3e4737efae",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ea7e3c145e048a1bd40ec32760db5faacfedfe72b61f452fb26bdd3e4737efae"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-book.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-book.raw-alignment.json",
+      "bytes": 6748,
+      "sha256_before": "e7e0c6108a2fa0eb73254d11fecf5c01b164100f528cb8c7d8366f4761f279f7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e7e0c6108a2fa0eb73254d11fecf5c01b164100f528cb8c7d8366f4761f279f7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-book.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-book.wav",
+      "bytes": 1264028,
+      "sha256_before": "159233ba15e75dffd906cdc2fa87ad69b3fc984e0bee0d679b5855a609802dab",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "159233ba15e75dffd906cdc2fa87ad69b3fc984e0bee0d679b5855a609802dab"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-book.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-book.words.json",
+      "bytes": 7731,
+      "sha256_before": "2f4314efb9bc1c3496a786edaca8e326b10795454e19e71f2fb41f8a69519731",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2f4314efb9bc1c3496a786edaca8e326b10795454e19e71f2fb41f8a69519731"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-bypass.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-bypass.raw-alignment.json",
+      "bytes": 18142,
+      "sha256_before": "586b50833e57ff63b1857bdeb6389bb816da57352f4daf343a9333b30cc8a24e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "586b50833e57ff63b1857bdeb6389bb816da57352f4daf343a9333b30cc8a24e"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-bypass.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-bypass.wav",
+      "bytes": 3574460,
+      "sha256_before": "aa0f09893bac779d836c3a502c044c473866d981e37397a456d41cfe88c850ae",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "aa0f09893bac779d836c3a502c044c473866d981e37397a456d41cfe88c850ae"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-bypass.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-bypass.words.json",
+      "bytes": 19747,
+      "sha256_before": "f99bff1e20f2774b3bb3626489fec6fffdd8bec6e009f9c9423919a9d75b3a52",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f99bff1e20f2774b3bb3626489fec6fffdd8bec6e009f9c9423919a9d75b3a52"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-cars.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-cars.raw-alignment.json",
+      "bytes": 7910,
+      "sha256_before": "dbd7f23414c2ef88229e939ac3c9f6c9cc58269e38b7131baf36f8417b19d345",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "dbd7f23414c2ef88229e939ac3c9f6c9cc58269e38b7131baf36f8417b19d345"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-cars.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-cars.wav",
+      "bytes": 1592060,
+      "sha256_before": "ba9b20e83121821f986355a5b00902c37b18b1f73255c25bb5a66c4bb421a122",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ba9b20e83121821f986355a5b00902c37b18b1f73255c25bb5a66c4bb421a122"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-cars.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-cars.words.json",
+      "bytes": 8827,
+      "sha256_before": "94747a61c4449172946471dd1c59c2e13d6409a9ad8a2b5f2b52ca74e229eeeb",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "94747a61c4449172946471dd1c59c2e13d6409a9ad8a2b5f2b52ca74e229eeeb"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-castle.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-castle.raw-alignment.json",
+      "bytes": 13108,
+      "sha256_before": "630a6f3104b90938be887a61e6d23a494b15ee8218b4386d5ec3d3926aedffeb",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "630a6f3104b90938be887a61e6d23a494b15ee8218b4386d5ec3d3926aedffeb"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-castle.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-castle.wav",
+      "bytes": 2406476,
+      "sha256_before": "2c3f923c4849f4c28fc25d537a1dc7fcd19c91cd884083495152428ebda2cba7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2c3f923c4849f4c28fc25d537a1dc7fcd19c91cd884083495152428ebda2cba7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-castle.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-castle.words.json",
+      "bytes": 13852,
+      "sha256_before": "681bde7df853999af4578c15dd9f15f89c66f848ffbb1c58e33bf23729fe8de7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "681bde7df853999af4578c15dd9f15f89c66f848ffbb1c58e33bf23729fe8de7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-checklist.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-checklist.raw-alignment.json",
+      "bytes": 8877,
+      "sha256_before": "dfcdc16d4955983d20cc6f749ae276cce2670fe28380b7496192ec8fbe566045",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "dfcdc16d4955983d20cc6f749ae276cce2670fe28380b7496192ec8fbe566045"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-checklist.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-checklist.wav",
+      "bytes": 1848092,
+      "sha256_before": "bb12e615bb7ebe7a46fff7bf219a15a35dd88ee359f840a7b282727148965359",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bb12e615bb7ebe7a46fff7bf219a15a35dd88ee359f840a7b282727148965359"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-checklist.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-checklist.words.json",
+      "bytes": 9681,
+      "sha256_before": "22f55f15a42bee485f19b265896fe49bd9bc1ecc3bda46a2da452d7a600fc393",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "22f55f15a42bee485f19b265896fe49bd9bc1ecc3bda46a2da452d7a600fc393"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-closing.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-closing.raw-alignment.json",
+      "bytes": 8175,
+      "sha256_before": "ad1af46ed10bb376317e29f76713e9b32af36a120a5a58278b5ef3fde51cb311",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ad1af46ed10bb376317e29f76713e9b32af36a120a5a58278b5ef3fde51cb311"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-closing.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-closing.wav",
+      "bytes": 1649802,
+      "sha256_before": "daf9350b7fdabc1b041bcdb66b5053f42f54ed11424637cd3c4c532f640bd337",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "daf9350b7fdabc1b041bcdb66b5053f42f54ed11424637cd3c4c532f640bd337"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-closing.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-closing.words.json",
+      "bytes": 9131,
+      "sha256_before": "d02dbbc5c242a1ede8aa4e2880f9f1c4e1b60f3796b6fc039ab880586944f2b0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d02dbbc5c242a1ede8aa4e2880f9f1c4e1b60f3796b6fc039ab880586944f2b0"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-copy.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-copy.raw-alignment.json",
+      "bytes": 8275,
+      "sha256_before": "ddd783d9f4f1edccabfab6981499bee3f42c7601d3a64e7bd3a61b2815a5685f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ddd783d9f4f1edccabfab6981499bee3f42c7601d3a64e7bd3a61b2815a5685f"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-copy.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-copy.wav",
+      "bytes": 1513676,
+      "sha256_before": "ed8ceafb6e86914518394d600e7513d8617885f79c2920ac748bb2a997a49031",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ed8ceafb6e86914518394d600e7513d8617885f79c2920ac748bb2a997a49031"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-copy.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-copy.words.json",
+      "bytes": 8831,
+      "sha256_before": "f9382e6124b1f0e1acafc2becdb0de1d82641ee7fa12f7ae99aabd0045011b07",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f9382e6124b1f0e1acafc2becdb0de1d82641ee7fa12f7ae99aabd0045011b07"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-cost.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-cost.raw-alignment.json",
+      "bytes": 15253,
+      "sha256_before": "858f964626130348283ae332e4e711cd6f63b957d20ca908d4553b287d8f316a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "858f964626130348283ae332e4e711cd6f63b957d20ca908d4553b287d8f316a"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-cost.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-cost.wav",
+      "bytes": 3107180,
+      "sha256_before": "9f02a9ea7e1f49c6a7cedc21d8dcbdc3b1b405b8f08f7b1f961e07d8528bbf7c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9f02a9ea7e1f49c6a7cedc21d8dcbdc3b1b405b8f08f7b1f961e07d8528bbf7c"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-cost.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-cost.words.json",
+      "bytes": 16746,
+      "sha256_before": "4ceaf82b5064da9fe8303348127b7c22f7c31ba49c867b230bc65b61de40eb83",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4ceaf82b5064da9fe8303348127b7c22f7c31ba49c867b230bc65b61de40eb83"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-customer.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-customer.raw-alignment.json",
+      "bytes": 19556,
+      "sha256_before": "197fb7f923f2cc5259e721f60ad4415be07844a63c7d1c49716215df1124571a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "197fb7f923f2cc5259e721f60ad4415be07844a63c7d1c49716215df1124571a"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-customer.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-customer.wav",
+      "bytes": 3931244,
+      "sha256_before": "da656dfd1967a16869100e92f8a694d72d0b3342cf8e5c20b701336443924c1b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "da656dfd1967a16869100e92f8a694d72d0b3342cf8e5c20b701336443924c1b"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-customer.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-customer.words.json",
+      "bytes": 21030,
+      "sha256_before": "aadceabd486121e21c51776f9426f2fafd8175339314d0e97e3187e473a35137",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "aadceabd486121e21c51776f9426f2fafd8175339314d0e97e3187e473a35137"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-delivery.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-delivery.raw-alignment.json",
+      "bytes": 12326,
+      "sha256_before": "693b056486e7149e4ff1d81812fe7fa5c8f92d550a8b6f20e00e9a35ab332935",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "693b056486e7149e4ff1d81812fe7fa5c8f92d550a8b6f20e00e9a35ab332935"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-delivery.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-delivery.wav",
+      "bytes": 2284844,
+      "sha256_before": "4ab6d2ad9f609043581a0d60a5cf98932b407e68e11d5b567c2785f83f534d01",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4ab6d2ad9f609043581a0d60a5cf98932b407e68e11d5b567c2785f83f534d01"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-delivery.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-delivery.words.json",
+      "bytes": 13259,
+      "sha256_before": "a7f761c054c961ac316f46b616eb9963f0fc6f21936ff13ff55bc47418d55007",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a7f761c054c961ac316f46b616eb9963f0fc6f21936ff13ff55bc47418d55007"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-efficiency.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-efficiency.raw-alignment.json",
+      "bytes": 14344,
+      "sha256_before": "7c0133ccebd5f76e18c3488d86b974cf030ccb7d7ab6ccb10c11c532e3ca9ff3",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7c0133ccebd5f76e18c3488d86b974cf030ccb7d7ab6ccb10c11c532e3ca9ff3"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-efficiency.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-efficiency.wav",
+      "bytes": 2475212,
+      "sha256_before": "3533b9ed10a83fd0900ea0548db2fb2cada3583179e7c7317e5fe7652c5bb6a5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3533b9ed10a83fd0900ea0548db2fb2cada3583179e7c7317e5fe7652c5bb6a5"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-efficiency.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-efficiency.words.json",
+      "bytes": 15927,
+      "sha256_before": "8868bb322a2998cbc7b3569d26f4b2d707d8ba822060de49457b51d113c6114d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8868bb322a2998cbc7b3569d26f4b2d707d8ba822060de49457b51d113c6114d"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-entry.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-entry.raw-alignment.json",
+      "bytes": 19630,
+      "sha256_before": "534ca6f32ec32bb20dbff1b8f90570248ceda352e2e4b4f61aceda415a269dc1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "534ca6f32ec32bb20dbff1b8f90570248ceda352e2e4b4f61aceda415a269dc1"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-entry.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-entry.wav",
+      "bytes": 3742412,
+      "sha256_before": "925b62789df7029820ca3b68d77cdbad8ceb3b6142b2c7d3d44b871fbb94eaef",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "925b62789df7029820ca3b68d77cdbad8ceb3b6142b2c7d3d44b871fbb94eaef"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-entry.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-entry.words.json",
+      "bytes": 20789,
+      "sha256_before": "b06f9eaf2f85618bf0fe7306343d322e04dd7ea2f8b0ed39395a012dfd7ee881",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b06f9eaf2f85618bf0fe7306343d322e04dd7ea2f8b0ed39395a012dfd7ee881"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-evidence.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-evidence.raw-alignment.json",
+      "bytes": 11618,
+      "sha256_before": "cf81e40afc0e7970e6c3df09e892eb35eacf7de7890c773df92380c16a494395",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "cf81e40afc0e7970e6c3df09e892eb35eacf7de7890c773df92380c16a494395"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-evidence.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-evidence.wav",
+      "bytes": 2211212,
+      "sha256_before": "857fa2877b6ca8f455c58c608a98a58c2b2f310415b096a3a67297344b5c3235",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "857fa2877b6ca8f455c58c608a98a58c2b2f310415b096a3a67297344b5c3235"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-evidence.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-evidence.words.json",
+      "bytes": 12656,
+      "sha256_before": "5b87f9bb154458deb609733a831dcd01dc2e002e89004719a86575788b6c2631",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5b87f9bb154458deb609733a831dcd01dc2e002e89004719a86575788b6c2631"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-evolve.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-evolve.raw-alignment.json",
+      "bytes": 11642,
+      "sha256_before": "35c1a0349d40fcc79a8c4ec493ca5da7f63c28e2b5b84a21d37ea48ffd379910",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "35c1a0349d40fcc79a8c4ec493ca5da7f63c28e2b5b84a21d37ea48ffd379910"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-evolve.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-evolve.wav",
+      "bytes": 2032076,
+      "sha256_before": "9a79ddeb22b8f9ca0540f97c80bb1de0ce337b4fa96922752ac04e293ad1107f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9a79ddeb22b8f9ca0540f97c80bb1de0ce337b4fa96922752ac04e293ad1107f"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-evolve.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-evolve.words.json",
+      "bytes": 12893,
+      "sha256_before": "1f5015a6e6234c98acfb16db363968725aac255fecdaf5d3c1c8903f1052e4b5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1f5015a6e6234c98acfb16db363968725aac255fecdaf5d3c1c8903f1052e4b5"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-local.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-local.raw-alignment.json",
+      "bytes": 16646,
+      "sha256_before": "e634bfad5ec315afb5f68c5d24bf01f145f96ae9f4ba0654d0af8eb7c486a770",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e634bfad5ec315afb5f68c5d24bf01f145f96ae9f4ba0654d0af8eb7c486a770"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-local.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-local.wav",
+      "bytes": 2990444,
+      "sha256_before": "7824e5b2c880a33b264f6d596f0359007a851a86a991a7d38583ea0b66f1f8e7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7824e5b2c880a33b264f6d596f0359007a851a86a991a7d38583ea0b66f1f8e7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-local.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-local.words.json",
+      "bytes": 18838,
+      "sha256_before": "dfcd4e565e955b99481c3cb0985144b65c92d9160eb64406931687c4026c66a4",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "dfcd4e565e955b99481c3cb0985144b65c92d9160eb64406931687c4026c66a4"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-profits.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-profits.raw-alignment.json",
+      "bytes": 12263,
+      "sha256_before": "313742b00299abd23ce6e642ac608a901eab854ea2766543f4bf8588cef3b290",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "313742b00299abd23ce6e642ac608a901eab854ea2766543f4bf8588cef3b290"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-profits.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-profits.wav",
+      "bytes": 2446460,
+      "sha256_before": "48811edfd8c8dc7d3030a261b80f94017f540a98c922ec567612acf633b304c6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "48811edfd8c8dc7d3030a261b80f94017f540a98c922ec567612acf633b304c6"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-profits.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-profits.words.json",
+      "bytes": 13249,
+      "sha256_before": "e40dcc08aa293e22a29670dc03a2e792a0face2ee57de510a9f52ac87463f74f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e40dcc08aa293e22a29670dc03a2e792a0face2ee57de510a9f52ac87463f74f"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-question.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-question.raw-alignment.json",
+      "bytes": 7961,
+      "sha256_before": "3e250e0ff6806ee7d86739b798d60d039f503ff139b34d62d6ba176c47123e34",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3e250e0ff6806ee7d86739b798d60d039f503ff139b34d62d6ba176c47123e34"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-question.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-question.wav",
+      "bytes": 1681580,
+      "sha256_before": "d0832d001d9ee5c077c0b69d56931524f82a8c8aa82d8f2b6fe70e454c2e2d1f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d0832d001d9ee5c077c0b69d56931524f82a8c8aa82d8f2b6fe70e454c2e2d1f"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-question.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-question.words.json",
+      "bytes": 7002,
+      "sha256_before": "1a2ae18e5623b316eaf4676ad8c74e17849ef23ac9029ee20176bcac4bd18064",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1a2ae18e5623b316eaf4676ad8c74e17849ef23ac9029ee20176bcac4bd18064"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-scale.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-scale.raw-alignment.json",
+      "bytes": 20674,
+      "sha256_before": "5aa31d4534f38c22bb3905d78a14790fa4baac6129604ea53c4edc4681ebac4a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5aa31d4534f38c22bb3905d78a14790fa4baac6129604ea53c4edc4681ebac4a"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-scale.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-scale.wav",
+      "bytes": 4001708,
+      "sha256_before": "7b21765ee4f49763ed92ccbce84187aefe7feb52061c07c6da846b4a1983d3b5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7b21765ee4f49763ed92ccbce84187aefe7feb52061c07c6da846b4a1983d3b5"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-scale.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-scale.words.json",
+      "bytes": 22364,
+      "sha256_before": "ea9c19c18c2ebae7e47d49c6eeb4455393d7edca58568b6e4171811658761743",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ea9c19c18c2ebae7e47d49c6eeb4455393d7edca58568b6e4171811658761743"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-three.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-three.raw-alignment.json",
+      "bytes": 5020,
+      "sha256_before": "cb61902ccdfba7b59bb05d02ca5e5a3ba9fdbe78f181caf5bb00e7990c298b57",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "cb61902ccdfba7b59bb05d02ca5e5a3ba9fdbe78f181caf5bb00e7990c298b57"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-three.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-three.wav",
+      "bytes": 1019276,
+      "sha256_before": "2952e2af40ecd555f918ed59c1b27f8563d7e040cf5f86bc9179b342204491a7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2952e2af40ecd555f918ed59c1b27f8563d7e040cf5f86bc9179b342204491a7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-three.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-three.words.json",
+      "bytes": 5651,
+      "sha256_before": "68791d5ff469f016d62d44b3154ce05b40ddb719c35e72db3d0fb4f230e1b6b7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "68791d5ff469f016d62d44b3154ce05b40ddb719c35e72db3d0fb4f230e1b6b7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-trap.raw-alignment.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-trap.raw-alignment.json",
+      "bytes": 14704,
+      "sha256_before": "4294bf2fbaf3408f7b6abdef83bf8afaf173e3146190063ac4d55510ba46f947",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4294bf2fbaf3408f7b6abdef83bf8afaf173e3146190063ac4d55510ba46f947"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-trap.wav",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-trap.wav",
+      "bytes": 2667212,
+      "sha256_before": "2b25000c0ac9b599c392d63f6f92bfbc95b9b5d69ff878ec502b6259ab5fb7a5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2b25000c0ac9b599c392d63f6f92bfbc95b9b5d69ff878ec502b6259ab5fb7a5"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-import/u-trap.words.json",
+      "new": "episodes/20260829-竞争优势/media/recordings/u-trap.words.json",
+      "bytes": 15824,
+      "sha256_before": "83783eab849db1f69372e48d6c41d7e4aa62388e08ae7bed1130ee7b3a54b1f4",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "83783eab849db1f69372e48d6c41d7e4aa62388e08ae7bed1130ee7b3a54b1f4"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/script.json",
+      "new": "episodes/20260829-竞争优势/script.json",
+      "bytes": 51350,
+      "sha256_before": "6ec501fbdcfff897d4cdf474e7a53c002f2503dd505c238fe323de149cb19887",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b0e42ef1ec48de4072973f3cb4fe654a0f01871b45ae10b0302cd52d98df84e9",
+      "edit_after_relocation": "迁移后的录音路径及导入入口更新"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/brief.json",
+      "new": "episodes/20260829-竞争优势/brief.json",
+      "bytes": 1570,
+      "sha256_before": "116d1fa5fba313b47212832fd9a1b2a48901c99d5cdbb7dabf0c469bf3fab677",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "116d1fa5fba313b47212832fd9a1b2a48901c99d5cdbb7dabf0c469bf3fab677"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/config.json",
+      "new": "episodes/20260829-竞争优势/config.json",
+      "bytes": 1183,
+      "sha256_before": "cb088f638379366259f1c88d3e97b82fc8df4f3f7363b2ce3b9692acdea2fe95",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "cb088f638379366259f1c88d3e97b82fc8df4f3f7363b2ce3b9692acdea2fe95"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/import_recording.py",
+      "new": "src/youtube_studio/import_competition_recording.py",
+      "bytes": 6092,
+      "sha256_before": "1d9d55141ccca4b5c433a3916149464ee917ef34b46a32f8aab6652197529365",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "00f6d41cae986c7c5632d981485ff910f16ad6b809f7a2774c611b73c8de6a92",
+      "edit_after_relocation": "迁移后的录音路径及导入入口更新"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/efficiency-edit.json",
+      "new": "episodes/20260829-竞争优势/media/images/efficiency-edit.json",
+      "bytes": 1338,
+      "sha256_before": "c2efa6a4bfca995ddcaf10c972de38ad3e3179719947beb4b74575a93cf4f9a7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c2efa6a4bfca995ddcaf10c972de38ad3e3179719947beb4b74575a93cf4f9a7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/provenance.json",
+      "new": "episodes/20260829-竞争优势/media/images/provenance.json",
+      "bytes": 25064,
+      "sha256_before": "c0e37895cbec10a826b554bb44e8a4be39172f5e1f05f1c52d2f9275161cfbba",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c0e37895cbec10a826b554bb44e8a4be39172f5e1f05f1c52d2f9275161cfbba"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-adapt.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-adapt.png",
+      "bytes": 3337528,
+      "sha256_before": "47e1131b6282a9f6ce48b341c2eaabd63a6430d9e1b97be746b456e6af18239a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "47e1131b6282a9f6ce48b341c2eaabd63a6430d9e1b97be746b456e6af18239a"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-book.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-book.png",
+      "bytes": 2952454,
+      "sha256_before": "3ae04aa3cf0001dc83caf0d32c0df8fa1c0aa7db0ee79bd901a77a02a7a9b477",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3ae04aa3cf0001dc83caf0d32c0df8fa1c0aa7db0ee79bd901a77a02a7a9b477"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-bypass.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-bypass.png",
+      "bytes": 3132515,
+      "sha256_before": "3b3be8090dcc13f51d4e1d51bcdb9472faac42febb471ee6adc7a1c950342ca2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3b3be8090dcc13f51d4e1d51bcdb9472faac42febb471ee6adc7a1c950342ca2"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-cars.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-cars.png",
+      "bytes": 2875647,
+      "sha256_before": "39c7d6a14d512530eb1c8dcd3c07524742171eeab212da591bcfec73bdb4397b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "39c7d6a14d512530eb1c8dcd3c07524742171eeab212da591bcfec73bdb4397b"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-castle.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-castle.png",
+      "bytes": 2995047,
+      "sha256_before": "9d4acfdb160ebc03eb38e0f90f051f511796d61631eb5bbb3f37ca067de71a47",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9d4acfdb160ebc03eb38e0f90f051f511796d61631eb5bbb3f37ca067de71a47"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-checklist.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-checklist.png",
+      "bytes": 2938471,
+      "sha256_before": "5226ebbd90a07df54582e7dfa856837b4078f2a288c6fa10e841b7e0cd5bf863",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5226ebbd90a07df54582e7dfa856837b4078f2a288c6fa10e841b7e0cd5bf863"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-closing.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-closing.png",
+      "bytes": 2656966,
+      "sha256_before": "8bcb105dacf97dd0461b9acef136cd6c4be159e8fc84213368bc58e472840034",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8bcb105dacf97dd0461b9acef136cd6c4be159e8fc84213368bc58e472840034"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-copy.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-copy.png",
+      "bytes": 2822405,
+      "sha256_before": "5786de565efbb9ec726776a47988c078004b16d0265bc36b13f3ac691f70508b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5786de565efbb9ec726776a47988c078004b16d0265bc36b13f3ac691f70508b"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-cost.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-cost.png",
+      "bytes": 2934265,
+      "sha256_before": "807a9475dd6af387cecd438526e25ebfcb3cee31c154a593217ceb4c71ae5426",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "807a9475dd6af387cecd438526e25ebfcb3cee31c154a593217ceb4c71ae5426"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-customer.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-customer.png",
+      "bytes": 3204141,
+      "sha256_before": "e9e9b4dcb4baa8cedd45871ae8512d88c48291c76a91080180544386aecbc39f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e9e9b4dcb4baa8cedd45871ae8512d88c48291c76a91080180544386aecbc39f"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-delivery.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-delivery.png",
+      "bytes": 3089331,
+      "sha256_before": "f7b22b8b46fd46a566d532c3c832121839ffbe1ecb0123045bf4893bc8677813",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f7b22b8b46fd46a566d532c3c832121839ffbe1ecb0123045bf4893bc8677813"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-efficiency-v2.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-efficiency-v2.png",
+      "bytes": 2845788,
+      "sha256_before": "b34aac5acde3f8449537ec16d3f0d53985b12ceb507719643351ccfdd703cd88",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b34aac5acde3f8449537ec16d3f0d53985b12ceb507719643351ccfdd703cd88"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-efficiency.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-efficiency.png",
+      "bytes": 3115286,
+      "sha256_before": "40844e92209b68a5f1a11d95552595e2ed7e6b96a46b30eede58944c3b4061e9",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "40844e92209b68a5f1a11d95552595e2ed7e6b96a46b30eede58944c3b4061e9"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-entry.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-entry.png",
+      "bytes": 3375012,
+      "sha256_before": "3d90fb8fa5ebbccf61de311ea51577531a7f656e86f56fa37105fdebbdaa6f66",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3d90fb8fa5ebbccf61de311ea51577531a7f656e86f56fa37105fdebbdaa6f66"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-evidence.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-evidence.png",
+      "bytes": 2838037,
+      "sha256_before": "d58fc65c3a36150e82b8041b6100aa8fe5bf1a0bc1f8aabdb8c5be60796e29fb",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d58fc65c3a36150e82b8041b6100aa8fe5bf1a0bc1f8aabdb8c5be60796e29fb"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-local.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-local.png",
+      "bytes": 3883727,
+      "sha256_before": "498e515f769a7b72113dca64e50e3df6d4691107dea727914103ae3e4302b47e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "498e515f769a7b72113dca64e50e3df6d4691107dea727914103ae3e4302b47e"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-profits.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-profits.png",
+      "bytes": 3121473,
+      "sha256_before": "64aa4b69aaf0359392b56e0bd459a40797275da5e4b6877ddd18a6d1ca989b43",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "64aa4b69aaf0359392b56e0bd459a40797275da5e4b6877ddd18a6d1ca989b43"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-question.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-question.png",
+      "bytes": 2939665,
+      "sha256_before": "b523a7ca5ae6359ed7d3d99ff1c14b69cd0bcd819832d4237a818e4bc8c2a2e0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b523a7ca5ae6359ed7d3d99ff1c14b69cd0bcd819832d4237a818e4bc8c2a2e0"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-scale.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-scale.png",
+      "bytes": 2864395,
+      "sha256_before": "96605aa90b8fcf979d725ca4063e74cce5af61a74a305ef9e4a3638a50c14504",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "96605aa90b8fcf979d725ca4063e74cce5af61a74a305ef9e4a3638a50c14504"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/images/s-trap.png",
+      "new": "episodes/20260829-竞争优势/media/images/s-trap.png",
+      "bytes": 2562624,
+      "sha256_before": "195753a90d4c4fc78487b6b2f658401ba592f750241a067925209383787196fe",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "195753a90d4c4fc78487b6b2f658401ba592f750241a067925209383787196fe"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/media/audio/original.mp3",
+      "new": "episodes/20260829-竞争优势/media/audio/original.mp3",
+      "bytes": 21008768,
+      "sha256_before": "62f402e2548aac5f2fc30760801c110d2a3942e4b829621eb00c89a2d0ee6ed2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "62f402e2548aac5f2fc30760801c110d2a3942e4b829621eb00c89a2d0ee6ed2"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/output.mp4",
+      "new": "episodes/20260829-竞争优势/deliverables/output.mp4",
+      "bytes": 879206460,
+      "sha256_before": "6ad9c031a33ecdaa48868b2c44be2e881fef8fbb76d94d53f6edae10273e9ee9",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "6ad9c031a33ecdaa48868b2c44be2e881fef8fbb76d94d53f6edae10273e9ee9"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/captions.srt",
+      "new": "episodes/20260829-竞争优势/deliverables/captions.srt",
+      "bytes": 16566,
+      "sha256_before": "fe4637ae7e5e33fd1caa0438b290f0f946e3b967275c93e3052c1aaa2b888d07",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "fe4637ae7e5e33fd1caa0438b290f0f946e3b967275c93e3052c1aaa2b888d07"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/qa.json",
+      "new": "episodes/20260829-竞争优势/deliverables/qa.json",
+      "bytes": 701,
+      "sha256_before": "fbc6c413690bf3a7cabfaf95d4a245795c1929f39627824778133b30490813d3",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "fbc6c413690bf3a7cabfaf95d4a245795c1929f39627824778133b30490813d3"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/chapters.txt",
+      "new": "episodes/20260829-竞争优势/deliverables/chapters.txt",
+      "bytes": 662,
+      "sha256_before": "3f6bc52210578e8856231925640296eb40f4beffd83a4604d97c1b6aa58d77fa",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3f6bc52210578e8856231925640296eb40f4beffd83a4604d97c1b6aa58d77fa"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/hyperframes-check.json",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/hyperframes-check.json",
+      "bytes": 34841,
+      "sha256_before": "1db7a0e9e75ba2fe45d5f370d874c5ee7b1946b92d52e00549388fd64ac5cd24",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1db7a0e9e75ba2fe45d5f370d874c5ee7b1946b92d52e00549388fd64ac5cd24"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/assets.manifest.json",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/assets.manifest.json",
+      "bytes": 18764,
+      "sha256_before": "1c63c0cc6c4030fdfe52ea04bb2e5e74deba09c62c3134b3701010b4d4e29c6c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1c63c0cc6c4030fdfe52ea04bb2e5e74deba09c62c3134b3701010b4d4e29c6c"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/generated-images.json",
+      "new": "episodes/20260829-竞争优势/source/import-evidence/generated-images.json",
+      "bytes": 4906,
+      "sha256_before": "65155de5eb7ab953ba71cfd095229748253b056c21a5d2958cd6c31639068118",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "65155de5eb7ab953ba71cfd095229748253b056c21a5d2958cd6c31639068118"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/script-recording-differences.json",
+      "new": "episodes/20260829-竞争优势/source/import-evidence/script-recording-differences.json",
+      "bytes": 19072,
+      "sha256_before": "5294fcf161a38678431ea202da472dfff5ad19bee1407246789ca3d82ab40df5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5294fcf161a38678431ea202da472dfff5ad19bee1407246789ca3d82ab40df5"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/images-contact.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/images-contact.jpg",
+      "bytes": 571684,
+      "sha256_before": "b196f0db1b75ba549d3084af4b3fe43f39835386d59a2fa89b2b4fff7abf263a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b196f0db1b75ba549d3084af4b3fe43f39835386d59a2fa89b2b4fff7abf263a"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-transcript-small.json",
+      "new": "episodes/20260829-竞争优势/source/import-evidence/recording-transcript-small.json",
+      "bytes": 266996,
+      "sha256_before": "6272efd43bb8fce6ec16b963ff547d6a1af93dbf796c5b64bbb96bb2e570594c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "6272efd43bb8fce6ec16b963ff547d6a1af93dbf796c5b64bbb96bb2e570594c"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/index.json",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/index.json",
+      "bytes": 750,
+      "sha256_before": "daeea42142dbc93eefb59f6d4ed1aca38ed8ff98878df4c1885eb20f0b9f0eae",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "daeea42142dbc93eefb59f6d4ed1aca38ed8ff98878df4c1885eb20f0b9f0eae"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/qa-169.5.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/qa-169.5.jpg",
+      "bytes": 14036,
+      "sha256_before": "4312c267330c6c41ab719340e33e87572c96884b1a13195591fc9fde6f0c9c89",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4312c267330c6c41ab719340e33e87572c96884b1a13195591fc9fde6f0c9c89"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/qa-170.8.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/qa-170.8.jpg",
+      "bytes": 16079,
+      "sha256_before": "f4e84faff01b7c92e9e7f4a3d7ebce3d7251c09105a4ffa6653496adc4555dab",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f4e84faff01b7c92e9e7f4a3d7ebce3d7251c09105a4ffa6653496adc4555dab"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/qa-435.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/qa-435.jpg",
+      "bytes": 14598,
+      "sha256_before": "0724c2f7a8a9e24e98562e9b86204b6803dfe7733cebb3a843a66d05f84199c5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0724c2f7a8a9e24e98562e9b86204b6803dfe7733cebb3a843a66d05f84199c5"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/qa-437.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/qa-437.jpg",
+      "bytes": 18718,
+      "sha256_before": "56cc9045bc61b696be4fcf388bdc50120b251f5f3616a76bd7c5b3e1ae761efb",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "56cc9045bc61b696be4fcf388bdc50120b251f5f3616a76bd7c5b3e1ae761efb"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/qa-525.18.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/qa-525.18.jpg",
+      "bytes": 57171,
+      "sha256_before": "1d8602798ee64dc38dbd80a47c3ebfc6076348b7cbecd41b7fee24efa51a4f3e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1d8602798ee64dc38dbd80a47c3ebfc6076348b7cbecd41b7fee24efa51a4f3e"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-adapt.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-adapt.jpg",
+      "bytes": 86773,
+      "sha256_before": "bf3ef90abeaa85722077c5df717dc50171fc7e732e9709345e968c7bee7e0e24",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bf3ef90abeaa85722077c5df717dc50171fc7e732e9709345e968c7bee7e0e24"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-book.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-book.jpg",
+      "bytes": 59447,
+      "sha256_before": "2e2d6ed9a1ba3675affcdd4c99bf9b719f339b9564e8f63c60214dd2e20de174",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2e2d6ed9a1ba3675affcdd4c99bf9b719f339b9564e8f63c60214dd2e20de174"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-bypass.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-bypass.jpg",
+      "bytes": 72516,
+      "sha256_before": "6efa5c251c77116bce60b5f3b91512d119d6687d86385710ce8adce212475a39",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "6efa5c251c77116bce60b5f3b91512d119d6687d86385710ce8adce212475a39"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-cars.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-cars.jpg",
+      "bytes": 57088,
+      "sha256_before": "d223699f9a88a003f0496bfea51b1f327778e34c3e5c906e116edaac305ececc",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d223699f9a88a003f0496bfea51b1f327778e34c3e5c906e116edaac305ececc"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-castle.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-castle.jpg",
+      "bytes": 67294,
+      "sha256_before": "139da4f79cd5ef1ed2438acd8746d897b8c5b09a4c52cbffff9d1cbe74444325",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "139da4f79cd5ef1ed2438acd8746d897b8c5b09a4c52cbffff9d1cbe74444325"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-checklist.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-checklist.jpg",
+      "bytes": 62137,
+      "sha256_before": "91081f507c4fa0dd48767d783ef808c0d0e89944d5fd34fbe12697b47a871c49",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "91081f507c4fa0dd48767d783ef808c0d0e89944d5fd34fbe12697b47a871c49"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-closing.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-closing.jpg",
+      "bytes": 57871,
+      "sha256_before": "5caa5b8080fc3f2e03d28d8760b62945d44ff17b857308ddb0824718ab0b908c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5caa5b8080fc3f2e03d28d8760b62945d44ff17b857308ddb0824718ab0b908c"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-copy.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-copy.jpg",
+      "bytes": 59130,
+      "sha256_before": "e23f6a742a50c0ca81d54a5dcedeae87821bc4cadafe5d24fc2969d5e05d6484",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e23f6a742a50c0ca81d54a5dcedeae87821bc4cadafe5d24fc2969d5e05d6484"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-cost.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-cost.jpg",
+      "bytes": 71082,
+      "sha256_before": "4b5cbfa5ccf1f47ab7370378e66f680004e5f4a67f6b8270d6536a1951167586",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4b5cbfa5ccf1f47ab7370378e66f680004e5f4a67f6b8270d6536a1951167586"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-customer.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-customer.jpg",
+      "bytes": 76315,
+      "sha256_before": "2e8ab6a226084164e70b672bc2416f0096df02d41e268d1b79c8e0777fa8a447",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2e8ab6a226084164e70b672bc2416f0096df02d41e268d1b79c8e0777fa8a447"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-delivery.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-delivery.jpg",
+      "bytes": 78622,
+      "sha256_before": "36613aa2f22588b91602ecd1699c547c82ea2296705f18e38da78a932f5f712e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "36613aa2f22588b91602ecd1699c547c82ea2296705f18e38da78a932f5f712e"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-efficiency.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-efficiency.jpg",
+      "bytes": 74103,
+      "sha256_before": "1d98825d9821d98bd0086ba5b1058b47ef056a96e0507ecce0fc39e45d574c84",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1d98825d9821d98bd0086ba5b1058b47ef056a96e0507ecce0fc39e45d574c84"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-entry.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-entry.jpg",
+      "bytes": 85617,
+      "sha256_before": "8cd202e06bb917d231b924c0706f89009d400eaeee0061499f9b9d7b3e2d75fa",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8cd202e06bb917d231b924c0706f89009d400eaeee0061499f9b9d7b3e2d75fa"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-evidence.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-evidence.jpg",
+      "bytes": 55311,
+      "sha256_before": "ba712435297be552c9acb1fb53dae719057d7797617b37e1b271f9f97f66dfe2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ba712435297be552c9acb1fb53dae719057d7797617b37e1b271f9f97f66dfe2"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-evolve-road.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-evolve-road.jpg",
+      "bytes": 71811,
+      "sha256_before": "b3c4870f8638caee4407b513e591ae26eebf4aa9130e01d1a49d7d9762d84d69",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b3c4870f8638caee4407b513e591ae26eebf4aa9130e01d1a49d7d9762d84d69"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-evolve.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-evolve.jpg",
+      "bytes": 9250,
+      "sha256_before": "aa6c66e46ed49e8a2cd95de20700ce8898b533d0198e8f18c99385f11f8f9163",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "aa6c66e46ed49e8a2cd95de20700ce8898b533d0198e8f18c99385f11f8f9163"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-local.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-local.jpg",
+      "bytes": 99569,
+      "sha256_before": "3fca383ed8d016b2566c1805d6494fd38eb6c19aedd1fece2588549ccb794f1e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3fca383ed8d016b2566c1805d6494fd38eb6c19aedd1fece2588549ccb794f1e"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-profits.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-profits.jpg",
+      "bytes": 75651,
+      "sha256_before": "77d47326c8172937c09fbdd49743df34b936d0c854e22f1fef0c6f947e37d5a2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "77d47326c8172937c09fbdd49743df34b936d0c854e22f1fef0c6f947e37d5a2"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-question.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-question.jpg",
+      "bytes": 65143,
+      "sha256_before": "43be27ff9345cf399168be5db1ba23c4fc700ef5a34cfde83166a79539b485d9",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "43be27ff9345cf399168be5db1ba23c4fc700ef5a34cfde83166a79539b485d9"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-scale.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-scale.jpg",
+      "bytes": 57444,
+      "sha256_before": "bc073c49cfdec5769cfc632f89b9824a44f04e7412d1e6915d155c5dfad63d9b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bc073c49cfdec5769cfc632f89b9824a44f04e7412d1e6915d155c5dfad63d9b"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-three.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-three.jpg",
+      "bytes": 8075,
+      "sha256_before": "e21892016b17632631228cb6c76b2e93bdd40073b1653f356bea2f75b8746721",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e21892016b17632631228cb6c76b2e93bdd40073b1653f356bea2f75b8746721"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/s-trap.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/s-trap.jpg",
+      "bytes": 52919,
+      "sha256_before": "79e69d2e1f1373182290146110962af64f71ad4d277193cc5662796d889eb8ec",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "79e69d2e1f1373182290146110962af64f71ad4d277193cc5662796d889eb8ec"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/transition-after.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/transition-after.jpg",
+      "bytes": 69241,
+      "sha256_before": "272070eb6b727217d4848e54808d89a1c8ee92d8a046bc02065605d505a803a7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "272070eb6b727217d4848e54808d89a1c8ee92d8a046bc02065605d505a803a7"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/transition-before.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/transition-before.jpg",
+      "bytes": 62991,
+      "sha256_before": "5d3ad584723cd7051de67cc11f008baf4e1ed88ba302e46b8d1d702e26d741a1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5d3ad584723cd7051de67cc11f008baf4e1ed88ba302e46b8d1d702e26d741a1"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/frames/transition-middle.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/frames/transition-middle.jpg",
+      "bytes": 64248,
+      "sha256_before": "30ddaa7d36925e8960c19a3db6f72d3c4f30de67f6c5a94f859984ae1b702863",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "30ddaa7d36925e8960c19a3db6f72d3c4f30de67f6c5a94f859984ae1b702863"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/recording-transcript.json",
+      "new": "episodes/20260829-竞争优势/source/import-evidence/recording-transcript.json",
+      "bytes": 249860,
+      "sha256_before": "a6c3546550204812a648e9d723d1cdb2d606099673b20c09acc49adeea5e458b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a6c3546550204812a648e9d723d1cdb2d606099673b20c09acc49adeea5e458b"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/final-contact-1.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/final-contact-1.jpg",
+      "bytes": 259361,
+      "sha256_before": "41eacde3a73774a5bf5b6b9434d3c458bf0bba57910209f0f423dba399e98c64",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "41eacde3a73774a5bf5b6b9434d3c458bf0bba57910209f0f423dba399e98c64"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/final-contact-2.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/final-contact-2.jpg",
+      "bytes": 335818,
+      "sha256_before": "b29f49e3ed3a375838df4543521e9a5e2ac6805e2f14ec4ab2fb34a995f63ff0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b29f49e3ed3a375838df4543521e9a5e2ac6805e2f14ec4ab2fb34a995f63ff0"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/timeline.json",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/timeline.json",
+      "bytes": 60668,
+      "sha256_before": "270c48a8efd1f82bea80ac9c1dd7021a1e008736c950c754d72b0f0739e007e8",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "270c48a8efd1f82bea80ac9c1dd7021a1e008736c950c754d72b0f0739e007e8"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/final-contact-3.jpg",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/final-contact-3.jpg",
+      "bytes": 138917,
+      "sha256_before": "0f9874eedc5cf5dfe6d05ada516dbd738992c9e0c0ebee9e342d08f178c8d63e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0f9874eedc5cf5dfe6d05ada516dbd738992c9e0c0ebee9e342d08f178c8d63e"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/review/negation-00m39s.mp3",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/review/negation-00m39s.mp3",
+      "bytes": 73055,
+      "sha256_before": "b15679a6b07b5e9adb98a7d3035454031adca43691a492193adb9bb09bb17492",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b15679a6b07b5e9adb98a7d3035454031adca43691a492193adb9bb09bb17492"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/review/scale-04m16s.mp3",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/review/scale-04m16s.mp3",
+      "bytes": 76136,
+      "sha256_before": "d51f699b2018209d6d8acca8af324b489deb351a1fbb449494c5d2f0ce253367",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d51f699b2018209d6d8acca8af324b489deb351a1fbb449494c5d2f0ce253367"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/imported-captions.json",
+      "new": "episodes/20260829-竞争优势/source/import-evidence/imported-captions.json",
+      "bytes": 25794,
+      "sha256_before": "bc9b51a43a9250551a5cca573f09ddf44d17aed065319150b3fc01b62f2e6e60",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bc9b51a43a9250551a5cca573f09ddf44d17aed065319150b3fc01b62f2e6e60"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/build/run-report.json",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/run-report.json",
+      "bytes": 2616,
+      "sha256_before": "35db01a2f627e2f3a420c67d17363e4a2ad6a23476c78aa0959ec53c7f5868b2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "35db01a2f627e2f3a420c67d17363e4a2ad6a23476c78aa0959ec53c7f5868b2"
+    },
+    {
+      "old": "episodes/20260829-竞争优势/production/state.json",
+      "new": "episodes/20260829-竞争优势/deliverables/evidence/state-before-migration.json",
+      "bytes": 2332,
+      "sha256_before": "9c7968b301a3562ed75837d3e6da78def4b690329bd7a5ef392223a783ef24de",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9c7968b301a3562ed75837d3e6da78def4b690329bd7a5ef392223a783ef24de"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/script.json",
+      "new": "examples/competition-continuity/script.json",
+      "bytes": 8640,
+      "sha256_before": "c2cf20633a1c4693a1f01cf2c58b7da6e678ae84b29c7e327fa62d7f614af742",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c2cf20633a1c4693a1f01cf2c58b7da6e678ae84b29c7e327fa62d7f614af742"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media-review.md",
+      "new": "examples/competition-continuity/media-review.md",
+      "bytes": 878,
+      "sha256_before": "9a6f16671dd14fd33c0dda016870ed302ec56052e9b7ffac84309f0850c474f7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9a6f16671dd14fd33c0dda016870ed302ec56052e9b7ffac84309f0850c474f7"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/brief.json",
+      "new": "examples/competition-continuity/brief.json",
+      "bytes": 811,
+      "sha256_before": "1210f7bf2c30ff9435ecb6ed88ddbd25da2d72befdbfc2d0010ce70ed351e9e8",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1210f7bf2c30ff9435ecb6ed88ddbd25da2d72befdbfc2d0010ce70ed351e9e8"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/config.json",
+      "new": "examples/competition-continuity/config.json",
+      "bytes": 1184,
+      "sha256_before": "51e0bb7de5dfc13e96fa604ff94c3297a7440426e98b5dad617004d159acf0df",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "51e0bb7de5dfc13e96fa604ff94c3297a7440426e98b5dad617004d159acf0df"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media-plan.json",
+      "new": "examples/competition-continuity/media-plan.json",
+      "bytes": 2216,
+      "sha256_before": "ce977c12b54fdf3048f0f8f6470d45eaae069d19bf6588c7dad4268495b59772",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ce977c12b54fdf3048f0f8f6470d45eaae069d19bf6588c7dad4268495b59772"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/review.json",
+      "new": "examples/competition-continuity/review.json",
+      "bytes": 3157,
+      "sha256_before": "7531ea50bdb1567ffc523fb85d694845a20f8ddf6b20e8de28d762602423ef19",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7531ea50bdb1567ffc523fb85d694845a20f8ddf6b20e8de28d762602423ef19"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/footage/cafe-original.mp4",
+      "new": "examples/competition-continuity/media/footage/cafe-original.mp4",
+      "bytes": 18103256,
+      "sha256_before": "a750dc2294e89ecf8c56c193fdc7f2aa824d09b1d70fd67d996fc775bcf08bff",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a750dc2294e89ecf8c56c193fdc7f2aa824d09b1d70fd67d996fc775bcf08bff"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/footage/cafe-service.mp4",
+      "new": "examples/competition-continuity/media/footage/cafe-service.mp4",
+      "bytes": 4458321,
+      "sha256_before": "ab04c5e22db369ec76c0c533230aed344526597afd6534b8b0fc41f66e7b7232",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ab04c5e22db369ec76c0c533230aed344526597afd6534b8b0fc41f66e7b7232"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/footage/provenance.json",
+      "new": "examples/competition-continuity/media/footage/provenance.json",
+      "bytes": 527,
+      "sha256_before": "565aa534bd74a066aae9f42fa46b2f365f7b648b0421c8d7073af1bb0991fd16",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "565aa534bd74a066aae9f42fa46b2f365f7b648b0421c8d7073af1bb0991fd16"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/manifest.json",
+      "new": "examples/competition-continuity/media/manifest.json",
+      "bytes": 2080,
+      "sha256_before": "889bb0486cfbab0653e2019d3f3511765411c28708daeb96a9d0b6e98dc5632c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "889bb0486cfbab0653e2019d3f3511765411c28708daeb96a9d0b6e98dc5632c"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/edit-decision.json",
+      "new": "examples/competition-continuity/media/recordings/edit-decision.json",
+      "bytes": 607,
+      "sha256_before": "4fb1741f5b4841b29a4df2ba3837a12af49a53153c5c3a805492bf7133fd9fe7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4fb1741f5b4841b29a4df2ba3837a12af49a53153c5c3a805492bf7133fd9fe7"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-copy-edited.wav",
+      "new": "examples/competition-continuity/media/recordings/u-copy-edited.wav",
+      "bytes": 1159758,
+      "sha256_before": "79ac58b0dabc0a607498dca5cb4219d3b01ed02c91764091a205e1a361f77707",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "79ac58b0dabc0a607498dca5cb4219d3b01ed02c91764091a205e1a361f77707"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-copy-edited.words.json",
+      "new": "examples/competition-continuity/media/recordings/u-copy-edited.words.json",
+      "bytes": 5539,
+      "sha256_before": "792576564a535079c85de42e3d7ac720f3febdd2b26e240bd6efbf7355cc706d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "792576564a535079c85de42e3d7ac720f3febdd2b26e240bd6efbf7355cc706d"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-copy.wav",
+      "new": "examples/competition-continuity/media/recordings/u-copy.wav",
+      "bytes": 1159758,
+      "sha256_before": "c408856e486d8b220b35108c3ca40aa642ebe115c60a150c4ff04a7c5286b7a2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c408856e486d8b220b35108c3ca40aa642ebe115c60a150c4ff04a7c5286b7a2"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-copy.words.json",
+      "new": "examples/competition-continuity/media/recordings/u-copy.words.json",
+      "bytes": 6353,
+      "sha256_before": "b5f1795af5a6b4cde6d053b47bcc70a47d9924ca9e55129f6e9e7044b8e1baa2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b5f1795af5a6b4cde6d053b47bcc70a47d9924ca9e55129f6e9e7044b8e1baa2"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-entry.wav",
+      "new": "examples/competition-continuity/media/recordings/u-entry.wav",
+      "bytes": 1068558,
+      "sha256_before": "038f1c2c748f40cce28765aaf21fc348492f48d0a1e78707929b4eba00d2d4e6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "038f1c2c748f40cce28765aaf21fc348492f48d0a1e78707929b4eba00d2d4e6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-entry.words.json",
+      "new": "examples/competition-continuity/media/recordings/u-entry.words.json",
+      "bytes": 6215,
+      "sha256_before": "5646b992c5fe82fbfe49901a15853d132f71d3e2128cd47282425fea22a7790d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5646b992c5fe82fbfe49901a15853d132f71d3e2128cd47282425fea22a7790d"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-profits.wav",
+      "new": "examples/competition-continuity/media/recordings/u-profits.wav",
+      "bytes": 1204878,
+      "sha256_before": "8064fbce3876a4025c77b5e8acf84d35b75dc2d23fdffe727e67d5c1b68f0058",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8064fbce3876a4025c77b5e8acf84d35b75dc2d23fdffe727e67d5c1b68f0058"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/recordings/u-profits.words.json",
+      "new": "examples/competition-continuity/media/recordings/u-profits.words.json",
+      "bytes": 6186,
+      "sha256_before": "2f3a1c27416c8fa28b76759146d5bf2d820e74829dbfb1e2ef7bef27f2afbd8b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2f3a1c27416c8fa28b76759146d5bf2d820e74829dbfb1e2ef7bef27f2afbd8b"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/sfx/CREDITS.md",
+      "new": "examples/competition-continuity/media/sfx/CREDITS.md",
+      "bytes": 1183,
+      "sha256_before": "79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/media/sfx/click-soft.mp3",
+      "new": "examples/competition-continuity/media/sfx/click-soft.mp3",
+      "bytes": 11702,
+      "sha256_before": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/output.mp4",
+      "new": "examples/competition-continuity/deliverables/output.mp4",
+      "bytes": 11923470,
+      "sha256_before": "6edc8e2d09071345f3b569df0d948caf581feba7deb536eb477767c7fb85ad2a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "6edc8e2d09071345f3b569df0d948caf581feba7deb536eb477767c7fb85ad2a"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/captions.srt",
+      "new": "examples/competition-continuity/deliverables/captions.srt",
+      "bytes": 1126,
+      "sha256_before": "c3a2979d2456bb88ad6af680c061a663ab333795a1459e70a3886203102f4eef",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c3a2979d2456bb88ad6af680c061a663ab333795a1459e70a3886203102f4eef"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/qa.json",
+      "new": "examples/competition-continuity/deliverables/qa.json",
+      "bytes": 1082,
+      "sha256_before": "43174e9d4976aef78e7fc5d495c4f4667978bb3a84df484f163713ff789e237b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "43174e9d4976aef78e7fc5d495c4f4667978bb3a84df484f163713ff789e237b"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/hyperframes-check.json",
+      "new": "examples/competition-continuity/deliverables/evidence/hyperframes-check.json",
+      "bytes": 6050,
+      "sha256_before": "5066358fca139c72824a707d9fc28c3d11c7b9fad32cde84921d1ceec31ca52e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5066358fca139c72824a707d9fc28c3d11c7b9fad32cde84921d1ceec31ca52e"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/0.50.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/0.50.jpg",
+      "bytes": 12654,
+      "sha256_before": "3eb4e7b665b3b889ded1a318662a73dafa93dfd5d8cbdb10186ff6d32ca8a34b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3eb4e7b665b3b889ded1a318662a73dafa93dfd5d8cbdb10186ff6d32ca8a34b"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/12.30.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/12.30.jpg",
+      "bytes": 5207,
+      "sha256_before": "049adc2422362e8c91bef9e51e4f0f02826f22aa99e3bd2ebe3267ecc514bb67",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "049adc2422362e8c91bef9e51e4f0f02826f22aa99e3bd2ebe3267ecc514bb67"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/15.40.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/15.40.jpg",
+      "bytes": 5066,
+      "sha256_before": "18302654effbc128e8f65f98e4cf15e6d9c2d18d7229e7d7d83a598f1672cb97",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "18302654effbc128e8f65f98e4cf15e6d9c2d18d7229e7d7d83a598f1672cb97"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/18.40.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/18.40.jpg",
+      "bytes": 6072,
+      "sha256_before": "8592f52ae4ef8c315c7c6fb0090f06837216d7e10744c586f0c717b06013792c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8592f52ae4ef8c315c7c6fb0090f06837216d7e10744c586f0c717b06013792c"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/20.50.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/20.50.jpg",
+      "bytes": 6162,
+      "sha256_before": "1402f5edacccd91dd1474609723c0d691a222c4d624b943762a99fd0aa5b6da1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1402f5edacccd91dd1474609723c0d691a222c4d624b943762a99fd0aa5b6da1"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/22.70.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/22.70.jpg",
+      "bytes": 6350,
+      "sha256_before": "76f3700a21239359970a66608781aaf8934e9f6eca3fc7024d3f2c0cc104bbaa",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "76f3700a21239359970a66608781aaf8934e9f6eca3fc7024d3f2c0cc104bbaa"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/26.40.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/26.40.jpg",
+      "bytes": 4891,
+      "sha256_before": "7aa3cc66a047c5563ff3763bbe7c3ec1f003ebbf257699d90756fa9731ebeaab",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7aa3cc66a047c5563ff3763bbe7c3ec1f003ebbf257699d90756fa9731ebeaab"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/29.70.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/29.70.jpg",
+      "bytes": 4738,
+      "sha256_before": "8ecf5c172931b85e883db4e1f156a04752828a1da303682fed2f0265e0e1b9c6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8ecf5c172931b85e883db4e1f156a04752828a1da303682fed2f0265e0e1b9c6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/3.20.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/3.20.jpg",
+      "bytes": 12483,
+      "sha256_before": "c227f5b877c5e480a9d651cc411364f30b5d7b545370a35fb93a30e54b6944b6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c227f5b877c5e480a9d651cc411364f30b5d7b545370a35fb93a30e54b6944b6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/31.90.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/31.90.jpg",
+      "bytes": 5287,
+      "sha256_before": "d8921c93c389625c142bedf1992db7a915b3bf4c7c6c1a4b570243081e105822",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d8921c93c389625c142bedf1992db7a915b3bf4c7c6c1a4b570243081e105822"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/33.10.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/33.10.jpg",
+      "bytes": 5501,
+      "sha256_before": "417d19c7d0edb39ea928f1b56f824be5c5562b94b23ff706b0fec500750e7819",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "417d19c7d0edb39ea928f1b56f824be5c5562b94b23ff706b0fec500750e7819"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/33.40.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/33.40.jpg",
+      "bytes": 5457,
+      "sha256_before": "f00628836b5100195af7f1b47d8e97d8a1b889706eb47fabfbfaf109232042ec",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f00628836b5100195af7f1b47d8e97d8a1b889706eb47fabfbfaf109232042ec"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/35.30.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/35.30.jpg",
+      "bytes": 5764,
+      "sha256_before": "acaad6a677ef7b724b17048a272a737342eb774fa0dff84e410a5aef2687ee82",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "acaad6a677ef7b724b17048a272a737342eb774fa0dff84e410a5aef2687ee82"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/6.40.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/6.40.jpg",
+      "bytes": 10133,
+      "sha256_before": "77d6851bd9bb0d30d75314f7ad5344d1a4ea375ff8b98e86642cc5e555ebc07d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "77d6851bd9bb0d30d75314f7ad5344d1a4ea375ff8b98e86642cc5e555ebc07d"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/8.80.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/8.80.jpg",
+      "bytes": 4335,
+      "sha256_before": "05722ce1572117d76ece329d8344de2d2fc877a456c1aea93665cee3c2632f90",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "05722ce1572117d76ece329d8344de2d2fc877a456c1aea93665cee3c2632f90"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/copy-detail.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/copy-detail.jpg",
+      "bytes": 20769,
+      "sha256_before": "216f64c373d1f2c3af8b4c12a9372c6e73621a2df9879214c58a6b4c31207703",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "216f64c373d1f2c3af8b4c12a9372c6e73621a2df9879214c58a6b4c31207703"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/review-frames/demand-detail.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/review-frames/demand-detail.jpg",
+      "bytes": 22850,
+      "sha256_before": "b23efde02fe099646c82dc6a82fe3b58c111a00e4a8d4fd8b1da1b30f1da49e0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b23efde02fe099646c82dc6a82fe3b58c111a00e4a8d4fd8b1da1b30f1da49e0"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/audio-mix.json",
+      "new": "examples/competition-continuity/deliverables/evidence/audio-mix.json",
+      "bytes": 2088,
+      "sha256_before": "af8e9ce7f38612e34fe1bf6e46823ff3efd49c3888214927618d801ebcfe38e1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "af8e9ce7f38612e34fe1bf6e46823ff3efd49c3888214927618d801ebcfe38e1"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/editorial-review.json",
+      "new": "examples/competition-continuity/deliverables/evidence/editorial-review.json",
+      "bytes": 3256,
+      "sha256_before": "d3f95ba1eb469e47ef4dcc6ca41ca0f49b921c3f23206ccbaf6e9f1ff01d8da1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d3f95ba1eb469e47ef4dcc6ca41ca0f49b921c3f23206ccbaf6e9f1ff01d8da1"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/motion-regression.json",
+      "new": "examples/competition-continuity/deliverables/evidence/motion-regression.json",
+      "bytes": 16361,
+      "sha256_before": "8a78caa45fff4a57f916449e8f797b606b578b31b3f4518e2f71075230c300ee",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8a78caa45fff4a57f916449e8f797b606b578b31b3f4518e2f71075230c300ee"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/assets.manifest.json",
+      "new": "examples/competition-continuity/deliverables/evidence/assets.manifest.json",
+      "bytes": 886,
+      "sha256_before": "8e625335456ec4340bb089dbb23b67852e5caf079f7990aa657ab1d8ae934651",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8e625335456ec4340bb089dbb23b67852e5caf079f7990aa657ab1d8ae934651"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/ending.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/ending.jpg",
+      "bytes": 23047,
+      "sha256_before": "67f0d86234d674d3550506efe0200a8570b8e4965fb97d3dbe0d690593eeeea7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "67f0d86234d674d3550506efe0200a8570b8e4965fb97d3dbe0d690593eeeea7"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/index.json",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/index.json",
+      "bytes": 2899,
+      "sha256_before": "a57a97db56e2d0fd968dc98cb1b105ec2053d01c32f110f693b044bc8e145562",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a57a97db56e2d0fd968dc98cb1b105ec2053d01c32f110f693b044bc8e145562"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-cafe-video.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-cafe-video.jpg",
+      "bytes": 42124,
+      "sha256_before": "e6be96f8921623c49fea97e48a100cfb9edab1189f0016825b267b5285aaf8c6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e6be96f8921623c49fea97e48a100cfb9edab1189f0016825b267b5285aaf8c6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-0-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-0-after.jpg",
+      "bytes": 14837,
+      "sha256_before": "9f32f967d7a015609f7a6a2b856b08a0d00ed5ba5e9765181304c48b5537c6b0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9f32f967d7a015609f7a6a2b856b08a0d00ed5ba5e9765181304c48b5537c6b0"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-0-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-0-before.jpg",
+      "bytes": 21885,
+      "sha256_before": "2057480b158e6eed6537b755feaaf5ece5be87c1d574ed60e7b0d7db0ef711e6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2057480b158e6eed6537b755feaaf5ece5be87c1d574ed60e7b0d7db0ef711e6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-0-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-0-moving.jpg",
+      "bytes": 15688,
+      "sha256_before": "e4a757b16efed5d61bad5abeeb0d33c24b4b82e9b1072b76691162ddb40b3067",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e4a757b16efed5d61bad5abeeb0d33c24b4b82e9b1072b76691162ddb40b3067"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-1-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-1-after.jpg",
+      "bytes": 19317,
+      "sha256_before": "08edebdf793588d98d60df29efdc76b8923c3d88f57f9d87b858dd2b5260418f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "08edebdf793588d98d60df29efdc76b8923c3d88f57f9d87b858dd2b5260418f"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-1-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-1-before.jpg",
+      "bytes": 14837,
+      "sha256_before": "9dc09a3b5b36cd040643fdb2497016a04c49a76cf8f193724a703738ac5529f0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9dc09a3b5b36cd040643fdb2497016a04c49a76cf8f193724a703738ac5529f0"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-1-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-1-moving.jpg",
+      "bytes": 19964,
+      "sha256_before": "aa8b5276cdb3815e5e206365bcea2f10f22838b4767828b55ce03d10a71d9344",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "aa8b5276cdb3815e5e206365bcea2f10f22838b4767828b55ce03d10a71d9344"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-2-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-2-after.jpg",
+      "bytes": 18114,
+      "sha256_before": "c6f7cada5a43fc3faccc57f49f1fe0a490e2a7c1ba05e3bdc54bad7e2d61408c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c6f7cada5a43fc3faccc57f49f1fe0a490e2a7c1ba05e3bdc54bad7e2d61408c"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-2-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-2-before.jpg",
+      "bytes": 16461,
+      "sha256_before": "d179fed63de8e80ce86fc847f3bdf8aad0fad25535e022f8878d25699b0e8645",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d179fed63de8e80ce86fc847f3bdf8aad0fad25535e022f8878d25699b0e8645"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-2-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-2-moving.jpg",
+      "bytes": 17799,
+      "sha256_before": "5be973f15db90cd8765a34e629cb0c95191d5b0954d2c78b4baaabad4678b492",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5be973f15db90cd8765a34e629cb0c95191d5b0954d2c78b4baaabad4678b492"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-3-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-3-after.jpg",
+      "bytes": 18667,
+      "sha256_before": "5ee88232c68f14b219097025a041550d062b817c58628807c1d1210d1f2d5010",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5ee88232c68f14b219097025a041550d062b817c58628807c1d1210d1f2d5010"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-3-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-3-before.jpg",
+      "bytes": 15913,
+      "sha256_before": "05a766a7e7ff9a8b6045c7fb8f8f6d54c17efebbfed78022f90dc48b504dddf6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "05a766a7e7ff9a8b6045c7fb8f8f6d54c17efebbfed78022f90dc48b504dddf6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-3-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-3-moving.jpg",
+      "bytes": 18294,
+      "sha256_before": "aeaa605f67255cf46a28421b4a38987bf69e4e8c2049323196a2a8a3f1c8661f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "aeaa605f67255cf46a28421b4a38987bf69e4e8c2049323196a2a8a3f1c8661f"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-4-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-4-after.jpg",
+      "bytes": 19931,
+      "sha256_before": "7fd3d532cd0f0911cf39621296e718241ad6e2b84fed9fa4dcf0f944b8e6996f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7fd3d532cd0f0911cf39621296e718241ad6e2b84fed9fa4dcf0f944b8e6996f"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-4-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-4-before.jpg",
+      "bytes": 18667,
+      "sha256_before": "5ee88232c68f14b219097025a041550d062b817c58628807c1d1210d1f2d5010",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5ee88232c68f14b219097025a041550d062b817c58628807c1d1210d1f2d5010"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-4-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-4-moving.jpg",
+      "bytes": 19123,
+      "sha256_before": "c1d253364205846d5d0b4436aa0f83290c358799378c170560124e06a063225b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c1d253364205846d5d0b4436aa0f83290c358799378c170560124e06a063225b"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-5-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-5-after.jpg",
+      "bytes": 18482,
+      "sha256_before": "1af5991744b3ec066a00faec8f5e901a7652bf11d489a996dfa0694a056bc0c4",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1af5991744b3ec066a00faec8f5e901a7652bf11d489a996dfa0694a056bc0c4"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-5-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-5-before.jpg",
+      "bytes": 19123,
+      "sha256_before": "c1d253364205846d5d0b4436aa0f83290c358799378c170560124e06a063225b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c1d253364205846d5d0b4436aa0f83290c358799378c170560124e06a063225b"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-5-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-5-moving.jpg",
+      "bytes": 19497,
+      "sha256_before": "07ba3cd43929ff14be51435f03c492fb7b56ff4f4ad241dd298a506c78662732",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "07ba3cd43929ff14be51435f03c492fb7b56ff4f4ad241dd298a506c78662732"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-6-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-6-after.jpg",
+      "bytes": 20739,
+      "sha256_before": "55a1f031328dffb4c41857df2b2f2bfec2c77e1f1349bbe7aca7a4bb7455cddd",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "55a1f031328dffb4c41857df2b2f2bfec2c77e1f1349bbe7aca7a4bb7455cddd"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-6-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-6-before.jpg",
+      "bytes": 19497,
+      "sha256_before": "07ba3cd43929ff14be51435f03c492fb7b56ff4f4ad241dd298a506c78662732",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "07ba3cd43929ff14be51435f03c492fb7b56ff4f4ad241dd298a506c78662732"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-6-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-6-moving.jpg",
+      "bytes": 19931,
+      "sha256_before": "7fd3d532cd0f0911cf39621296e718241ad6e2b84fed9fa4dcf0f944b8e6996f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7fd3d532cd0f0911cf39621296e718241ad6e2b84fed9fa4dcf0f944b8e6996f"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-7-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-7-after.jpg",
+      "bytes": 23859,
+      "sha256_before": "1a562d26113b492ccc2fee3203132237bd53fd1be34f3b2fd78280c725ba25c3",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1a562d26113b492ccc2fee3203132237bd53fd1be34f3b2fd78280c725ba25c3"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-7-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-7-before.jpg",
+      "bytes": 18482,
+      "sha256_before": "1af5991744b3ec066a00faec8f5e901a7652bf11d489a996dfa0694a056bc0c4",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1af5991744b3ec066a00faec8f5e901a7652bf11d489a996dfa0694a056bc0c4"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-7-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-7-moving.jpg",
+      "bytes": 20769,
+      "sha256_before": "216f64c373d1f2c3af8b4c12a9372c6e73621a2df9879214c58a6b4c31207703",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "216f64c373d1f2c3af8b4c12a9372c6e73621a2df9879214c58a6b4c31207703"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-8-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-8-after.jpg",
+      "bytes": 23062,
+      "sha256_before": "7e1a674664a4bfa2d3137024cc6185d6af3966d23b31d93ae0cffe206adbfba5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7e1a674664a4bfa2d3137024cc6185d6af3966d23b31d93ae0cffe206adbfba5"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-8-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-8-before.jpg",
+      "bytes": 20845,
+      "sha256_before": "8a790b1111f053bf00cdd2113c0c79c5ed7816b15ebdfba70b7779cfee9f010b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8a790b1111f053bf00cdd2113c0c79c5ed7816b15ebdfba70b7779cfee9f010b"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-event-8-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-event-8-moving.jpg",
+      "bytes": 23828,
+      "sha256_before": "1434127cf352696c30048f0d6753bd38ec22765e104f5fdd0b676457ffd97b06",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1434127cf352696c30048f0d6753bd38ec22765e104f5fdd0b676457ffd97b06"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-transition-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-transition-after.jpg",
+      "bytes": 16081,
+      "sha256_before": "7e1229e36d5616b1b9d8084757617497437adba8ba7ffae22eb69efd0873d9bf",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7e1229e36d5616b1b9d8084757617497437adba8ba7ffae22eb69efd0873d9bf"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-transition-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-transition-before.jpg",
+      "bytes": 21192,
+      "sha256_before": "04a7655f54b3d444f73e7d61a477845c46147def8f9a2eaee1617b395718f7f6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "04a7655f54b3d444f73e7d61a477845c46147def8f9a2eaee1617b395718f7f6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy-transition-middle.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy-transition-middle.jpg",
+      "bytes": 18304,
+      "sha256_before": "23328e4a46612a6ad7c7db76b1a174817e71ef863fc23eb7c425ce1ddf82efb1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "23328e4a46612a6ad7c7db76b1a174817e71ef863fc23eb7c425ce1ddf82efb1"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-copy.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-copy.jpg",
+      "bytes": 18645,
+      "sha256_before": "54bbfe24991e1b9224956da178ef3e211c765e81b857e8b04544486fa0c237e0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "54bbfe24991e1b9224956da178ef3e211c765e81b857e8b04544486fa0c237e0"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-0-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-0-after.jpg",
+      "bytes": 22486,
+      "sha256_before": "89b7750d0ac85984a83b3a507e986d85208a6dceb08f75399e82de59916809b5",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "89b7750d0ac85984a83b3a507e986d85208a6dceb08f75399e82de59916809b5"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-0-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-0-before.jpg",
+      "bytes": 11402,
+      "sha256_before": "ce49ecd1f4a1bddd698bd3a1a38ed6e9a3f84a294f319ef08fe640422f20bbae",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ce49ecd1f4a1bddd698bd3a1a38ed6e9a3f84a294f319ef08fe640422f20bbae"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-0-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-0-moving.jpg",
+      "bytes": 21838,
+      "sha256_before": "8b41c7c24b7607feb5dfddd780456c1bf1b5c322bc11ad900a71dd95dde6ced7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8b41c7c24b7607feb5dfddd780456c1bf1b5c322bc11ad900a71dd95dde6ced7"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-1-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-1-after.jpg",
+      "bytes": 22850,
+      "sha256_before": "83c56ebbd3a4e38047eb5c4458210a56919ba538431db9c49f96476c70b6447a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "83c56ebbd3a4e38047eb5c4458210a56919ba538431db9c49f96476c70b6447a"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-1-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-1-before.jpg",
+      "bytes": 22498,
+      "sha256_before": "bb08929ab3f17b85149e71f8610cdcdc5ba05de08e0a46368041c4467e2d21f4",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bb08929ab3f17b85149e71f8610cdcdc5ba05de08e0a46368041c4467e2d21f4"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-1-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-1-moving.jpg",
+      "bytes": 22785,
+      "sha256_before": "803a645b187a266ea9130016f7df77e88843f6dd129504cc9101e13ae813716a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "803a645b187a266ea9130016f7df77e88843f6dd129504cc9101e13ae813716a"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-2-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-2-after.jpg",
+      "bytes": 25610,
+      "sha256_before": "7be129abb796fd18f6cf199530c8060b69f52966dc80e88b572dfdd0230ad1f4",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7be129abb796fd18f6cf199530c8060b69f52966dc80e88b572dfdd0230ad1f4"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-2-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-2-before.jpg",
+      "bytes": 20641,
+      "sha256_before": "2f9c9699dfa0d938efd8adbac5f8687e7d301c16269b34465091f8b4d4325e0a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2f9c9699dfa0d938efd8adbac5f8687e7d301c16269b34465091f8b4d4325e0a"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-2-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-2-moving.jpg",
+      "bytes": 25284,
+      "sha256_before": "2abff07f222167bc3d60b9d3a380ebeccc548044b171e0164b1d87d02fe1137c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2abff07f222167bc3d60b9d3a380ebeccc548044b171e0164b1d87d02fe1137c"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-3-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-3-after.jpg",
+      "bytes": 24258,
+      "sha256_before": "655857e7a047a08ff2419bb9c2547219f9451cf4c94f470846747a595083cd1d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "655857e7a047a08ff2419bb9c2547219f9451cf4c94f470846747a595083cd1d"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-3-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-3-before.jpg",
+      "bytes": 23836,
+      "sha256_before": "882cec88b107c5bb44de05cd9c91d8017faa21cd99e3733ef6759c43ee883cfa",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "882cec88b107c5bb44de05cd9c91d8017faa21cd99e3733ef6759c43ee883cfa"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-3-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-3-moving.jpg",
+      "bytes": 24915,
+      "sha256_before": "f024f7d53920ac9879c5dd0d67889924a3f6a7e8646b23693b1711432cede7db",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f024f7d53920ac9879c5dd0d67889924a3f6a7e8646b23693b1711432cede7db"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-4-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-4-after.jpg",
+      "bytes": 25821,
+      "sha256_before": "acee29e3e584addab1256588709a7d4d1f22670c5663f1167217db77505e3774",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "acee29e3e584addab1256588709a7d4d1f22670c5663f1167217db77505e3774"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-4-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-4-before.jpg",
+      "bytes": 22759,
+      "sha256_before": "45907ed4de96fee4e7abd268db19544885acc24b4ffb53187a4fd3dad392eea7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "45907ed4de96fee4e7abd268db19544885acc24b4ffb53187a4fd3dad392eea7"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-event-4-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-event-4-moving.jpg",
+      "bytes": 25819,
+      "sha256_before": "840d5ea81099b245e8c114e141ee0c0bc2bdc909ae2ef780472a9cac68202f56",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "840d5ea81099b245e8c114e141ee0c0bc2bdc909ae2ef780472a9cac68202f56"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-transition-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-transition-after.jpg",
+      "bytes": 22000,
+      "sha256_before": "0e3b590ae9500c8aed4c1015b7c63f1166dcef1f12ce6ab2ca3d1aae5d1380f1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0e3b590ae9500c8aed4c1015b7c63f1166dcef1f12ce6ab2ca3d1aae5d1380f1"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-transition-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-transition-before.jpg",
+      "bytes": 14717,
+      "sha256_before": "f6800be84bfedb31d40d6bdc5d9b3c01727c696c8ef32acd10a67c3222770072",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f6800be84bfedb31d40d6bdc5d9b3c01727c696c8ef32acd10a67c3222770072"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand-transition-middle.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand-transition-middle.jpg",
+      "bytes": 19320,
+      "sha256_before": "174a53a2ab20a68e80945c1c1dd4a95dc8e71d2fa888d2125eb5c893b6d85751",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "174a53a2ab20a68e80945c1c1dd4a95dc8e71d2fa888d2125eb5c893b6d85751"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-demand.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-demand.jpg",
+      "bytes": 25632,
+      "sha256_before": "b964d8af15134856a61387c6b2d8cb624e15d97ec43e7eb706f1b7b15f27c499",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b964d8af15134856a61387c6b2d8cb624e15d97ec43e7eb706f1b7b15f27c499"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-event-0-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-event-0-after.jpg",
+      "bytes": 15519,
+      "sha256_before": "259c58668770166cc84731244daf26bb8b0e529dd7e89542647bfe611ee3edea",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "259c58668770166cc84731244daf26bb8b0e529dd7e89542647bfe611ee3edea"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-event-0-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-event-0-before.jpg",
+      "bytes": 7500,
+      "sha256_before": "05cf0912eb3d09074a9ed496a4c5fd3368396d3b9a09a4347f15d97d7169a654",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "05cf0912eb3d09074a9ed496a4c5fd3368396d3b9a09a4347f15d97d7169a654"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-event-0-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-event-0-moving.jpg",
+      "bytes": 14756,
+      "sha256_before": "2ccafb3c743398266895e5d1adc590e89151e52c21c865ba04bb05d212c9e30f",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2ccafb3c743398266895e5d1adc590e89151e52c21c865ba04bb05d212c9e30f"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-event-1-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-event-1-after.jpg",
+      "bytes": 16460,
+      "sha256_before": "53fcf7bb6292c9c4c53f8d1e5eda9978b4f7cfbd97b9d3023c1caad1a99dcc51",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "53fcf7bb6292c9c4c53f8d1e5eda9978b4f7cfbd97b9d3023c1caad1a99dcc51"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-event-1-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-event-1-before.jpg",
+      "bytes": 13691,
+      "sha256_before": "4e0a20a5e51e7d6a008f425f4c7748414bf1e9b8d69a5d4b11a8a284f73511c7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4e0a20a5e51e7d6a008f425f4c7748414bf1e9b8d69a5d4b11a8a284f73511c7"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-event-1-moving.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-event-1-moving.jpg",
+      "bytes": 18380,
+      "sha256_before": "eac121bcfde83b3d575a2b2059065da2b35f75843f912899ad3e476c08ddd7b3",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "eac121bcfde83b3d575a2b2059065da2b35f75843f912899ad3e476c08ddd7b3"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-transition-after.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-transition-after.jpg",
+      "bytes": 15923,
+      "sha256_before": "4b519dfd036e0b72ce868b004dc83bd8380bf0efa51a2e6cde36db2e625d76c0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4b519dfd036e0b72ce868b004dc83bd8380bf0efa51a2e6cde36db2e625d76c0"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-transition-before.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-transition-before.jpg",
+      "bytes": 33516,
+      "sha256_before": "70ea2a2c9596adcb3a68a1c58ec088e44dad90e61a9d8ee23ab28366b904347c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "70ea2a2c9596adcb3a68a1c58ec088e44dad90e61a9d8ee23ab28366b904347c"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry-transition-middle.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry-transition-middle.jpg",
+      "bytes": 13539,
+      "sha256_before": "12efa7b3ff11f5719a914f7b07b9f94f0345571233be24e77f3cb80e99a4507e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "12efa7b3ff11f5719a914f7b07b9f94f0345571233be24e77f3cb80e99a4507e"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/frames/s-street-entry.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/frames/s-street-entry.jpg",
+      "bytes": 17922,
+      "sha256_before": "e9136274a1abc7de28f19430a8c5654b576a97c7adbc06c007cb2671991f63a2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e9136274a1abc7de28f19430a8c5654b576a97c7adbc06c007cb2671991f63a2"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/voice-review.json",
+      "new": "examples/competition-continuity/deliverables/evidence/voice-review.json",
+      "bytes": 901,
+      "sha256_before": "04a6a7a77592bf57ec48b9b6745c2330c06da8363bc66afd240d88b757b4e552",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "04a6a7a77592bf57ec48b9b6745c2330c06da8363bc66afd240d88b757b4e552"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/timeline.json",
+      "new": "examples/competition-continuity/deliverables/evidence/timeline.json",
+      "bytes": 8443,
+      "sha256_before": "4d6c36a7ec18cafa24dcc3f3d2574625c773119c55d4315ec4cf04fe05fa51f6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4d6c36a7ec18cafa24dcc3f3d2574625c773119c55d4315ec4cf04fe05fa51f6"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/build/continuous-contact.jpg",
+      "new": "examples/competition-continuity/deliverables/evidence/continuous-contact.jpg",
+      "bytes": 101435,
+      "sha256_before": "80d54ab528a1af60ac64e07bef0df32aff8bc4b1ec226ba707f78e2e14d96900",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "80d54ab528a1af60ac64e07bef0df32aff8bc4b1ec226ba707f78e2e14d96900"
+    },
+    {
+      "old": "episodes/20261024-竞争优势-连续场景样片/production/state.json",
+      "new": "examples/competition-continuity/deliverables/evidence/state-before-migration.json",
+      "bytes": 2970,
+      "sha256_before": "a8d8e647d80098ed0a9f4b477b871677723bd3e8915b6a40c4b1c3699d3c0022",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a8d8e647d80098ed0a9f4b477b871677723bd3e8915b6a40c4b1c3699d3c0022"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/fonts/OFL.txt",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/fonts/OFL.txt",
+      "bytes": 4388,
+      "sha256_before": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/fonts/noto-sans-sc.ttf",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/fonts/noto-sans-sc.ttf",
+      "bytes": 17772300,
+      "sha256_before": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/gsap.min.js",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/gsap.min.js",
+      "bytes": 72779,
+      "sha256_before": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-1.aiff",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-1.aiff",
+      "bytes": 769026,
+      "sha256_before": "fcddc7355f5cd20fc9d4fe5131f25e5fc839636544c6ced89d7a18a483b6c9be",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "fcddc7355f5cd20fc9d4fe5131f25e5fc839636544c6ced89d7a18a483b6c9be"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-1.txt",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-1.txt",
+      "bytes": 228,
+      "sha256_before": "0c846875f5be01da364dcf32e0af7071a0e35b9bc804925649c1d666ee0abcdc",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0c846875f5be01da364dcf32e0af7071a0e35b9bc804925649c1d666ee0abcdc"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-1.wav",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-1.wav",
+      "bytes": 1665232,
+      "sha256_before": "5506700aa4fc15df3e11445e87cee754746e1519e8d5e1938587848b82c0c1dc",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "5506700aa4fc15df3e11445e87cee754746e1519e8d5e1938587848b82c0c1dc"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-2.aiff",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-2.aiff",
+      "bytes": 808962,
+      "sha256_before": "923b3ed48dd18cd11ad4bdd25159e11819f0983609ba78e96c3d3e97b4fd0a3c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "923b3ed48dd18cd11ad4bdd25159e11819f0983609ba78e96c3d3e97b4fd0a3c"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-2.txt",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-2.txt",
+      "bytes": 237,
+      "sha256_before": "8d9b38704f0e70018f2ccbe69748af52ce5834e79ad5c2a217e02ba4b1fea418",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8d9b38704f0e70018f2ccbe69748af52ce5834e79ad5c2a217e02ba4b1fea418"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-2.wav",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-2.wav",
+      "bytes": 1752168,
+      "sha256_before": "50676df5717b05f4efb0229fde725f107d0944a6d654d72e43e3cf5892f452d6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "50676df5717b05f4efb0229fde725f107d0944a6d654d72e43e3cf5892f452d6"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-3.aiff",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-3.aiff",
+      "bytes": 746498,
+      "sha256_before": "eb4e897a9a67af7728690ab17fd3b6287903e953d6240d279e0639fb8405094a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "eb4e897a9a67af7728690ab17fd3b6287903e953d6240d279e0639fb8405094a"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-3.txt",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-3.txt",
+      "bytes": 219,
+      "sha256_before": "614c6fcbcf9ca50735445d678801dab2b701774ec85bb83a3188209006be94cd",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "614c6fcbcf9ca50735445d678801dab2b701774ec85bb83a3188209006be94cd"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-3.wav",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-3.wav",
+      "bytes": 1616192,
+      "sha256_before": "abed8e2b04c1c81cbe0d18183dc22c6dbcad06441a9aab8c0b67483c59b31ef7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "abed8e2b04c1c81cbe0d18183dc22c6dbcad06441a9aab8c0b67483c59b31ef7"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-4.aiff",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-4.aiff",
+      "bytes": 758786,
+      "sha256_before": "f5bd2b5d9bd71a6fb910941244cf528274f75f9ae8d5af8f07b038ef4c039a97",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f5bd2b5d9bd71a6fb910941244cf528274f75f9ae8d5af8f07b038ef4c039a97"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-4.txt",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-4.txt",
+      "bytes": 222,
+      "sha256_before": "0fc2087281c5d69fd1eeaf8c6f1d8eb71f12f476abc4add11c7d4a4c8c857602",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0fc2087281c5d69fd1eeaf8c6f1d8eb71f12f476abc4add11c7d4a4c8c857602"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/assets/voice-4.wav",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/assets/voice-4.wav",
+      "bytes": 1642942,
+      "sha256_before": "aa9b891329683ecad290e1b520afd19c33fa816def73d7168d7c188c3a2f4d92",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "aa9b891329683ecad290e1b520afd19c33fa816def73d7168d7c188c3a2f4d92"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/BRIEF.md",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/BRIEF.md",
+      "bytes": 889,
+      "sha256_before": "17b605f63d693ebae836b3e591edfa985aa03b92a4e8e069878c8dd3bc2b2913",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "17b605f63d693ebae836b3e591edfa985aa03b92a4e8e069878c8dd3bc2b2913"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/SCRIPT.md",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/SCRIPT.md",
+      "bytes": 1162,
+      "sha256_before": "19c9803c3b9dd43ea9d75fbe698e94f1ad9a63b7e66acecd9da47e2d56f209cd",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "19c9803c3b9dd43ea9d75fbe698e94f1ad9a63b7e66acecd9da47e2d56f209cd"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/STORYBOARD.md",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/STORYBOARD.md",
+      "bytes": 3855,
+      "sha256_before": "6682bce3a0b1009ce5d059bc5c51c87aea37bd0b84af44e7fe4a5d8f6b11996a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "6682bce3a0b1009ce5d059bc5c51c87aea37bd0b84af44e7fe4a5d8f6b11996a"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/frame.md",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/frame.md",
+      "bytes": 17449,
+      "sha256_before": "7eefb3a9aba020584c53943ba840764db8bbb0d44eda818694157abdf642f8ed",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7eefb3a9aba020584c53943ba840764db8bbb0d44eda818694157abdf642f8ed"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/index.html",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/index.html",
+      "bytes": 10594,
+      "sha256_before": "38b54658ee3d02a2c134689cad4e9622d61559ff0c4394b77919c8ab942b4af3",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "38b54658ee3d02a2c134689cad4e9622d61559ff0c4394b77919c8ab942b4af3"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/compositions/frames/01-scene.html",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/compositions/frames/01-scene.html",
+      "bytes": 2641,
+      "sha256_before": "55d4a7b4edc9bc513a13352ae7003f1474ddd856af9974612eadb0941c2abc86",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "55d4a7b4edc9bc513a13352ae7003f1474ddd856af9974612eadb0941c2abc86"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/compositions/frames/02-scene.html",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/compositions/frames/02-scene.html",
+      "bytes": 2957,
+      "sha256_before": "349c4cc617c13605417f1e5979b75dd750d345a2710b31cf14592b39fdcd9b58",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "349c4cc617c13605417f1e5979b75dd750d345a2710b31cf14592b39fdcd9b58"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/compositions/frames/03-scene.html",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/compositions/frames/03-scene.html",
+      "bytes": 3012,
+      "sha256_before": "a2430499284f419584ef45d0fa93f13b28c02ed84e4d8c94b1c50c0bcbf5ff8c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a2430499284f419584ef45d0fa93f13b28c02ed84e4d8c94b1c50c0bcbf5ff8c"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/compositions/frames/04-scene.html",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/compositions/frames/04-scene.html",
+      "bytes": 2736,
+      "sha256_before": "f9a32cdf6c224dc6bdce24509e459b59455eacfaad077df149640aead8081e03",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f9a32cdf6c224dc6bdce24509e459b59455eacfaad077df149640aead8081e03"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/scenes.json",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/scenes.json",
+      "bytes": 1611,
+      "sha256_before": "837f06cc7d0e37f41998a7c1803db6644df8c81319bb9c9458a44179dab8d221",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "837f06cc7d0e37f41998a7c1803db6644df8c81319bb9c9458a44179dab8d221"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/audio_meta.json",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/audio_meta.json",
+      "bytes": 575,
+      "sha256_before": "f24a0a6dbdb1f67835ec2fcdd92369aa6108f90ad4c55b74ddc3c7a179b753c0",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f24a0a6dbdb1f67835ec2fcdd92369aa6108f90ad4c55b74ddc3c7a179b753c0"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/captions.json",
+      "new": "episodes/20260913-企业再融资-增发和发债/source/reference-demo/captions.json",
+      "bytes": 3557,
+      "sha256_before": "80024be06fe71759f4b2a0915b8a353dac3583b32c5be9c916a67481a7aad1f3",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "80024be06fe71759f4b2a0915b8a353dac3583b32c5be9c916a67481a7aad1f3"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/renders/opinion-demo.mp4",
+      "new": "episodes/20260913-企业再融资-增发和发债/deliverables/opinion-demo.mp4",
+      "bytes": 4014127,
+      "sha256_before": "0e9c4aace38f31cf61aae28e0048614a79400117dd94ab8b7a22a7115379598e",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0e9c4aace38f31cf61aae28e0048614a79400117dd94ab8b7a22a7115379598e"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/renders/actual-frames.jpg",
+      "new": "episodes/20260913-企业再融资-增发和发债/deliverables/actual-frames.jpg",
+      "bytes": 45928,
+      "sha256_before": "b300a2b461861d1e485d7b431d8308eef7c1b9cde501505e3b4e7cdf5f34cede",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b300a2b461861d1e485d7b431d8308eef7c1b9cde501505e3b4e7cdf5f34cede"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/README.md",
+      "new": "episodes/20260913-企业再融资-增发和发债/deliverables/evidence/README.md",
+      "bytes": 1124,
+      "sha256_before": "7b56242833b10c54e0117bb061da5ec67714216363f8b5529708704dbe2df4cf",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "7b56242833b10c54e0117bb061da5ec67714216363f8b5529708704dbe2df4cf"
+    },
+    {
+      "old": "episodes/20260913-企业再融资-增发和发债/video/opinion-demo/check-result.json",
+      "new": "episodes/20260913-企业再融资-增发和发债/deliverables/evidence/check-result.json",
+      "bytes": 11522,
+      "sha256_before": "b29fcd13f1b0c524c8e906d544c735f3e68ea2a706e16816d10588084387118d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b29fcd13f1b0c524c8e906d544c735f3e68ea2a706e16816d10588084387118d"
+    },
+    {
+      "old": "docs/cleanup-2026-10-24.json",
+      "new": "docs/decisions/cleanup-2026-10-24.json",
+      "bytes": 23038,
+      "sha256_before": "2ab7a18a8ee29146296024605e1a89319a6682ad3722ed3b95f772938d7c96e6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2ab7a18a8ee29146296024605e1a89319a6682ad3722ed3b95f772938d7c96e6"
+    },
+    {
+      "old": "docs/visual-direction-2026-10-24.md",
+      "new": "docs/decisions/visual-direction-2026-10-24.md",
+      "bytes": 4810,
+      "sha256_before": "16a0af561e209765cb23e7c65f88ba937746f304399a4eae33ecc128192590c6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "85557192debec9ebd0e49181e096f734bbf2cd92a6292a30de6c15deaf94872a",
+      "edit_after_relocation": "路径、目录说明与审批状态更新"
+    },
+    {
+      "old": "docs/xiaoa-investment-series-analysis.md",
+      "new": "docs/research/xiaoa-investment-series-analysis.md",
+      "bytes": 17580,
+      "sha256_before": "325d62a235f9147abeb8190a70a831ab7d55e40ae40ed770b61b678ad7643e60",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a9f085ba225a15f51c660a0203fc798dd610ab58b7f23ced90dc3ffe04ae39d0",
+      "edit_after_relocation": "路径、目录说明与审批状态更新"
+    },
+    {
+      "old": "docs/continuous-scene-implementation-2026-10-24.md",
+      "new": "docs/decisions/continuous-scene-implementation-2026-10-24.md",
+      "bytes": 4857,
+      "sha256_before": "0a6e59ee1b442984732326def47033b0265bad4045791312fbf1b8b7366d1c79",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d1067b84858be5e72127d4a28a210245c6a1a40c2db0b22543f7d7839ac805b7",
+      "edit_after_relocation": "路径、目录说明与审批状态更新"
+    },
+    {
+      "old": "docs/mindcoffee-spending-money-full-analysis.md",
+      "new": "docs/research/mindcoffee-spending-money-full-analysis.md",
+      "bytes": 11015,
+      "sha256_before": "e0b5b6e89b8e26fb84a929b81dce2f045d4fb2f4bbd09530e8fae13b55a3eab1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4b3fd52125915bf8223071cdda39af726f3be452351b0c252c1f18899559a757",
+      "edit_after_relocation": "路径、目录说明与审批状态更新"
+    },
+    {
+      "old": "docs/repository-migration-2026-10-24.json",
+      "new": "docs/decisions/repository-migration-2026-10-24.json",
+      "bytes": 2227,
+      "sha256_before": "dcb00ead46ed640896e3a7f646074e3fc1648706641ab36715a7cd6729167f7b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "dcb00ead46ed640896e3a7f646074e3fc1648706641ab36715a7cd6729167f7b"
+    },
+    {
+      "old": "docs/directory-plan-2026-10-24.md",
+      "new": "docs/decisions/directory-plan-2026-10-24.md",
+      "bytes": 7013,
+      "sha256_before": "d3dddb3f8980a173cd5d72d2b797646df8c620ec11e97b100a3ad574df236779",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bf0f1ed544c0a00a88bbe337ce2b89d57d6a7b4bf7e224d28da3d0fbf877490b",
+      "edit_after_relocation": "路径、目录说明与审批状态更新"
+    },
+    {
+      "old": "docs/current-video-review-2026-10-24.md",
+      "new": "docs/decisions/current-video-review-2026-10-24.md",
+      "bytes": 4120,
+      "sha256_before": "6fb091aef89807271dd52487e886be40bd1984f63579c84c35d6b6903f5620f2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "ec426078b264bed80244e76f6e646482d15aa5d787928d81b7eb2b9babc9e98f",
+      "edit_after_relocation": "路径、目录说明与审批状态更新"
+    },
+    {
+      "old": "docs/repository-structure.md",
+      "new": "docs/guides/repository-structure.md",
+      "bytes": 9540,
+      "sha256_before": "1112c2fc74ac3fa5a1fea8270b9684dc028997a394db29f3ab8b56d62370d42a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d7eed9765d8f62aa2c12c714c6429168216e6d722b6ab97f6b2016eea9f8e947",
+      "edit_after_relocation": "路径、目录说明与审批状态更新"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/audio-measurement.txt",
+      "new": "docs/research/evidence/mindcoffee-full/audio-measurement.txt",
+      "bytes": 2866823,
+      "sha256_before": "f8006af6d6f702a3165f14176068c58fb679e1be00655b4c9cfc9da7b60dd8a2",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f8006af6d6f702a3165f14176068c58fb679e1be00655b4c9cfc9da7b60dd8a2"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/concept-sequence.jpg",
+      "new": "docs/research/evidence/mindcoffee-full/concept-sequence.jpg",
+      "bytes": 366848,
+      "sha256_before": "3bfc4531501a9e67b4d5c2c753cbc3d2228b71bfa70d5fe41c20ad345130add6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "3bfc4531501a9e67b4d5c2c753cbc3d2228b71bfa70d5fe41c20ad345130add6"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/inventory.json",
+      "new": "docs/research/evidence/mindcoffee-full/inventory.json",
+      "bytes": 4555,
+      "sha256_before": "04bef5e35ec34742437f0ea5bfc052b2171b126a84c3c3b0e88d457208a3e4ef",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "04bef5e35ec34742437f0ea5bfc052b2171b126a84c3c3b0e88d457208a3e4ef"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/opening.jpg",
+      "new": "docs/research/evidence/mindcoffee-full/opening.jpg",
+      "bytes": 314840,
+      "sha256_before": "66d92c3bc2e247381c50c843da5ab655795d6b778ef13ee75513168f56bebebb",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "66d92c3bc2e247381c50c843da5ab655795d6b778ef13ee75513168f56bebebb"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/overview-01.jpg",
+      "new": "docs/research/evidence/mindcoffee-full/overview-01.jpg",
+      "bytes": 359253,
+      "sha256_before": "a1ccb9224b3e7f222a72436672abddea57f7df6fed5bcdbfa4d138c8aede2057",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a1ccb9224b3e7f222a72436672abddea57f7df6fed5bcdbfa4d138c8aede2057"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/overview-02.jpg",
+      "new": "docs/research/evidence/mindcoffee-full/overview-02.jpg",
+      "bytes": 420999,
+      "sha256_before": "606496268f9d9baf38bcb3b7adcce87a95b9e463d43c781c4d89a0f4f8679fd7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "606496268f9d9baf38bcb3b7adcce87a95b9e463d43c781c4d89a0f4f8679fd7"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/overview-03.jpg",
+      "new": "docs/research/evidence/mindcoffee-full/overview-03.jpg",
+      "bytes": 345641,
+      "sha256_before": "c2752dad6638b22b3869708617ba405f039fc3b53bad442846810b6fe6f74e36",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c2752dad6638b22b3869708617ba405f039fc3b53bad442846810b6fe6f74e36"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/transcript.json",
+      "new": "docs/research/evidence/mindcoffee-full/transcript.json",
+      "bytes": 74823,
+      "sha256_before": "353c36a6a029d85c86fd5dff02b3b9ae6afc8b1d317bd770cb6685d8b754c879",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "353c36a6a029d85c86fd5dff02b3b9ae6afc8b1d317bd770cb6685d8b754c879"
+    },
+    {
+      "old": "docs/reference-evidence/mindcoffee-full/transcript.txt",
+      "new": "docs/research/evidence/mindcoffee-full/transcript.txt",
+      "bytes": 29072,
+      "sha256_before": "d1b67d57dc1c9913d7ffb28da3d954c80dbdfae03b95364aa01d9604a7afd0a1",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "d1b67d57dc1c9913d7ffb28da3d954c80dbdfae03b95364aa01d9604a7afd0a1"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/asr-opening-01.json",
+      "new": "docs/research/evidence/xiaoa/asr-opening-01.json",
+      "bytes": 23689,
+      "sha256_before": "936c76f38778bf14de45a2dfb57c252ec8438737a8f38cafeb3bb7732c4e9973",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "936c76f38778bf14de45a2dfb57c252ec8438737a8f38cafeb3bb7732c4e9973"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/asr-opening-03.json",
+      "new": "docs/research/evidence/xiaoa/asr-opening-03.json",
+      "bytes": 25283,
+      "sha256_before": "44bbd0067a5683b89cd8e78b074c408c6c75b1ba3ce975220e8d5c3ce3c4c2ed",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "44bbd0067a5683b89cd8e78b074c408c6c75b1ba3ce975220e8d5c3ce3c4c2ed"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/asr-opening-06.json",
+      "new": "docs/research/evidence/xiaoa/asr-opening-06.json",
+      "bytes": 24116,
+      "sha256_before": "bcdcb0196f5c9cdf16393245a2929a644183f443bd8f025cec8d0039724a7f33",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "bcdcb0196f5c9cdf16393245a2929a644183f443bd8f025cec8d0039724a7f33"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/audio-metrics.json",
+      "new": "docs/research/evidence/xiaoa/audio-metrics.json",
+      "bytes": 1555,
+      "sha256_before": "fbfbe5c8bdbfa751c1898396711089f356c13b432d93ec7295849b73f0364b2d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "fbfbe5c8bdbfa751c1898396711089f356c13b432d93ec7295849b73f0364b2d"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/contact-01.jpg",
+      "new": "docs/research/evidence/xiaoa/contact-01.jpg",
+      "bytes": 283456,
+      "sha256_before": "a4e392a984e3787075a0c6c33564a677fb68df18fa58db18cec24363885c7d1a",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a4e392a984e3787075a0c6c33564a677fb68df18fa58db18cec24363885c7d1a"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/contact-11.jpg",
+      "new": "docs/research/evidence/xiaoa/contact-11.jpg",
+      "bytes": 284366,
+      "sha256_before": "e96a99437e5c9688cf566d170bce6bbd5a7df971c19f6140985c01886417d8cb",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "e96a99437e5c9688cf566d170bce6bbd5a7df971c19f6140985c01886417d8cb"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/inventory.json",
+      "new": "docs/research/evidence/xiaoa/inventory.json",
+      "bytes": 37933,
+      "sha256_before": "2f1c207f598d27e89a5a26c7903ee74f79d9004526f23b71feb7f3c28b01b19d",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "2f1c207f598d27e89a5a26c7903ee74f79d9004526f23b71feb7f3c28b01b19d"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/motion-balloon.jpg",
+      "new": "docs/research/evidence/xiaoa/motion-balloon.jpg",
+      "bytes": 419170,
+      "sha256_before": "0fc6fc94d6c2a32ae4753c166b01bfffa27a6fea8c1a16f9769611e135457999",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "0fc6fc94d6c2a32ae4753c166b01bfffa27a6fea8c1a16f9769611e135457999"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/motion-gauge.jpg",
+      "new": "docs/research/evidence/xiaoa/motion-gauge.jpg",
+      "bytes": 347939,
+      "sha256_before": "f4a9d9c73ab72620bc9be927ab09dd26b6535368b52b3e33dc8629ce1bf1a695",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "f4a9d9c73ab72620bc9be927ab09dd26b6535368b52b3e33dc8629ce1bf1a695"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/motion-question.jpg",
+      "new": "docs/research/evidence/xiaoa/motion-question.jpg",
+      "bytes": 370363,
+      "sha256_before": "6cd5b07d136adb35a09e34769273080c24b9111a2964f7ad74a4b294da832120",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "6cd5b07d136adb35a09e34769273080c24b9111a2964f7ad74a4b294da832120"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/motion-water.jpg",
+      "new": "docs/research/evidence/xiaoa/motion-water.jpg",
+      "bytes": 471970,
+      "sha256_before": "a58927f3a307b0e1d318c15a7c68db0c3a307ecf059dff07179aacb577b29874",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a58927f3a307b0e1d318c15a7c68db0c3a307ecf059dff07179aacb577b29874"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/reuse-comparison.jpg",
+      "new": "docs/research/evidence/xiaoa/reuse-comparison.jpg",
+      "bytes": 395965,
+      "sha256_before": "fc89d7bcb5fec35a2466f6ed293c7028589f0b5e1ea108b1c549fe53dd860ca8",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "fc89d7bcb5fec35a2466f6ed293c7028589f0b5e1ea108b1c549fe53dd860ca8"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/reuse-matches.json",
+      "new": "docs/research/evidence/xiaoa/reuse-matches.json",
+      "bytes": 1538,
+      "sha256_before": "63d75546f5c48003e6bea934ded9512100f902c521efa487e7137360f29896bc",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "63d75546f5c48003e6bea934ded9512100f902c521efa487e7137360f29896bc"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/scene-candidates.json",
+      "new": "docs/research/evidence/xiaoa/scene-candidates.json",
+      "bytes": 6693,
+      "sha256_before": "16d9a333745203bcfbf05b5cdf78de5da07ca01560b215599f4309c745b9ee91",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "16d9a333745203bcfbf05b5cdf78de5da07ca01560b215599f4309c745b9ee91"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-01.txt",
+      "new": "docs/research/evidence/xiaoa/text-01.txt",
+      "bytes": 7857,
+      "sha256_before": "8d3b7b725d39ec0555135467adc21c9de1cfdc1337b74a55eaaa16627d2b7778",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8d3b7b725d39ec0555135467adc21c9de1cfdc1337b74a55eaaa16627d2b7778"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-02.txt",
+      "new": "docs/research/evidence/xiaoa/text-02.txt",
+      "bytes": 7286,
+      "sha256_before": "9608b9d0f941c44e4b941f4bd2fb949a3da0def75194defd1b55e3cec5dfb810",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "9608b9d0f941c44e4b941f4bd2fb949a3da0def75194defd1b55e3cec5dfb810"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-03.txt",
+      "new": "docs/research/evidence/xiaoa/text-03.txt",
+      "bytes": 6720,
+      "sha256_before": "a1c504ca926870a27af5abfc03bee416642990d3eed9dd3e126a58c36a10c0cd",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "a1c504ca926870a27af5abfc03bee416642990d3eed9dd3e126a58c36a10c0cd"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-04.txt",
+      "new": "docs/research/evidence/xiaoa/text-04.txt",
+      "bytes": 6031,
+      "sha256_before": "b8ff53f5e39f3f1e56b38f070377d6cb5483cec23f998613240859d832e1f56b",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "b8ff53f5e39f3f1e56b38f070377d6cb5483cec23f998613240859d832e1f56b"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-05.txt",
+      "new": "docs/research/evidence/xiaoa/text-05.txt",
+      "bytes": 9106,
+      "sha256_before": "556c1bc54cffca5b288fd364d625d48904c5fa58aeb14f312addb0e29bfc89e7",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "556c1bc54cffca5b288fd364d625d48904c5fa58aeb14f312addb0e29bfc89e7"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-06.txt",
+      "new": "docs/research/evidence/xiaoa/text-06.txt",
+      "bytes": 6711,
+      "sha256_before": "39a1b0ce62eb97f9e0f7381a60ae725b7b2a087f3d594c94bbc4d9d853ccdb4c",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "39a1b0ce62eb97f9e0f7381a60ae725b7b2a087f3d594c94bbc4d9d853ccdb4c"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-07.txt",
+      "new": "docs/research/evidence/xiaoa/text-07.txt",
+      "bytes": 5940,
+      "sha256_before": "4566174dca2ee357816f575bfa8c555dc1b5cf1e7d300a197a1889b30cbe9625",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "4566174dca2ee357816f575bfa8c555dc1b5cf1e7d300a197a1889b30cbe9625"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-08.txt",
+      "new": "docs/research/evidence/xiaoa/text-08.txt",
+      "bytes": 10863,
+      "sha256_before": "c82a1431d13242c18cb4185a36174aff2ee129fba2625bb07e2436df02be72f6",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "c82a1431d13242c18cb4185a36174aff2ee129fba2625bb07e2436df02be72f6"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-09.txt",
+      "new": "docs/research/evidence/xiaoa/text-09.txt",
+      "bytes": 5857,
+      "sha256_before": "8b230bb8d8144405556acdb9868cfacca67e5cffe14aafe3b7cffb735925c052",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "8b230bb8d8144405556acdb9868cfacca67e5cffe14aafe3b7cffb735925c052"
+    },
+    {
+      "old": "docs/reference-evidence/xiaoa/text-10.txt",
+      "new": "docs/research/evidence/xiaoa/text-10.txt",
+      "bytes": 6581,
+      "sha256_before": "cb94bcfccdfa542749a64e61798f7a60ccc8e0fbf18a276a3165bd999f69c786",
+      "byte_identical_at_relocation": true,
+      "sha256_after": "cb94bcfccdfa542749a64e61798f7a60ccc8e0fbf18a276a3165bd999f69c786"
+    }
+  ],
+  "deleted": [
+    {
+      "path": "episodes/20261024-竞争优势-表达样片",
+      "files": 113,
+      "bytes": 204842164
+    },
+    {
+      "path": "episodes/20261024-竞争优势-杂志拼贴样片",
+      "files": 135,
+      "bytes": 55348290
+    },
+    {
+      "path": "episodes/20260829-竞争优势/production/build/recording-import/decoded.wav",
+      "files": 1,
+      "bytes": 50421004
+    },
+    {
+      "path": "episodes/20260829-竞争优势/production",
+      "files": 68,
+      "bytes": 336220197
+    },
+    {
+      "path": "episodes/20261024-竞争优势-连续场景样片/production",
+      "files": 29,
+      "bytes": 25422796
+    },
+    {
+      "path": "episodes/20260913-企业再融资-增发和发债/video",
+      "files": 15,
+      "bytes": 615838
+    }
+  ],
+  "deleted_bytes": 672870289,
+  "deleted_files": 361,
+  "final_hash_verification": {
+    "verified": 359,
+    "unchanged": 350,
+    "intentional_text_updates": [
+      {
+        "path": "episodes/20260829-竞争优势/script.json",
+        "reason": "迁移后的录音路径及导入入口更新"
+      },
+      {
+        "path": "src/youtube_studio/import_competition_recording.py",
+        "reason": "迁移后的录音路径及导入入口更新"
+      },
+      {
+        "path": "docs/decisions/visual-direction-2026-10-24.md",
+        "reason": "路径、目录说明与审批状态更新"
+      },
+      {
+        "path": "docs/research/xiaoa-investment-series-analysis.md",
+        "reason": "路径、目录说明与审批状态更新"
+      },
+      {
+        "path": "docs/decisions/continuous-scene-implementation-2026-10-24.md",
+        "reason": "路径、目录说明与审批状态更新"
+      },
+      {
+        "path": "docs/research/mindcoffee-spending-money-full-analysis.md",
+        "reason": "路径、目录说明与审批状态更新"
+      },
+      {
+        "path": "docs/decisions/directory-plan-2026-10-24.md",
+        "reason": "路径、目录说明与审批状态更新"
+      },
+      {
+        "path": "docs/decisions/current-video-review-2026-10-24.md",
+        "reason": "路径、目录说明与审批状态更新"
+      },
+      {
+        "path": "docs/guides/repository-structure.md",
+        "reason": "路径、目录说明与审批状态更新"
+      }
+    ],
+    "media_byte_identical": true
+  },
+  "verification_report": "layout-validation-2026-10-24.json",
+  "verification_temporary_cleanup": [
+    {
+      "path": ".venv",
+      "files": 872,
+      "bytes": 11347643
+    },
+    {
+      "path": "node_modules",
+      "files": 5324,
+      "bytes": 141909684
+    },
+    {
+      "path": "examples/competition-continuity/build",
+      "files": 21,
+      "bytes": 24974478
+    },
+    {
+      "path": "examples/competition-continuity/.cache",
+      "files": 13,
+      "bytes": 24716276
+    },
+    {
+      "path": "src/youtube_studio/__pycache__",
+      "files": 13,
+      "bytes": 166280
+    },
+    {
+      "path": "tests/__pycache__",
+      "files": 3,
+      "bytes": 50437
+    },
+    {
+      "path": "src/youtube_studio.egg-info",
+      "files": 6,
+      "bytes": 7691
+    }
+  ]
+}

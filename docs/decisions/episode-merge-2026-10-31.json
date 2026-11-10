@@ -1,0 +1,349 @@
+{
+  "date": "2026-10-31",
+  "canonical_episode": "episodes/20261030-熊市买入-完整版",
+  "old_episode": "episodes/20261027-你应该在熊市中买入股票",
+  "development_materials": "episodes/20261030-熊市买入-完整版/source/development/20261027-你应该在熊市中买入股票",
+  "method": "整目录迁入正式剧集 source/development，早期原件逐字节保留，当前生产输入不被旧稿覆盖",
+  "files": {
+    "script.json": "6f1425563316207b6420b463e8276e782a213a35212138366999e30d4fac6117",
+    "brief.json": "a886c8ee2e7251487ba0e95f3fb9b76930bb3f3b93d925fabda696d46d3319ff",
+    "config.json": "ed750e3b3030fcc9f62594bb49c8747afaf6ebebb92883aa726a43f6ed8f6f5a",
+    "media-plan.json": "abf801aab8f1caaaaba99494a75fb35019877c2f7e176bcf77450b1c3a4eb7bd",
+    "build/editorial-review.json": "a81de63564ec0b8bb3789a7662377ac3cea95907d9372adfabd038aae6e7494b",
+    "build/script.md": "f23f1d7302749be153c32d72d43f83c377c4f0393e29f6e41a38f70e7e3642d8",
+    "source/planning/market-snapshot-20261027.json": "50301c27a50e6b8fcf5eb6e5719a1087cdc0805ef7d3d97cd1fed68d3071211d",
+    "source/planning/source-inventory.json": "68618c2002a847ea80060a1df0de338e8b09e3687cf4590402d89a4322259d85",
+    "source/planning/script-20261027.json": "87a8a6215be0680154b0e0b983ef268e6a8bc5e057651072947c25a6e231bc8f",
+    "source/planning/script-20261030-before-focus-rewrite.json": "4459f5688794d18b4594d3019e46ed0b3aef5c76f82b5e43a207927dcbf36bdd",
+    "source/planning/direction.md": "129bd235bc639276ed3d8804d14c3670b8507809df3f6db6645cd7b8227a6cb7",
+    "source/planning/market-snapshot.json": "b2c2ee93912a610c58b10402e21abc941e0ed471a8cddd6769fae10682f9289c",
+    "source/planning/research-handoff.md": "df10f59d547346ed872667b23e4b8e5e65eb9822ce0fb4a09a717bb89bd8cf21"
+  },
+  "preserved_current_assets": {
+    "script.json": "e3b54f1a2b0a617943c21cafa2271c3da6e34a3e3ade931e68f07bff87ea9427",
+    "config.json": "1b764ffad362b7c48875a6b4741a51ea2a243d6e8850d065b47555401a51a2b6",
+    "deliverables/output-finishing-v3.mp4": "08d346e5662869316278c9f3bad39bf68e60ebe16f9f14aa94b713d210b57a28",
+    "deliverables/cover.png": "fea47edaba207e25ec9cf24736875b9103adba194f892c75bcbd0e487dcc698f",
+    "deliverables/captions.srt": "b50db92f80860338c2320bef79012b172ec8ab79498641e94eb1b5cd54281852"
+  },
+  "pre_merge_qa": {
+    "machine_checks": "passed",
+    "mode": "final",
+    "duration": 626.9884150000001,
+    "drift_seconds": 0.011584999999854517,
+    "coverage_basis": "reference-constrained timings; independent ASR differences in build/voice-review.json",
+    "minimum_text_coverage": 1.0,
+    "editorial_review": "not_automatically_certified",
+    "visual_review": "inspect frames and movie",
+    "audio_lufs": -20.02,
+    "true_peak_dbfs": -3.07,
+    "black_intervals": [],
+    "visual_qa_reused": false,
+    "exported_paper_edges": [
+      {
+        "time": 12.4190415,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 137.02518700000002,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 161.44916600000002,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 185.60872850000004,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 212.60552,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 240.43879050000004,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 266.92545700000005,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 334.89256100000006,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 359.7966650000001,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 438.0417695000001,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 532.2911445000001,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 608.4140610000002,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      },
+      {
+        "time": 624.8884150000001,
+        "rgb": [
+          243,
+          241,
+          228
+        ]
+      }
+    ],
+    "frames": "/Users/herbxu/Desktop/github/youtube/episodes/20261030-熊市买入-完整版/build/frames",
+    "movie": "/Users/herbxu/Desktop/github/youtube/episodes/20261030-熊市买入-完整版/deliverables/output.mp4",
+    "movie_sha256": "08d346e5662869316278c9f3bad39bf68e60ebe16f9f14aa94b713d210b57a28",
+    "input_signature": "e87a127f1353850366f817107917741b2ee29092a8ed679b05bcda82917e1000"
+  },
+  "pre_merge_review": {
+    "movie_sha256": "08d346e5662869316278c9f3bad39bf68e60ebe16f9f14aa94b713d210b57a28",
+    "input_signature": "e87a127f1353850366f817107917741b2ee29092a8ed679b05bcda82917e1000",
+    "reviewer": "Codex",
+    "checks": {
+      "content": {
+        "status": "passed",
+        "evidence": [
+          "source/full-content-review.json",
+          "source/planning/full-source-verification.json"
+        ],
+        "scope": "核对完整稿主旨、实际trade节选、腾讯研究边界、10月30日市场数据与假设算术。"
+      },
+      "audio": {
+        "status": "pending",
+        "evidence": [
+          "deliverables/qa.json",
+          "build/audio-repair.json",
+          "build/audio-repair/comparison.json",
+          "build/audio-repair/final-audio-check.json",
+          "deliverables/7m22-before.wav",
+          "deliverables/7m22-after.wav",
+          "source/feedback/finishing-audio-review.json"
+        ],
+        "completed": "保留原始母带；保守脉冲插值后保持采样数、声道和所有字词时间一致；实际 MP4 响度、真峰值通过检查；片尾音乐延续并淡出。",
+        "remaining": "用户已确认7:22附近的混音预听明显改善；完整主观听审未完成，不宣称所有杂音已消失。"
+      },
+      "visual": {
+        "status": "pending",
+        "evidence": [
+          "build/finishing-review/check.json",
+          "build/finishing-review/encoded/segments.json",
+          "build/finishing-review/final/index.json",
+          "build/motion-seek-check.json",
+          "build/box-alignment-check.json",
+          "build/player-check.json"
+        ],
+        "frame_review": "passed",
+        "scope": "检查开场慢入、完整1秒停留与提前退场；独立封面不含叠层；数字去千位逗号；末段逐项进入，频道落款独立出现。",
+        "remaining": "未完成全片实时连续观看；抽帧及播放功能检查不等于全程观感验收。"
+      },
+      "engineering": {
+        "status": "passed",
+        "evidence": [
+          "deliverables/qa.json",
+          "build/player-check.json"
+        ],
+        "scope": "1920×1080，30fps，626.988秒；82项单元测试、149项动作检查、40项对齐状态检查通过；实际视频音画指标见qa.json。"
+      },
+      "efficiency": {
+        "status": "passed",
+        "evidence": [
+          "state.json",
+          "build/render-plan.json"
+        ],
+        "scope": "复用全部已确认配音与对齐；仅增加本地脉冲修复、片尾音乐延续和视觉重渲染；未发起新付费配音或图片生成。"
+      }
+    },
+    "skills_updated": {
+      "youtube-produce": "短框声明完整1秒停留与切镜前退场；独立无声明封面；显式无旁白片尾与音乐尾声。",
+      "youtube-visuals": "无千位逗号数字，声明连续帧和独立封面分别验收，末段条件按声音递进。",
+      "youtube-voice": "源/母带/混音/最终MP4分层排查脉冲噪声，保守修复保留采样与原件，提供前后试听而不夸大检测。",
+      "youtube-write": "结尾回收开篇问题，带条件的行动与有呼吸的落款；不得虚构新配音。"
+    },
+    "viewer_feedback_revision": {
+      "disclaimer": [
+        {
+          "unit": "u-opening",
+          "offset": 0.25,
+          "duration": 2.65,
+          "fade_in": 1.0,
+          "hold": 1.0,
+          "fade_out": 0.65,
+          "clear_before_cut": 0.2,
+          "text": "免责声明：仅代表个人观点\n不构成任何投资建议",
+          "start": 0.25,
+          "end": 2.9
+        }
+      ],
+      "voice_master_sha256": "1f9a8952fba760027b0ef9aae9c9fa3adf90cec86ebca876373054ad533d5f65",
+      "cleaned_voice_sha256": "53ec91c969a7a0631b3d9eb895e87488178333a73d43b3bea30954ee3b14638f",
+      "audio_mix_sha256": "934a0e68e0dfb1c128c8a13d4de7719133cef01ec6f749b623b60e2db19dd31f",
+      "playback_file": "output-finishing-v3.mp4",
+      "closing": {
+        "duration": 4.2,
+        "tagline": "研究清楚  从容行动",
+        "music_track": "bgm-chapter-5"
+      },
+      "full_real_time_watch": false,
+      "full_subjective_listening": false
+    }
+  },
+  "updated_references": [
+    {
+      "file": "episodes/20261030-熊市买入-完整版/brief.json",
+      "before_sha256": "93dcef1f9d15c776520250b611c7fd6096e1ccd50a33397e55dc3167fe400990",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "dea58d7663c79cd892133ccc027ac578fc2e11ee04970c51994bf4c2610c730d"
+    },
+    {
+      "file": "episodes/20261030-熊市买入-完整版/source/planning/full-production.json",
+      "before_sha256": "446b84295379e1e10af5582cf0a0656f47471d74bbc939514e388c15eed9c7b3",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "9da38ca26ae32eaae50e1df9de3b6b86853777940de1b5920460dab97bd60dac"
+    },
+    {
+      "file": "docs/research/yikouxinfan-bear-sample-comparison.md",
+      "before_sha256": "76b80d5b5ea2191b6e658b73d38a7791d8a5471379f8ef36b719c17ba0ca7a27",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "6d0016d11ae89b578725a18f1a4bfd9bfd7a3da400652c5fd9eb0804c820bbfb"
+    },
+    {
+      "file": "examples/bear-market-90s/brief.json",
+      "before_sha256": "c5c172210244985784e3ab090b647b345a9964d7009dc5f6b741b332900da41a",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "b5dcf86f570fda898cbb2643a86f73154735cc0a0308fc12df1c53bb6b341c68"
+    },
+    {
+      "file": "examples/bear-market-90s-v5/brief.json",
+      "before_sha256": "81c870afe0cf438df38dfc40188f8a68f53690392c60302c2e67238197fdba6c",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "6ee8567bea738e767d3b324b3e334a7c221d6cc8ea889c721d328538b27a8570"
+    },
+    {
+      "file": "examples/bear-market-90s-v2/brief.json",
+      "before_sha256": "0223599fef023357d2537506c9a91badbcfe173f5780146e206625e425cd54f7",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "0c00558fb1ae25a9ba81b7957d6df8dc83b8b88fe1f7727619ee27c100b3e9d5"
+    },
+    {
+      "file": "examples/bear-market-90s-v3/brief.json",
+      "before_sha256": "0223599fef023357d2537506c9a91badbcfe173f5780146e206625e425cd54f7",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "0c00558fb1ae25a9ba81b7957d6df8dc83b8b88fe1f7727619ee27c100b3e9d5"
+    },
+    {
+      "file": "examples/bear-market-90s-v4/brief.json",
+      "before_sha256": "0223599fef023357d2537506c9a91badbcfe173f5780146e206625e425cd54f7",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "0c00558fb1ae25a9ba81b7957d6df8dc83b8b88fe1f7727619ee27c100b3e9d5"
+    },
+    {
+      "file": "examples/bear-market-90s-v10/brief.json",
+      "before_sha256": "f238eb4b68e270851a511cd93f8461d6b48f8b44f7cef1ebad3ab428bf89c47d",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "ba3d4a7b3dc2df85357a6de44b81b57a3eb9a3b3f2ee345b837a6444fc4cb35e"
+    },
+    {
+      "file": "examples/bear-market-90s-v11/brief.json",
+      "before_sha256": "05697362e3338bd043c1ad8d8fe5343b2975e4b4a56b4cbf424b2965be9071f4",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "575cc61e2d911025368bc16e58732e7d8d6820c579a4cd7e7f360d86f3048bab"
+    },
+    {
+      "file": "examples/bear-market-90s-v8/brief.json",
+      "before_sha256": "631aeb07ba5e6be031f8dc88e7764ce7a3949fe256c88db588ca239cb5fab17c",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "2ba6a4569d97882e5b60a6f29e6e194b1580f7aff90e68dbd81b79e6bf10820e"
+    },
+    {
+      "file": "examples/bear-market-90s-v6/brief.json",
+      "before_sha256": "a4fa3266738e78d28ea35c192437ac67eee526bcff416ec63a3473f05d78d44e",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "72d13db521214e97acebcfa4d5b5166d6e18dc2ac318aebfac0a69d7930cb072"
+    },
+    {
+      "file": "examples/bear-market-90s-v7/brief.json",
+      "before_sha256": "8902013341949ce4521b6fc15dc6e624820f2d0b6be63339969f8d4667a5b5fe",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "d25d30e899db3365599fbfa87ab370186ebddea20a440381556920ff7629de05"
+    },
+    {
+      "file": "examples/bear-market-90s-v9/brief.json",
+      "before_sha256": "fed7c7b1bfbd276b6293698c5e45a06e6730cb86b61198a7f3cb42e1f0be0de7",
+      "operation": "仅迁移来源链接，历史来源指向保留下来的早期材料",
+      "after_sha256": "25d70785b36cca202465b7e58f3f94113353807edfb5f26e11809e4418a7f41b"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "original_files_preserved": 13,
+    "current_script_and_config_unchanged": true,
+    "cli_init": "passed",
+    "validate": "passed",
+    "doctor": "passed",
+    "pipeline_verify": "passed",
+    "cache_hits": 139,
+    "cache_misses": 0,
+    "movie_unchanged": true,
+    "current_input_signature": "59bba51d4e8addb1bce7b2afd10802658f610ae3c21e9fe42a0ef233bf243b30",
+    "review_binding": "metadata-only migration; subjective pending items retained",
+    "upload_zip": "episodes/20261030-熊市买入-完整版/deliverables/YouTube上传素材-熊市买入-20261030.zip",
+    "zip_sha256": "e804917696360cbb0853e1336abd534ea5461e102191e146227ac416ab2cc43c",
+    "subtitle_entries": 306
+  },
+  "preservation_verified": true
+}

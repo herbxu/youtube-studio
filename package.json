@@ -1,0 +1,7 @@
+{
+  "name": "illustrated-opinion-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned local rendering dependencies; no media providers run during install.",
+  "dependencies": {"hyperframes": "0.8.171", "gsap": "3.14.2"}
+}

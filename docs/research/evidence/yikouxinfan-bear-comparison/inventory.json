@@ -1,0 +1,223 @@
+{
+  "sources": [
+    {
+      "path": "/Users/herbxu/Desktop/一口新飯_為什麼我不尋找下一個特斯拉_20251011.mp4",
+      "sha256": "18e5bc24e61b9d687ef3a12d1e9c7c272d7707dae3ca2350ae859a4dc75fc202"
+    },
+    {
+      "path": "/Users/herbxu/Desktop/github/youtube/examples/bear-market-90s/deliverables/output.mp4",
+      "sha256": "8001d5bacf17ff2c7acf22b1f959b8eac4c6f125d0cc100c49aebbda38fd4c17"
+    }
+  ],
+  "sample_units": [
+    {
+      "id": "u-sample-1",
+      "start": 0.0,
+      "end": 14.477208,
+      "coverage": 1.0,
+      "unmatched": [],
+      "method": "faster-whisper/small cross-attention DTW forced alignment",
+      "differences": [],
+      "reference_constrained": true,
+      "independent_asr": {
+        "model": "small",
+        "text": "你有没有发现股价高的时候,我们总说等它跌下来就买,可真的跌下来了,又想等市场稳定,等别人先买。结果,只有价格重新涨上去,自己才敢买。",
+        "match_ratio": 1.0,
+        "differences": []
+      }
+    },
+    {
+      "id": "u-sample-2",
+      "start": 14.477208,
+      "end": 30.121375,
+      "coverage": 1.0,
+      "unmatched": [],
+      "method": "faster-whisper/small cross-attention DTW forced alignment",
+      "differences": [],
+      "reference_constrained": true,
+      "independent_asr": {
+        "model": "small",
+        "text": "我认为,雄市应该是长期投资者认真买路的阶段为什么?因为你有机会花更少的钱买到好企业未来的收入我们用一个假设的例子把这件事说清楚",
+        "match_ratio": 0.9672131147540983,
+        "differences": [
+          {
+            "operation": "replace",
+            "expected": "熊",
+            "recognized": "雄"
+          },
+          {
+            "operation": "replace",
+            "expected": "入",
+            "recognized": "路"
+          }
+        ]
+      }
+    },
+    {
+      "id": "u-sample-3",
+      "start": 30.121375,
+      "end": 47.098458,
+      "coverage": 1.0,
+      "unmatched": [],
+      "method": "faster-whisper/small cross-attention DTW forced alignment",
+      "differences": [],
+      "reference_constrained": true,
+      "independent_asr": {
+        "model": "small",
+        "text": "一家公司,你买下其中一份股权每年可以分配10块钱假设这笔收入能够持续先不考虑增长和税费这份股权卖200块你花200,每年拿10块相当于买价的5%",
+        "match_ratio": 0.8467153284671532,
+        "differences": [
+          {
+            "operation": "replace",
+            "expected": "十",
+            "recognized": "10"
+          },
+          {
+            "operation": "replace",
+            "expected": "两百",
+            "recognized": "200"
+          },
+          {
+            "operation": "replace",
+            "expected": "两百",
+            "recognized": "200"
+          },
+          {
+            "operation": "replace",
+            "expected": "十",
+            "recognized": "10"
+          },
+          {
+            "operation": "replace",
+            "expected": "百分之五",
+            "recognized": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "u-sample-4",
+      "start": 47.098458,
+      "end": 63.075416000000004,
+      "coverage": 1.0,
+      "unmatched": [],
+      "method": "faster-whisper/small cross-attention DTW forced alignment",
+      "differences": [],
+      "reference_constrained": true,
+      "independent_asr": {
+        "model": "small",
+        "text": "后来市场下跌这份股权只要100块公司还是那家公司每年分给你的仍然是10块钱你花100每年拿10块相当于买价的10%取得同一份收入你付的钱少了一半",
+        "match_ratio": 0.8428571428571429,
+        "differences": [
+          {
+            "operation": "replace",
+            "expected": "一百",
+            "recognized": "100"
+          },
+          {
+            "operation": "replace",
+            "expected": "十",
+            "recognized": "10"
+          },
+          {
+            "operation": "replace",
+            "expected": "一百",
+            "recognized": "100"
+          },
+          {
+            "operation": "replace",
+            "expected": "十",
+            "recognized": "10"
+          },
+          {
+            "operation": "replace",
+            "expected": "百分之十",
+            "recognized": "10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "u-sample-5",
+      "start": 63.075416000000004,
+      "end": 76.05291600000001,
+      "coverage": 1.0,
+      "unmatched": [],
+      "method": "faster-whisper/small cross-attention DTW forced alignment",
+      "differences": [],
+      "reference_constrained": true,
+      "independent_asr": {
+        "model": "small",
+        "text": "当然,如果公司的生意变差,以后只能分5块钱,降价也未必划算所以我说的是,研究过的好生意,到了足够便宜的价格,就应该开始买",
+        "match_ratio": 0.9814814814814815,
+        "differences": [
+          {
+            "operation": "replace",
+            "expected": "五",
+            "recognized": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "u-sample-6",
+      "start": 76.05291600000001,
+      "end": 89.94712400000002,
+      "coverage": 1.0,
+      "unmatched": [],
+      "method": "faster-whisper/small cross-attention DTW forced alignment",
+      "differences": [],
+      "reference_constrained": true,
+      "independent_asr": {
+        "model": "small",
+        "text": "你不需要保证买在最低点也不必等所有人重新乐观用预留的长期资金分批行动雄市值得买的理由就在这里未来同样的一份收入你现在可以花更少的钱买到",
+        "match_ratio": 0.9850746268656716,
+        "differences": [
+          {
+            "operation": "replace",
+            "expected": "熊",
+            "recognized": "雄"
+          }
+        ]
+      }
+    }
+  ],
+  "sample_shots": [
+    {
+      "id": "s-sample-1",
+      "kind": "cover",
+      "start": 0.0,
+      "end": 14.477208
+    },
+    {
+      "id": "s-sample-2",
+      "kind": "claim",
+      "start": 14.477208,
+      "end": 30.121375
+    },
+    {
+      "id": "s-sample-3",
+      "kind": "object_scene",
+      "start": 30.121375,
+      "end": 47.098458
+    },
+    {
+      "id": "s-sample-4",
+      "kind": "object_scene",
+      "start": 47.098458,
+      "end": 63.075416000000004
+    },
+    {
+      "id": "s-sample-5",
+      "kind": "comparison",
+      "start": 63.075416000000004,
+      "end": 76.05291600000001
+    },
+    {
+      "id": "s-sample-6",
+      "kind": "claim",
+      "start": 76.05291600000001,
+      "end": 89.94712400000002
+    }
+  ]
+}

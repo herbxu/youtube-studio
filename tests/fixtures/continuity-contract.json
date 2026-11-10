@@ -1,0 +1,1035 @@
+{
+  "note": "Captured contract fixture; no local media needed by unit tests",
+  "doc": {
+    "schema": "opinion-script/v1",
+    "title": "竞争优势：什么难以复制？ · 连续场景样片",
+    "editorial": {
+      "question": "公司做得好，为什么还不足以证明有竞争优势？",
+      "thesis": "考察优势是否难以复制，并结合竞争者追赶和具体条件判断。",
+      "takeaway": "这家公司的护城河到底在哪里，竞争者为什么难以复制？"
+    },
+    "sources": [
+      {
+        "id": "author-recording",
+        "title": "作者提供的竞争优势原稿与录音",
+        "local_source": "episodes/20260829-竞争优势",
+        "date": "2026-08-29",
+        "excerpt": "本样片重新组织作者真实录音；去掉未核实的具体公司案例、名人引语与收益保证，不据此认证原片全部事实。"
+      }
+    ],
+    "units": [
+      {
+        "id": "u-entry",
+        "text": "在位企业能做到，而新进入者做不到的事情，说人话就是，别人能不能在你隔壁，开一家一模一样的店，还活得比你滋润。",
+        "delivery": "原作者录音，保留自然句群和语气",
+        "audio": "media/recordings/u-entry.wav",
+        "words": "media/recordings/u-entry.words.json",
+        "argument": {
+          "role": "example",
+          "point": "把进入壁垒翻译成隔壁开店的情境",
+          "basis": "用新进入者能否复制并存活作为理解入口",
+          "boundary": "这是判断问题，具体行业仍需实证。"
+        },
+        "claims": [
+          {
+            "kind": "interpretation",
+            "text": "把进入壁垒翻译成隔壁开店的情境"
+          }
+        ],
+        "shots": [
+          {
+            "id": "s-cafe-video",
+            "kind": "footage",
+            "cue": "",
+            "purpose": "咖啡交到顾客手里，建立营业与服务的真实情境",
+            "asset": "media/footage/cafe-service.mp4",
+            "source_in": 0,
+            "focus": [
+              0.5,
+              0.5
+            ],
+            "headline": "别人能复制吗？",
+            "credit": "Thirdman / Pexels",
+            "note": "情境实拍；下文为假设街区",
+            "provenance": {
+              "kind": "stock-video",
+              "source": "https://www.pexels.com/video/barista-serving-a-coffee-8935798/",
+              "author": "Thirdman",
+              "license": "Pexels License",
+              "license_url": "https://www.pexels.com/license/",
+              "retrieved": "2026-10-24",
+              "usage": "情境实拍，视频中的个人与店铺不承担假设经营事实"
+            }
+          },
+          {
+            "id": "s-street-entry",
+            "kind": "continuity",
+            "scene": "shop-competition/v1",
+            "cue": "别人能不能",
+            "hypothetical": true,
+            "note": "假设街区 · 从同一场景观察新店进入",
+            "purpose": "保持原店与顾客对象连续，按口播演示进入、分流及模仿",
+            "events": [
+              {
+                "action": "establish",
+                "cue": "别人能不能"
+              },
+              {
+                "action": "rival",
+                "cue": "开一家"
+              }
+            ]
+          }
+        ],
+        "audio_tracks": [
+          {
+            "id": "a-u-entry",
+            "type": "sfx",
+            "asset": "media/sfx/click-soft.mp3",
+            "cue": "开一家",
+            "duration": 0.37,
+            "gain_db": -24,
+            "fade": 0.025,
+            "duck": true,
+            "provenance": {
+              "kind": "bundled-sfx",
+              "provider": "media-use / bundled.sfx",
+              "source": "bundled click-soft, see media/sfx/CREDITS.md",
+              "upstream_library": "Pixabay",
+              "license": "Pixabay Content License",
+              "license_url": "https://pixabay.com/service/license-summary/",
+              "author": "not specified in bundled credits",
+              "usage": "two quiet object landing accents, no music"
+            }
+          }
+        ]
+      },
+      {
+        "id": "u-profits",
+        "text": "你想一个生意要是特别赚钱，又没人拦着外人，会怎么样，新玩家闻着味就冲进来了，老对手拼命扩产，利润很快就会被摊薄。",
+        "delivery": "原作者录音，保留自然句群和语气",
+        "audio": "media/recordings/u-profits.wav",
+        "words": "media/recordings/u-profits.words.json",
+        "argument": {
+          "role": "mechanism",
+          "point": "没有进入限制时，竞争可能压缩利润",
+          "basis": "沿着进入、扩产、利润压力解释竞争机制",
+          "boundary": "需求、成本和扩产周期也会影响结果，不是所有市场立即发生。"
+        },
+        "claims": [
+          {
+            "kind": "hypothetical",
+            "text": "赚钱且没有进入限制的市场情境"
+          }
+        ],
+        "shots": [
+          {
+            "id": "s-street-demand",
+            "kind": "continuity",
+            "scene": "shop-competition/v1",
+            "cue": "",
+            "hypothetical": true,
+            "note": "假设：总需求不变，单价和成本条件不变；顾客数量仅作示意",
+            "purpose": "保持原店与顾客对象连续，按口播演示进入、分流及模仿",
+            "events": [
+              {
+                "action": "demand",
+                "cue": ""
+              },
+              {
+                "action": "profitable",
+                "cue": "特别赚钱"
+              },
+              {
+                "action": "entry",
+                "cue": "新玩家"
+              },
+              {
+                "action": "capacity",
+                "cue": "老对手"
+              },
+              {
+                "action": "pressure",
+                "cue": "利润很快"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u-copy",
+        "text": "换句话说，我比别人做得好，根本不够，你能差异化，对手也能，你的制度人才管理，对手挖一挖学一学。",
+        "delivery": "作者录音；剪掉绝对化结尾，保留原始录音与剪辑记录",
+        "audio": "media/recordings/u-copy-edited.wav",
+        "words": "media/recordings/u-copy-edited.words.json",
+        "argument": {
+          "role": "objection",
+          "point": "当前领先还需要检验是否容易被复制",
+          "basis": "把作者的做得更好与对手可能模仿并置",
+          "boundary": "这里讨论可模仿的优势，不证明所有差异化最终都会失效。"
+        },
+        "claims": [
+          {
+            "kind": "interpretation",
+            "text": "当前领先还需要检验是否容易被复制"
+          }
+        ],
+        "shots": [
+          {
+            "id": "s-street-copy",
+            "kind": "continuity",
+            "scene": "shop-competition/v1",
+            "cue": "",
+            "hypothetical": true,
+            "note": "假设：只讨论可模仿的优势，复制不代表所有行业的必然结果",
+            "purpose": "保持原店与顾客对象连续，按口播演示进入、分流及模仿",
+            "events": [
+              {
+                "action": "focus",
+                "cue": ""
+              },
+              {
+                "action": "claim",
+                "cue": "我比别人做得好"
+              },
+              {
+                "action": "product",
+                "cue": "你能差异化"
+              },
+              {
+                "action": "imitate",
+                "cue": "对手也能"
+              },
+              {
+                "action": "systems",
+                "cue": "制度"
+              },
+              {
+                "action": "talent",
+                "cue": "人才"
+              },
+              {
+                "action": "management",
+                "cue": "管理"
+              },
+              {
+                "action": "copy",
+                "cue": "对手挖一挖"
+              },
+              {
+                "action": "question",
+                "cue": "学一学"
+              }
+            ]
+          }
+        ],
+        "audio_tracks": [
+          {
+            "id": "a-u-copy",
+            "type": "sfx",
+            "asset": "media/sfx/click-soft.mp3",
+            "cue": "对手挖一挖",
+            "duration": 0.37,
+            "gain_db": -24,
+            "fade": 0.025,
+            "duck": true,
+            "provenance": {
+              "kind": "bundled-sfx",
+              "provider": "media-use / bundled.sfx",
+              "source": "bundled click-soft, see media/sfx/CREDITS.md",
+              "upstream_library": "Pixabay",
+              "license": "Pixabay Content License",
+              "license_url": "https://pixabay.com/service/license-summary/",
+              "author": "not specified in bundled credits",
+              "usage": "two quiet object landing accents, no music"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "words": {
+    "u-entry": {
+      "method": "excerpt of existing recording-aligned words; time offset only",
+      "words": [
+        {
+          "text": "在",
+          "start": 0.17650000000001143,
+          "end": 0.9564999999999984,
+          "probability": 0.18358178436756134
+        },
+        {
+          "text": "位",
+          "start": 0.9564999999999984,
+          "end": 1.1365000000000052,
+          "probability": 0.09053147584199905
+        },
+        {
+          "text": "企",
+          "start": 1.1365000000000052,
+          "end": 1.3965000000000103,
+          "probability": 0.9767218828201294
+        },
+        {
+          "text": "业",
+          "start": 1.3965000000000103,
+          "end": 1.4965000000000046,
+          "probability": 0.9975021779537201
+        },
+        {
+          "text": "能",
+          "start": 1.4965000000000046,
+          "end": 1.6565000000000012,
+          "probability": 0.9587464928627014
+        },
+        {
+          "text": "做",
+          "start": 1.6565000000000012,
+          "end": 1.8965000000000103,
+          "probability": 0.9832959771156311
+        },
+        {
+          "text": "到",
+          "start": 1.8965000000000103,
+          "end": 2.136500000000005,
+          "probability": 0.9980636239051819
+        },
+        {
+          "text": "而",
+          "start": 2.556500000000007,
+          "end": 2.596499999999999,
+          "probability": 0.903223991394043
+        },
+        {
+          "text": "新",
+          "start": 2.596499999999999,
+          "end": 2.8965000000000103,
+          "probability": 0.9312824606895447
+        },
+        {
+          "text": "进",
+          "start": 2.8965000000000103,
+          "end": 3.096499999999999,
+          "probability": 0.8813762068748474
+        },
+        {
+          "text": "入",
+          "start": 3.096499999999999,
+          "end": 3.1965000000000074,
+          "probability": 0.7108667492866516
+        },
+        {
+          "text": "者",
+          "start": 3.1965000000000074,
+          "end": 3.3965000000000103,
+          "probability": 0.9981294274330139
+        },
+        {
+          "text": "做",
+          "start": 3.3965000000000103,
+          "end": 3.636500000000005,
+          "probability": 0.9645065069198608
+        },
+        {
+          "text": "不到",
+          "start": 3.636500000000005,
+          "end": 3.7765000000000057,
+          "probability": 0.9913256764411926
+        },
+        {
+          "text": "的",
+          "start": 3.7765000000000057,
+          "end": 3.9365000000000023,
+          "probability": 0.9770938754081726
+        },
+        {
+          "text": "事情",
+          "start": 3.9365000000000023,
+          "end": 4.136500000000005,
+          "probability": 0.984686553478241
+        },
+        {
+          "text": "说",
+          "start": 4.956499999999998,
+          "end": 5.25650000000001,
+          "probability": 0.9629071354866028
+        },
+        {
+          "text": "人",
+          "start": 5.25650000000001,
+          "end": 5.39650000000001,
+          "probability": 0.17337998747825623
+        },
+        {
+          "text": "话",
+          "start": 5.39650000000001,
+          "end": 5.536500000000011,
+          "probability": 0.9567771553993225
+        },
+        {
+          "text": "就是",
+          "start": 5.536500000000011,
+          "end": 5.836500000000008,
+          "probability": 0.9488188624382019
+        },
+        {
+          "text": "别",
+          "start": 6.616500000000009,
+          "end": 6.6965000000000074,
+          "probability": 0.9173884391784668
+        },
+        {
+          "text": "人",
+          "start": 6.6965000000000074,
+          "end": 6.8765,
+          "probability": 0.9980915188789368
+        },
+        {
+          "text": "能",
+          "start": 6.8765,
+          "end": 7.036500000000011,
+          "probability": 0.9976758360862732
+        },
+        {
+          "text": "不能",
+          "start": 7.036500000000011,
+          "end": 7.136500000000005,
+          "probability": 0.9919077157974243
+        },
+        {
+          "text": "在",
+          "start": 7.136500000000005,
+          "end": 7.39650000000001,
+          "probability": 0.9765788316726685
+        },
+        {
+          "text": "你",
+          "start": 7.39650000000001,
+          "end": 7.536500000000011,
+          "probability": 0.9913825392723083
+        },
+        {
+          "text": "隔",
+          "start": 7.536500000000011,
+          "end": 7.6965000000000074,
+          "probability": 0.969882071018219
+        },
+        {
+          "text": "壁",
+          "start": 7.6965000000000074,
+          "end": 7.856500000000004,
+          "probability": 0.9994643330574036
+        },
+        {
+          "text": "开",
+          "start": 8.0165,
+          "end": 8.096499999999999,
+          "probability": 0.9649377465248108
+        },
+        {
+          "text": "一",
+          "start": 8.096499999999999,
+          "end": 8.356500000000004,
+          "probability": 0.9851827025413513
+        },
+        {
+          "text": "家",
+          "start": 8.356500000000004,
+          "end": 8.496500000000005,
+          "probability": 0.995456337928772
+        },
+        {
+          "text": "一",
+          "start": 8.496500000000005,
+          "end": 8.75650000000001,
+          "probability": 0.881715714931488
+        },
+        {
+          "text": "模",
+          "start": 8.75650000000001,
+          "end": 8.856500000000004,
+          "probability": 0.9471786618232727
+        },
+        {
+          "text": "一",
+          "start": 8.856500000000004,
+          "end": 8.956499999999998,
+          "probability": 0.9931271076202393
+        },
+        {
+          "text": "样",
+          "start": 8.956499999999998,
+          "end": 9.03650000000001,
+          "probability": 0.9997842907905579
+        },
+        {
+          "text": "的",
+          "start": 9.03650000000001,
+          "end": 9.176499999999997,
+          "probability": 0.992429792881012
+        },
+        {
+          "text": "店",
+          "start": 9.176499999999997,
+          "end": 9.276500000000006,
+          "probability": 0.9900760054588318
+        },
+        {
+          "text": "还",
+          "start": 9.856500000000004,
+          "end": 9.996500000000005,
+          "probability": 0.9835985898971558
+        },
+        {
+          "text": "活",
+          "start": 9.996500000000005,
+          "end": 10.156500000000001,
+          "probability": 0.9961503744125366
+        },
+        {
+          "text": "得",
+          "start": 10.156500000000001,
+          "end": 10.2365,
+          "probability": 0.9575701951980591
+        },
+        {
+          "text": "比",
+          "start": 10.2365,
+          "end": 10.3765,
+          "probability": 0.9982272982597351
+        },
+        {
+          "text": "你",
+          "start": 10.3765,
+          "end": 10.496500000000005,
+          "probability": 0.9959979057312012
+        },
+        {
+          "text": "滋",
+          "start": 10.496500000000005,
+          "end": 10.656500000000001,
+          "probability": 0.6371311247348785
+        },
+        {
+          "text": "润",
+          "start": 10.656500000000001,
+          "end": 10.75650000000001,
+          "probability": 0.84065181016922
+        }
+      ]
+    },
+    "u-profits": {
+      "method": "excerpt of existing recording-aligned words; time offset only",
+      "words": [
+        {
+          "text": "你想",
+          "start": 0.0799999999999983,
+          "end": 1.0600000000000023,
+          "probability": 0.6079970598220825
+        },
+        {
+          "text": "一个",
+          "start": 1.0600000000000023,
+          "end": 1.2399999999999949,
+          "probability": 0.963969349861145
+        },
+        {
+          "text": "生意",
+          "start": 1.2399999999999949,
+          "end": 1.5400000000000063,
+          "probability": 1.7221690313817817e-06
+        },
+        {
+          "text": "要",
+          "start": 1.5400000000000063,
+          "end": 1.7600000000000051,
+          "probability": 0.6254333257675171
+        },
+        {
+          "text": "是",
+          "start": 1.7600000000000051,
+          "end": 1.9000000000000057,
+          "probability": 0.541546106338501
+        },
+        {
+          "text": "特",
+          "start": 1.9000000000000057,
+          "end": 2.0,
+          "probability": 0.903418242931366
+        },
+        {
+          "text": "别",
+          "start": 2.0,
+          "end": 2.1400000000000006,
+          "probability": 0.9902048110961914
+        },
+        {
+          "text": "赚",
+          "start": 2.1400000000000006,
+          "end": 2.280000000000001,
+          "probability": 0.9943890273571014
+        },
+        {
+          "text": "钱",
+          "start": 2.280000000000001,
+          "end": 2.5600000000000023,
+          "probability": 0.998740017414093
+        },
+        {
+          "text": "又",
+          "start": 3.0400000000000063,
+          "end": 3.3799999999999955,
+          "probability": 0.9327842593193054
+        },
+        {
+          "text": "没",
+          "start": 3.3799999999999955,
+          "end": 3.780000000000001,
+          "probability": 0.972399115562439
+        },
+        {
+          "text": "人",
+          "start": 3.780000000000001,
+          "end": 3.9000000000000057,
+          "probability": 0.7547178864479065
+        },
+        {
+          "text": "拦",
+          "start": 3.9000000000000057,
+          "end": 4.040000000000006,
+          "probability": 0.9769673049449921
+        },
+        {
+          "text": "着",
+          "start": 4.040000000000006,
+          "end": 4.159999999999997,
+          "probability": 0.9238048195838928
+        },
+        {
+          "text": "外",
+          "start": 4.159999999999997,
+          "end": 4.319999999999993,
+          "probability": 0.9887440204620361
+        },
+        {
+          "text": "人",
+          "start": 4.319999999999993,
+          "end": 4.5,
+          "probability": 0.950791597366333
+        },
+        {
+          "text": "会",
+          "start": 4.719999999999999,
+          "end": 4.840000000000003,
+          "probability": 0.8353476524353027
+        },
+        {
+          "text": "怎么样",
+          "start": 4.840000000000003,
+          "end": 5.1200000000000045,
+          "probability": 0.7665539383888245
+        },
+        {
+          "text": "新",
+          "start": 5.6200000000000045,
+          "end": 5.8799999999999955,
+          "probability": 0.9842914342880249
+        },
+        {
+          "text": "玩",
+          "start": 5.8799999999999955,
+          "end": 6.019999999999996,
+          "probability": 0.987146258354187
+        },
+        {
+          "text": "家",
+          "start": 6.019999999999996,
+          "end": 6.219999999999999,
+          "probability": 0.9987998008728027
+        },
+        {
+          "text": "闻",
+          "start": 6.219999999999999,
+          "end": 6.539999999999992,
+          "probability": 0.5344606973230839
+        },
+        {
+          "text": "着",
+          "start": 6.539999999999992,
+          "end": 6.640000000000001,
+          "probability": 0.9693372845649719
+        },
+        {
+          "text": "味",
+          "start": 6.640000000000001,
+          "end": 6.760000000000005,
+          "probability": 0.30994895100593567
+        },
+        {
+          "text": "就",
+          "start": 6.760000000000005,
+          "end": 6.900000000000006,
+          "probability": 0.7976558804512024
+        },
+        {
+          "text": "冲",
+          "start": 6.900000000000006,
+          "end": 7.079999999999998,
+          "probability": 0.8722058534622192
+        },
+        {
+          "text": "进",
+          "start": 7.079999999999998,
+          "end": 7.180000000000007,
+          "probability": 0.997073769569397
+        },
+        {
+          "text": "来了",
+          "start": 7.180000000000007,
+          "end": 7.400000000000006,
+          "probability": 0.9573535919189453
+        },
+        {
+          "text": "老",
+          "start": 8.099999999999994,
+          "end": 8.340000000000003,
+          "probability": 0.963803231716156
+        },
+        {
+          "text": "对",
+          "start": 8.340000000000003,
+          "end": 8.5,
+          "probability": 0.94477379322052
+        },
+        {
+          "text": "手",
+          "start": 8.5,
+          "end": 8.700000000000003,
+          "probability": 0.9993595480918884
+        },
+        {
+          "text": "拼",
+          "start": 8.700000000000003,
+          "end": 9.219999999999999,
+          "probability": 0.9664432108402252
+        },
+        {
+          "text": "命",
+          "start": 9.219999999999999,
+          "end": 9.36,
+          "probability": 0.9995588660240173
+        },
+        {
+          "text": "扩",
+          "start": 9.36,
+          "end": 9.519999999999996,
+          "probability": 0.9515812397003174
+        },
+        {
+          "text": "产",
+          "start": 9.519999999999996,
+          "end": 9.700000000000003,
+          "probability": 0.4956253300606477
+        },
+        {
+          "text": "利",
+          "start": 10.319999999999993,
+          "end": 10.480000000000004,
+          "probability": 0.4572952687740326
+        },
+        {
+          "text": "润",
+          "start": 10.480000000000004,
+          "end": 10.680000000000007,
+          "probability": 0.6759207844734192
+        },
+        {
+          "text": "很",
+          "start": 10.680000000000007,
+          "end": 11.239999999999995,
+          "probability": 0.9534661173820496
+        },
+        {
+          "text": "快",
+          "start": 11.239999999999995,
+          "end": 11.439999999999998,
+          "probability": 0.9934779405593872
+        },
+        {
+          "text": "就",
+          "start": 11.439999999999998,
+          "end": 11.599999999999994,
+          "probability": 0.8757431507110596
+        },
+        {
+          "text": "会",
+          "start": 11.599999999999994,
+          "end": 11.700000000000003,
+          "probability": 0.7641742825508118
+        },
+        {
+          "text": "被",
+          "start": 11.700000000000003,
+          "end": 11.840000000000003,
+          "probability": 0.9944483041763306
+        },
+        {
+          "text": "摊",
+          "start": 11.840000000000003,
+          "end": 12.0,
+          "probability": 0.6094661802053452
+        },
+        {
+          "text": "薄",
+          "start": 12.0,
+          "end": 12.219999999999999,
+          "probability": 0.5649181604385376
+        }
+      ]
+    },
+    "u-copy": {
+      "method": "existing measured words, unchanged through 10.46s; removed final phrase in actual audio; no new ASR",
+      "words": [
+        {
+          "text": "换",
+          "start": 0,
+          "end": 0.6599999999999966,
+          "probability": 0.6427427530288696
+        },
+        {
+          "text": "句",
+          "start": 0.6599999999999966,
+          "end": 0.7800000000000011,
+          "probability": 0.9959128499031067
+        },
+        {
+          "text": "话",
+          "start": 0.7800000000000011,
+          "end": 0.9399999999999977,
+          "probability": 0.9945114850997925
+        },
+        {
+          "text": "说",
+          "start": 0.9399999999999977,
+          "end": 1.1400000000000006,
+          "probability": 0.9872670769691467
+        },
+        {
+          "text": "我",
+          "start": 1.6400000000000006,
+          "end": 1.8199999999999932,
+          "probability": 0.6140910387039185
+        },
+        {
+          "text": "比",
+          "start": 1.8199999999999932,
+          "end": 1.980000000000004,
+          "probability": 0.9890215992927551
+        },
+        {
+          "text": "别",
+          "start": 1.980000000000004,
+          "end": 2.1599999999999966,
+          "probability": 0.9809078574180603
+        },
+        {
+          "text": "人",
+          "start": 2.1599999999999966,
+          "end": 2.299999999999997,
+          "probability": 0.9980831146240234
+        },
+        {
+          "text": "做",
+          "start": 2.299999999999997,
+          "end": 2.4399999999999977,
+          "probability": 0.9944276809692383
+        },
+        {
+          "text": "得",
+          "start": 2.4399999999999977,
+          "end": 2.5400000000000063,
+          "probability": 0.5543705821037292
+        },
+        {
+          "text": "好",
+          "start": 2.5400000000000063,
+          "end": 2.700000000000003,
+          "probability": 0.9972525238990784
+        },
+        {
+          "text": "根",
+          "start": 3.1200000000000045,
+          "end": 3.239999999999995,
+          "probability": 0.9967531561851501
+        },
+        {
+          "text": "本",
+          "start": 3.239999999999995,
+          "end": 3.4000000000000057,
+          "probability": 0.9997497200965881
+        },
+        {
+          "text": "不",
+          "start": 3.4000000000000057,
+          "end": 3.519999999999996,
+          "probability": 0.9960349202156067
+        },
+        {
+          "text": "够",
+          "start": 3.519999999999996,
+          "end": 3.700000000000003,
+          "probability": 0.9994407892227173
+        },
+        {
+          "text": "你",
+          "start": 4.420000000000002,
+          "end": 4.560000000000002,
+          "probability": 0.954882025718689
+        },
+        {
+          "text": "能",
+          "start": 4.560000000000002,
+          "end": 4.700000000000003,
+          "probability": 0.9969493746757507
+        },
+        {
+          "text": "差",
+          "start": 4.700000000000003,
+          "end": 4.840000000000003,
+          "probability": 0.88443922996521
+        },
+        {
+          "text": "异",
+          "start": 4.840000000000003,
+          "end": 4.980000000000004,
+          "probability": 0.9862055778503418
+        },
+        {
+          "text": "化",
+          "start": 4.980000000000004,
+          "end": 5.140000000000001,
+          "probability": 0.9106432795524597
+        },
+        {
+          "text": "对",
+          "start": 5.5,
+          "end": 5.640000000000001,
+          "probability": 0.9902068972587585
+        },
+        {
+          "text": "手",
+          "start": 5.640000000000001,
+          "end": 5.819999999999993,
+          "probability": 0.9965676069259644
+        },
+        {
+          "text": "也",
+          "start": 5.819999999999993,
+          "end": 5.980000000000004,
+          "probability": 0.9950954914093018
+        },
+        {
+          "text": "能",
+          "start": 5.980000000000004,
+          "end": 6.159999999999997,
+          "probability": 0.9898909330368042
+        },
+        {
+          "text": "你的",
+          "start": 6.760000000000005,
+          "end": 6.939999999999998,
+          "probability": 0.9821017980575562
+        },
+        {
+          "text": "制",
+          "start": 6.939999999999998,
+          "end": 7.159999999999997,
+          "probability": 0.9804596900939941
+        },
+        {
+          "text": "度",
+          "start": 7.159999999999997,
+          "end": 7.280000000000001,
+          "probability": 0.9983938336372375
+        },
+        {
+          "text": "人",
+          "start": 7.280000000000001,
+          "end": 7.640000000000001,
+          "probability": 0.013086019083857536
+        },
+        {
+          "text": "才",
+          "start": 7.640000000000001,
+          "end": 7.859999999999999,
+          "probability": 0.9351978898048401
+        },
+        {
+          "text": "管",
+          "start": 7.859999999999999,
+          "end": 8.200000000000003,
+          "probability": 0.5085651874542236
+        },
+        {
+          "text": "理",
+          "start": 8.200000000000003,
+          "end": 8.420000000000002,
+          "probability": 0.9987877011299133
+        },
+        {
+          "text": "对",
+          "start": 9.039999999999992,
+          "end": 9.180000000000007,
+          "probability": 0.9952250719070435
+        },
+        {
+          "text": "手",
+          "start": 9.180000000000007,
+          "end": 9.379999999999995,
+          "probability": 0.9995104074478149
+        },
+        {
+          "text": "挖",
+          "start": 9.379999999999995,
+          "end": 9.579999999999998,
+          "probability": 0.9829407632350922
+        },
+        {
+          "text": "一",
+          "start": 9.579999999999998,
+          "end": 9.700000000000003,
+          "probability": 0.9781404733657837
+        },
+        {
+          "text": "挖",
+          "start": 9.700000000000003,
+          "end": 9.86,
+          "probability": 0.9965219795703888
+        },
+        {
+          "text": "学",
+          "start": 9.86,
+          "end": 10.219999999999999,
+          "probability": 0.4699990451335907
+        },
+        {
+          "text": "一",
+          "start": 10.219999999999999,
+          "end": 10.36,
+          "probability": 0.9689897298812866
+        },
+        {
+          "text": "学",
+          "start": 10.36,
+          "end": 10.460000000000008,
+          "probability": 0.9996041655540466
+        }
+      ]
+    }
+  },
+  "lengths": {
+    "u-entry": 11.13,
+    "u-profits": 12.55,
+    "u-copy": 12.08
+  }
+}

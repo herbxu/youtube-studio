@@ -1,0 +1,52 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/herbxu/Desktop/一口新飯_為什麼我不尋找下一個特斯拉_20251011.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2025-10-10T21:35:46.000000Z
+    encoder         : Google
+  Duration: 00:15:30.91, start: 0.000000, bitrate: 253 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 640x360 [SAR 1:1 DAR 16:9], 121 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      creation_time   : 2025-10-10T21:35:46.000000Z
+      handler_name    : ISO Media file produced by Google Inc. Created on: 10/10/2025.
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2025-10-10T21:35:46.000000Z
+      handler_name    : ISO Media file produced by Google Inc. Created on: 10/10/2025.
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    encoder         : Lavf62.12.102
+  Stream #0:0(eng): Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.102 pcm_s16le
+      creation_time   : 2025-10-10T21:35:46.000000Z
+      handler_name    : ISO Media file produced by Google Inc. Created on: 10/10/2025.
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 5.858118
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 5.981066 | silence_duration: 0.122948
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 6.091156
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 6.232948 | silence_duration: 0.141791
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 7.989274
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 8.384036 | silence_duration: 0.394762
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 11.351383
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 11.487007 | silence_duration: 0.135624
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 13.744082
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 13.934921 | silence_duration: 0.190839
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 13.934989
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 14.079819 | silence_duration: 0.14483
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 14.630794
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 14.753787 | silence_duration: 0.122993
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 19.107234
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 19.319206 | silence_duration: 0.211973
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 24.201043
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 24.445805 | silence_duration: 0.244762
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_start: 31.691814
+[Parsed_silencedetect_1 @ 0x7fbd1a012cc0] silence_end: 31.973764 | silence_duration: 0.28195
+[out#0/null @ 0x7fbd1ca18f00] video:0KiB audio:2756KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:32.00 bitrate=N/A speed= 565x elapsed=0:00:00.05    

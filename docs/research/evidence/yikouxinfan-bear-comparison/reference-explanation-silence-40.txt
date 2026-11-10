@@ -1,0 +1,64 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/herbxu/Desktop/一口新飯_為什麼我不尋找下一個特斯拉_20251011.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2025-10-10T21:35:46.000000Z
+    encoder         : Google
+  Duration: 00:15:30.91, start: 0.000000, bitrate: 253 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 640x360 [SAR 1:1 DAR 16:9], 121 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      creation_time   : 2025-10-10T21:35:46.000000Z
+      handler_name    : ISO Media file produced by Google Inc. Created on: 10/10/2025.
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2025-10-10T21:35:46.000000Z
+      handler_name    : ISO Media file produced by Google Inc. Created on: 10/10/2025.
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    encoder         : Lavf62.12.102
+  Stream #0:0(eng): Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.102 pcm_s16le
+      creation_time   : 2025-10-10T21:35:46.000000Z
+      handler_name    : ISO Media file produced by Google Inc. Created on: 10/10/2025.
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 4.709456
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 4.925374 | silence_duration: 0.215918
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 4.967891
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 5.181202 | silence_duration: 0.213311
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 5.473197
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 5.611927 | silence_duration: 0.13873
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 8.975805
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 9.263878 | silence_duration: 0.288073
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 10.576236
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 11.021905 | silence_duration: 0.445669
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 14.738844
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 14.965079 | silence_duration: 0.226236
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 17.996644
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 18.167596 | silence_duration: 0.170952
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 18.266735
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 18.399932 | silence_duration: 0.133197
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 19.893673
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 20.015306 | silence_duration: 0.121633
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 20.800839
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 20.933968 | silence_duration: 0.133129
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 26.634694
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 26.804853 | silence_duration: 0.170159
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 31.945465
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 32.152925 | silence_duration: 0.20746
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 36.849728
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 37.087392 | silence_duration: 0.237664
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 37.175238
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 37.411723 | silence_duration: 0.236485
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 37.906757
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 38.13576 | silence_duration: 0.229002
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_start: 40.251701
+[Parsed_silencedetect_1 @ 0x7fbf6d9057c0] silence_end: 40.386077 | silence_duration: 0.134376
+[out#0/null @ 0x7fbf6c11c580] video:0KiB audio:3618KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:42.00 bitrate=N/A speed= 408x elapsed=0:00:00.10    

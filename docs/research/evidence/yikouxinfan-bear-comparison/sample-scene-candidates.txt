@@ -1,0 +1,33 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/herbxu/Desktop/github/youtube/examples/bear-market-90s/deliverables/output.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Duration: 00:01:29.97, start: 0.000000, bitrate: 1177 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1015 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 155 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+Press [q] to stop, [?] for help
+[Parsed_showinfo_1 @ 0x7fabf1988140] config in time_base: 1/15360, frame_rate: 30/1
+[Parsed_showinfo_1 @ 0x7fabf1988140] config out time_base: 0/0, frame_rate: 0/0
+[vf#0:0 @ 0x7fabf1908080] No filtered frames for output stream, trying to initialize anyway.
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Stream #0:0(und): Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.102 wrapped_avframe
+      handler_name    : VideoHandler
+[out#0/null @ 0x7fabf1905200] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+[out#0/null @ 0x7fabf1905200] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)
+frame=    0 fps=0.0 q=0.0 Lsize=N/A time=N/A bitrate=N/A speed=N/A elapsed=0:00:02.31    

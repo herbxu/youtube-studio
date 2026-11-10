@@ -1,0 +1,9 @@
+{
+  "name": "面朝北北",
+  "asset": "resources/branding/mianchao-beibei.svg",
+  "source": "用户2026-10-25提供面朝北北.svg",
+  "original_asset": "episodes/20260913-企业再融资-增发和发债/media/branding/channel.svg",
+  "source_record": "episodes/20260913-企业再融资-增发和发债/source/branding.json",
+  "sha256": "147d07ddada9176d749ec53859148acbb43257a29e3c9350820353b8b8ce3c60",
+  "usage": "封面右下角独立叠加原始SVG，保持比例与路径图形，不重新生成或用文字替代。"
+}
