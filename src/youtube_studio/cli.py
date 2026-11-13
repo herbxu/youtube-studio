@@ -15,8 +15,8 @@ from .editorial import review_script
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["init","doctor","validate","review","quality","run","resume","status","preview","sample"])
-    parser.add_argument("--episode", required=True, type=Path)
+    parser.add_argument("command", choices=["check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
+    parser.add_argument("--episode", type=Path)
     parser.add_argument("--title", default="新一期观点视频")
     parser.add_argument("--mode", choices=["preview","final"], default="final")
     parser.add_argument("--through", choices=STAGES, default="verify")
@@ -29,6 +29,13 @@ def main():
     args = parser.parse_args()
     from .local_env import load_local_env
     load_local_env()
+    if args.command == 'check-workspace':
+        from .handoff import workspace
+        try: result=workspace(args.episode)
+        except (StudioError,ValueError,OSError,KeyError) as exc: result={'ok':False,'error':str(exc)}
+        print(json.dumps(result,ensure_ascii=False,indent=2))
+        return 0 if result['ok'] else 2
+    if not args.episode:parser.error('--episode is required')
     root = args.episode.resolve()
     try:
         if args.stop and args.command!='preview': raise StudioError('--stop只用于preview')
@@ -60,7 +67,7 @@ def main():
             qa_path = (root/"deliverables" if args.mode == "final" else runtime(root)/"build/preview")/"qa.json"
             qa = read(qa_path) if qa_path.exists() else None
             if qa:
-                movie = Path(qa.get("movie", ""))
+                movie = qa_path.parent / ("output.mp4" if args.mode=="final" else "preview.mp4")
                 if (not movie.is_file() or qa.get("input_signature") != input_signature(root)
                         or file_hash(movie) != qa.get("movie_sha256")):
                     qa = None
@@ -70,6 +77,15 @@ def main():
             result = read(runtime(root)/"state.json") if (runtime(root)/"state.json").exists() else {"status":"not_started"}
             if result.get("input_signature") and result["input_signature"] != input_signature(root):
                 result = {**result,"status":"stale","previous_status":result["status"],"note":"输入或运行代码已变化，旧成片不是当前版本"}
+            release_path = root/'deliverables/release.json'
+            if release_path.is_file():
+                from .handoff import asset_status
+                record = read(release_path)
+                result['archived_delivery'] = {
+                    'record_type': record['record_type'],
+                    'video_status': asset_status(release_path.parent, 'output.mp4', record['video']['sha256']),
+                    'review': record.get('review'),
+                }
         elif args.command == 'preview':
             from .pipeline import browser_for, hf
             if args.stop:

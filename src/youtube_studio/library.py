@@ -26,7 +26,11 @@ def load(index):
 
 
 def local_path(row,repo=REPO):
-    if repo == REPO:
+    if repo == REPO and row.get('repository'):
+        bases={'youtube':works(),'youtube-workbench':bench(),'youtube-studio':REPO}
+        require(row['repository'] in bases,'未知素材仓库')
+        repo=bases[row['repository']]
+    elif repo == REPO:
         prefix = Path(row['path']).parts[:1]
         if prefix == ('examples',): repo = bench()
         if prefix == ('episodes',): repo = works()

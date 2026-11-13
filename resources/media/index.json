@@ -19,7 +19,8 @@
       "reuse_notes": "每期重新判断语义、裁切、许可；不把共享来源当作已经审听",
       "used_in": [
         "competition-continuity"
-      ]
+      ],
+      "repository": "youtube-workbench"
     },
     {
       "id": "soft-click",
@@ -39,7 +40,8 @@
       "reuse_notes": "每期重新判断语义、裁切、许可；不把共享来源当作已经审听",
       "used_in": [
         "competition-continuity"
-      ]
+      ],
+      "repository": "youtube-workbench"
     },
     {
       "id": "xiaomi-proceeds",
@@ -59,7 +61,8 @@
       "reuse_notes": "每期重新判断语义、裁切、许可；不把共享来源当作已经审听",
       "used_in": [
         "20260913-企业再融资-增发和发债"
-      ]
+      ],
+      "repository": "youtube"
     }
   ]
 }

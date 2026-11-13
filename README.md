@@ -134,3 +134,7 @@ node tests/check_composition.cjs ../youtube-workbench/examples/competition-conti
 2026-10-24：已完成目录迁移和旧工程清理，详见 [实施方案](docs/decisions/directory-plan-2026-10-24.md) 与 [迁移清单](docs/decisions/layout-migration-2026-10-24.json)。历史 QA 和人工审阅保留原记录，不代表新结构下重新渲染或听审。
 
 目录迁移时曾清理可重装依赖；本轮功能验证已重新安装 `.venv/` 和 `node_modules/`，均受 Git 忽略。迁移记录见 [目录迁移验证](docs/decisions/layout-validation-2026-10-24.json)，本轮能力、验证及配音缺项见 [Skills 改进实施记录](docs/decisions/skills-improvement-2026-10-24.md)。
+
+三仓检查：运行 `.venv/bin/youtube-studio check-workspace`；加 `--episode ../youtube/episodes/<ID>` 可核对该期正在使用的素材。缺仓库、LFS 指针未展开、缺文件、无效路径将列在 issues 并返回非零。研究出处使用 `repo:trade/<相对路径>`，指向可选的独立研究仓库，不是渲染输入。历史报告保留原值，迁移路径见 [路径清单](docs/decisions/three-repositories-2026-11-10.json)。
+
+交付检查会重算成片、发布文件、选版证据和 QA 的 SHA256。status 单列 archived_delivery 与当前输入的运行状态。工作区有未提交制作代码时，正式交付会保存 Python 源码和依赖清单的私有工作台快照。

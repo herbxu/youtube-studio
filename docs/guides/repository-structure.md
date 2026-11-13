@@ -16,3 +16,5 @@
 在 youtube-studio 运行：`youtube-studio doctor --episode ../youtube/episodes/<ID>`。CLI 的 --episode 仍是输入目录；独立临时工程保留本地布局。三仓库使用相同剧集名，无需嵌套 Git 仓库或符号链接。
 
 完成的全片文件、QA 与审阅结论不因迁移重算或升级。历史报告中的路径按迁移映射解析，代码版本变化后 status / quality 可能提示旧输入。运行中的锁及未决或付费任务记录不得清理。历史结构可在作品库拆分前提交 d3bf0d5 中查阅。
+
+版本试剪、修音对照和历史导航页随工作台的版本索引保存。使用作品库的交付清单取用发布文件。归档的 QA 描述当次导出；CLI status 的顶层状态描述当前输入，archived_delivery 单列已存成片的哈希核对结果。工作台私有运行资料的恢复位置和核对步骤见工作台 README。

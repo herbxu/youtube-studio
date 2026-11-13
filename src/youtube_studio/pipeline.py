@@ -595,6 +595,10 @@ class Pipeline:
                   "input_signature":input_signature(self.root)}
         write(self.output_dir / "qa.json",report)
         write(self.output_dir / "quality.json", quality_report(self.root, self.doc, self.timeline, report, self.mode))
+        from .storage import works
+        if self.mode=="final" and self.root.parent==works()/"episodes":
+            from .handoff import release
+            release(self.root)
         return report
 
     def verify_visuals(self):

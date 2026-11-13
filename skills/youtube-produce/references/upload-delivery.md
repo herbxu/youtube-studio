@@ -43,3 +43,7 @@ API 文档入口：[视频上传](https://developers.google.com/youtube/data/gui
 官方规格入口：[封面](https://support.google.com/youtube/answer/72431)、[字幕](https://support.google.com/youtube/answer/2734698)、[章节](https://support.google.com/youtube/answer/9884579)。
 
 交付“全部产物”时，用可打开的索引标出正式版、对比试剪、试听、来源、验收和发布包。核对每个入口与包内成片指纹。频道授权、打开文件选择框和平台生成视频链接是不同进度，回执记录最后实际核验的状态。
+
+发布与复盘分开：作品中的交付清单只链接本仓可发布文件；跨库试剪、听审与内部资料放工作台复盘清单。定稿时维护工作台 episodes/<ID>/版本索引.md 和 selection.json，写明选择范围、文件、仓库相对路径与 SHA256，未获批不推断。正式 verify 记录 deliverables/release.json，区分制作版本和事后盘点的版本；干净检出后运行 check-workspace 并检查作品库单独打开的发布清单。
+
+交接时分别记录当前输入、历史成片指纹、机器 QA、内容审阅、全片听审、连续观看和上传回执。旧片能复算原 QA 输入指纹时登记匹配的源码仓库与提交；只有归档记录时保留证据提交及未知项。局部听审与抽帧保留范围。正式发布清单和证据随对应仓库提交，通过干净检出核验。运行缓存的私有备份需记录位置、校验方式及是否跨物理设备。
