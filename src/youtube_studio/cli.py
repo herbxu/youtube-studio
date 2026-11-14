@@ -15,7 +15,7 @@ from .editorial import review_script
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
+    parser.add_argument("command", choices=["export-upload","check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
     parser.add_argument("--episode", type=Path)
     parser.add_argument("--title", default="新一期观点视频")
     parser.add_argument("--mode", choices=["preview","final"], default="final")
@@ -26,7 +26,19 @@ def main():
     parser.add_argument('--port',type=int,default=3017,help='浏览器预览服务端口')
     parser.add_argument('--stop',action='store_true',help='停止本剧集的浏览器预览服务')
     parser.add_argument("--retry-uncertain", action="store_true", help="确认外部服务记录后，重试上次结果不确定的请求（可能重复计费）")
+    parser.add_argument("--destination", type=Path, help="export-upload：新建的最终上传备份目录")
     args = parser.parse_args()
+    if args.command == "export-upload":
+        if not args.destination:
+            parser.error("export-upload 需要 --destination")
+        from .upload_backup import export_backup
+        try:
+            result = export_backup(args.destination, args.episode)
+        except (StudioError, OSError, ValueError, KeyError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 0
     from .local_env import load_local_env
     load_local_env()
     if args.command == 'check-workspace':
