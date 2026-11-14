@@ -299,8 +299,9 @@ def validate_script(doc):
 class Cache:
     """Content-addressed, verified outputs; ambiguous paid calls never silently retry."""
 
-    def __init__(self, root, retry_uncertain=False):
+    def __init__(self, root, retry_uncertain=False, prior_root=None):
         self.root = Path(root)
+        self.prior_root = prior_root
         self.retry_uncertain = retry_uncertain
         self.hits = self.misses = 0
 
@@ -311,6 +312,15 @@ class Cache:
         output = folder / ("result" + suffix)
         meta = folder / "task.json"
         old = read(meta) if meta.exists() else {}
+        if not old and self.prior_root:
+            prior = self.prior_root / kind / key
+            if (prior / "task.json").is_file():
+                old = read(prior / "task.json")
+                original = prior / output.name
+                if old.get("status") == "succeeded" and original.is_file() and file_hash(original) == old.get("sha256"):
+                    import shutil
+                    shutil.copyfile(original, output)
+                    write(meta, old)
         if old.get("status") == "succeeded" and output.exists() and old.get("sha256") == file_hash(output):
             self.hits += 1
             return output

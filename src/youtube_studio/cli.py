@@ -15,7 +15,7 @@ from .editorial import review_script
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["export-upload","check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
+    parser.add_argument("command", choices=["produce","export-upload","check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
     parser.add_argument("--episode", type=Path)
     parser.add_argument("--title", default="新一期观点视频")
     parser.add_argument("--mode", choices=["preview","final"], default="final")
@@ -27,13 +27,29 @@ def main():
     parser.add_argument('--stop',action='store_true',help='停止本剧集的浏览器预览服务')
     parser.add_argument("--retry-uncertain", action="store_true", help="确认外部服务记录后，重试上次结果不确定的请求（可能重复计费）")
     parser.add_argument("--destination", type=Path, help="export-upload：新建的最终上传备份目录")
+    parser.add_argument("--script", type=Path, help="Markdown 口播脚本")
+    parser.add_argument("--assets", type=Path, help="可选的私有制作素材目录")
+    parser.add_argument("--source", type=Path, help="export-upload：上传成品根目录")
     args = parser.parse_args()
+    if args.command == "produce":
+        if not args.script or not args.destination:
+            parser.error("produce 需要 --script 和 --destination")
+        from .local_env import load_local_env
+        from .portable import produce
+        load_local_env()
+        try:
+            result = produce(args.script, args.assets, args.destination)
+        except (StudioError, OSError, ValueError, KeyError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 0
     if args.command == "export-upload":
         if not args.destination:
             parser.error("export-upload 需要 --destination")
         from .upload_backup import export_backup
         try:
-            result = export_backup(args.destination, args.episode)
+            result = export_backup(args.destination, args.episode, args.source)
         except (StudioError, OSError, ValueError, KeyError) as exc:
             print(str(exc), file=sys.stderr)
             return 2

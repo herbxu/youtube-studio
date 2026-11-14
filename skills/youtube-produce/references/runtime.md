@@ -1,6 +1,6 @@
 # 运行契约
 
-正式作品在同级 `youtube/episodes/<ID>`；试剪样片在 `youtube-workbench/examples/<ID>`。文中的 `build/`、`.cache/`、`state.json` 和 `.run.lock` 均相对工作台 `runtime/episodes/<ID>/`（样片使用 `runtime/examples/<ID>/`）；`deliverables/` 相对剧集根。
+作品库维护 Markdown 脚本、知识及忽略的上传成品。制作时显式传入脚本、素材与输出位置；本机缓存由 YOUTUBE_STUDIO_CACHE 指定。高级 JSON 工程使用 --episode。
 
 ## 安装与入口
 

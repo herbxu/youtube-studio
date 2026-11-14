@@ -596,7 +596,7 @@ class Pipeline:
         write(self.output_dir / "qa.json",report)
         write(self.output_dir / "quality.json", quality_report(self.root, self.doc, self.timeline, report, self.mode))
         from .storage import works
-        if self.mode=="final" and self.root.parent==works()/"episodes":
+        if self.mode=="final" and os.environ.get("YOUTUBE_WORKS_ROOT") and self.root.parent==works()/"episodes":
             from .handoff import release
             release(self.root)
         return report
@@ -657,7 +657,7 @@ class Pipeline:
             project = self.build/'cover-composition'
             compile_html(poster,project,RUNTIME,self.images,'final',self.config.get('style',{}).get('id'),silent=True)
             snapshots = self.build/'cover-snapshots'
-            at = min(1.8,cover['end']-.25)
+            at = round(min(1.8,cover['end']-.25), 3)
             hf(['snapshot','--at',str(at),'--output',str(snapshots),'--keep','--no-end','--describe','false'],
                project,browser=browser_for(self.config))
             shutil.copy2(snapshots/f'at-{at:g}s.png',self.output_dir/'navigation.png')

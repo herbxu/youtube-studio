@@ -6,15 +6,17 @@ STUDIO = Path(__file__).resolve().parents[2]
 
 
 def works():
-    return Path(os.environ.get('YOUTUBE_WORKS_ROOT', STUDIO.parent / 'youtube')).expanduser().resolve()
+    return Path(os.environ.get('YOUTUBE_WORKS_ROOT', Path.cwd())).expanduser().resolve()
 
 
 def bench():
-    return Path(os.environ.get('YOUTUBE_WORKBENCH_ROOT', STUDIO.parent / 'youtube-workbench')).expanduser().resolve()
+    return Path(os.environ.get('YOUTUBE_WORKBENCH_ROOT', Path(os.environ.get("YOUTUBE_STUDIO_CACHE", Path.home()/".cache"/"youtube-studio")))).expanduser().resolve()
 
 
 def runtime(episode):
     episode = Path(episode).resolve()
+    if not os.environ.get("YOUTUBE_WORKBENCH_ROOT"):
+        return episode
     for base, namespace in ((works() / 'episodes', 'episodes'), (bench() / 'examples', 'examples')):
         if episode.parent == base:
             return bench() / 'runtime' / namespace / episode.name

@@ -3,7 +3,7 @@
   "assets": [
     {
       "id": "cafe-service",
-      "path": "examples/competition-continuity/media/footage/cafe-service.mp4",
+      "path": "resources/media/catalog/cafe-service.mp4",
       "type": "video",
       "subject": "咖啡店 顾客",
       "action": "递出咖啡 服务",
@@ -20,11 +20,11 @@
       "used_in": [
         "competition-continuity"
       ],
-      "repository": "youtube-workbench"
+      "repository": "youtube-studio"
     },
     {
       "id": "soft-click",
-      "path": "examples/competition-continuity/media/sfx/click-soft.mp3",
+      "path": "resources/media/catalog/click-soft.mp3",
       "type": "sfx",
       "subject": "物体",
       "action": "落位 轻点",
@@ -32,20 +32,20 @@
       "usage": "illustrative",
       "sha256": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d",
       "license_name": "Pixabay：依据随素材附带的 CREDITS；原作者条目缺失",
-      "source_url": "examples/competition-continuity/media/sfx/CREDITS.md",
+      "source_url": "resources/media/catalog/CREDITS.md",
       "recovery": {
-        "source": "examples/competition-continuity/media/sfx/CREDITS.md",
+        "source": "resources/media/catalog/CREDITS.md",
         "method": "从原来源恢复或请用户提供备份，再核对本哈希；公告截图按本期 provenance 的页码和裁切坐标重建"
       },
       "reuse_notes": "每期重新判断语义、裁切、许可；不把共享来源当作已经审听",
       "used_in": [
         "competition-continuity"
       ],
-      "repository": "youtube-workbench"
+      "repository": "youtube-studio"
     },
     {
       "id": "xiaomi-proceeds",
-      "path": "episodes/20260913-企业再融资-增发和发债/media/evidence/xiaomi-use-of-proceeds.png",
+      "path": "resources/media/catalog/xiaomi-use-of-proceeds.png",
       "type": "image",
       "subject": "小米 公告",
       "action": "融资 用途 研发",
@@ -62,7 +62,7 @@
       "used_in": [
         "20260913-企业再融资-增发和发债"
       ],
-      "repository": "youtube"
+      "repository": "youtube-studio"
     }
   ]
 }

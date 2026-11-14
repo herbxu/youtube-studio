@@ -4,7 +4,7 @@ import shutil
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from .core import read, require
+from .core import file_hash, read, require
 from .handoff import asset_status
 from .storage import works
 
@@ -59,9 +59,33 @@ def export_episode(episode, target):
             (target / (key + ".txt")).write_text(value.strip() + "\n", encoding="utf-8")
 
 
-def export_backup(destination, episode=None):
+def export_backup(destination, episode=None, source_dir=None):
     destination = destination.expanduser().resolve()
     require(not destination.exists(), f"备份目录已存在，请选择新目录：{destination}")
+    if source_dir or (not episode and (works()/"上传成品").is_dir()):
+        source_dir = (source_dir or works()/"上传成品").expanduser().resolve()
+        require(source_dir.is_dir() and not destination.is_relative_to(source_dir), "请选择独立的备份位置")
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        packages = sorted(p for p in source_dir.iterdir() if p.is_dir())
+        require(packages, "未找到上传成品")
+        allowed = {"正片.mp4", "封面.png", "封面.jpg", "封面.jpeg", "中文字幕.zh-Hans.srt",
+                   "标题.txt", "简介.txt", "标签.txt", "置顶评论.txt"}
+        with TemporaryDirectory(dir=destination.parent) as tmp:
+            staging = Path(tmp)/"backup"
+            staging.mkdir()
+            for package in packages:
+                files = [p for p in package.iterdir() if p.name in allowed]
+                names = {p.name for p in files}
+                require({"正片.mp4", "中文字幕.zh-Hans.srt", "标题.txt", "简介.txt"} <= names
+                        and len([n for n in names if n.startswith("封面.")]) == 1, f"{package.name} 文件不完整")
+                target = staging/package.name
+                target.mkdir()
+                for path in files:
+                    require(asset_status(source_dir, str(path.relative_to(source_dir))) == "ready", f"无效上传文件 {path}")
+                    shutil.copyfile(path, target/path.name)
+                    require(asset_status(target, path.name, file_hash(path)) == "ready", f"备份校验失败 {path.name}")
+            staging.rename(destination)
+        return {"directory": str(destination), "episodes": [p.name for p in packages]}
     episodes = [episode.resolve()] if episode else sorted(p.parent.parent for p in
                 (works() / "episodes").glob("*/deliverables/release.json"))
     require(episodes and all(e.parent == works() / "episodes" for e in episodes), "请选择正式剧集")

@@ -1,5 +1,6 @@
 """Portable repository diagnostics and release metadata; never uploads media."""
 import html
+import os
 import json
 import subprocess
 import zipfile
@@ -13,7 +14,12 @@ from .planning import input_refs
 
 
 def roots():
-    return {'youtube':works(), 'youtube-studio':STUDIO, 'youtube-workbench':bench()}
+    repos = {'youtube-studio': STUDIO}
+    if os.getenv('YOUTUBE_WORKS_ROOT'):
+        repos['youtube'] = works()
+    if os.getenv('YOUTUBE_WORKBENCH_ROOT'):
+        repos['youtube-workbench'] = bench()
+    return repos
 
 
 def git(root, *args):
@@ -50,7 +56,8 @@ def workspace(episode=None):
         state=asset_status(base,ref,expected)
         if state!='ready':issues.append(dict(repository=name,path=ref,status=state))
     for name,root in repos.items():
-        if not found[name]['present']:issues.append(dict(repository=name,status='missing_checkout'))
+        if not found[name]['present'] and not (name == 'youtube-studio' and (root/'pyproject.toml').is_file()):
+            issues.append(dict(repository=name,status='missing_checkout'))
     lfs_counts={}
     for name,root in repos.items():
         if not found[name]['present']:continue
@@ -64,6 +71,12 @@ def workspace(episode=None):
         for row in read(idx)['assets']:
             name=row['repository'];check(name,repos[name],row['path'],row['sha256'])
     else:check('youtube-studio',STUDIO,'resources/media/index.json')
+    if 'youtube' not in repos:
+        if episode:
+            from .pipeline import doctor
+            result = doctor(Path(episode).resolve())
+            issues.extend(dict(repository='episode', status=message) for message in result['issues'])
+        return dict(ok=not issues, repositories=found, lfs_files_checked=lfs_counts, issues=issues)
     if episode:
         episode=Path(episode).resolve()
         require(episode.parent==works()/'episodes','--episode 必须属于作品库 episodes/')
@@ -150,9 +163,9 @@ def release(episode, historical=False, historical_source=None):
     if historical_source:
         require(historical, '历史来源仅用于盘点')
         record['historical_source'] = historical_source
-    if not historical and record['production_studio_commit'] is None:
+    if not historical and record['production_studio_commit'] is None and 'youtube-workbench' in revisions:
         record['source_snapshot'] = archive_source(episode)
-    if decision.is_file():
+    if 'youtube-workbench' in revisions and decision.is_file():
         decision_data=read(decision)
         for ev in decision_data.get('evidence',[]):
             require(ev['repository'] in roots() and asset_status(roots()[ev['repository']],ev['path'],ev['sha256'])=='ready','选用依据已变化，请更新 selection.json 后交付')

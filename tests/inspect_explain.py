@@ -10,11 +10,13 @@ from youtube_studio.core import read,write,probe
 from youtube_studio.composition import compile_html
 
 ROOT=Path(__file__).resolve().parents[1]
-from youtube_studio.storage import works
-EP=works()/'episodes/20260913-企业再融资-增发和发债'
+import argparse
 OUT=ROOT/'build/explain-contract'
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--episode", required=True, type=Path)
+    EP = parser.parse_args().episode.resolve()
     OUT.mkdir(parents=True,exist_ok=True)
     doc=read(EP/'script.json');shots=[];captions=[];assets={};duration=len(doc['units'])*17
     silence=OUT/'layout-only-silence.wav'

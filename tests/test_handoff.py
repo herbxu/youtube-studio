@@ -12,7 +12,7 @@ class Handoff(unittest.TestCase):
             self.assertEqual(h.asset_status(root,'absent'),'missing')
             self.assertEqual(h.asset_status(root,'../escape'),'invalid_path')
             missing=root/'missing'
-            with patch.object(h,'roots',return_value={n:missing for n in h.roots()}):
+            with patch.object(h,'roots',return_value={n:missing for n in ('youtube','youtube-studio','youtube-workbench')}):
                 self.assertEqual(sum(x['status']=='missing_checkout' for x in h.workspace()['issues']),3)
 
     def test_historical_inventory_checks_identity_and_keeps_private_files_out(self):

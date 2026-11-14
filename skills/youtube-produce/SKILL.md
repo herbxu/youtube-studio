@@ -9,14 +9,14 @@ description: 在本仓库从主题或现有讲稿制作观点型视频，串联�
 
 在本仓库根目录运行 `youtube-studio`，生产源码位于 `src/youtube_studio/`。已停用的旧 skills 和运行时已清理。
 
-正式作品在同级 `youtube/episodes/<ID>`；试剪样片在 `youtube-workbench/examples/<ID>`。文中的 `build/`、`.cache/`、`state.json` 和 `.run.lock` 均相对工作台 `runtime/episodes/<ID>/`（样片使用 `runtime/examples/<ID>/`）；`deliverables/` 相对剧集根。 跨库迁移以同一份缓存和正式成片哈希验证，不通过重新生成来验证路径。
+作品库维护 Markdown 脚本、知识及忽略的上传成品。制作时显式传入脚本、素材与输出位置；本机缓存由 YOUTUBE_STUDIO_CACHE 指定。高级 JSON 工程使用 --episode。
 
 ## 工作方式
 
 研究来源与制作职责：投资思想、经验和公司研究按 [trade 研究交接](../youtube-write/references/trade-context.md) 只读选取；本期选题由用户请求确定。仅要求修改技能时停留在技能与文档层，不自行拿历史公司、新主题或样片测试。
 
-1. 对新剧集执行 `init --episode <目录> --title <标题>`。已有 `config.json` 时读 `brief.json`、`script.json`、`config.json` 和 `status`，接续已有工作。
-2. 需要研究或改稿，使用同级 [youtube-write](../youtube-write/SKILL.md)。先将本期采用的作者立场、真实经历、证据与未知项交给写作，再形成观众问题和论证。稿件和分镜以 `script.json` 为唯一可编辑源；`build/script.md` 只是阅读副本。不要把旧 aligned 文件当原稿。先明确对象、动作、结果和论证条件；语义单元边界不要求换画面。
+1. 新片用 produce 指定 Markdown、素材和输出目录。开发独立 JSON 工程时可用 init --episode 初始化。
+2. 需要研究或改稿，使用同级 [youtube-write](../youtube-write/SKILL.md)。先将本期采用的作者立场、真实经历、证据与未知项交给写作，再形成观众问题和论证。口播以作品库 Markdown 为准，高级分镜使用素材包 script.json；`build/script.md` 只是阅读副本。不要把旧 aligned 文件当原稿。先明确对象、动作、结果和论证条件；语义单元边界不要求换画面。
 3. 用 [youtube-visuals](../youtube-visuals/SKILL.md) 确定对象如何持续、变化、落定，再匹配当前模板；新主题不强套街区示例。配音问题使用 [youtube-voice](../youtube-voice/SKILL.md)。依赖、数据格式和 provider 配置见 [运行契约](references/runtime.md)。
 4. 缺少图片、实拍视频、音乐或音效时，先使用 [youtube-media](../youtube-media/SKILL.md) 做素材准备。图片、footage 视频和单元 audio_tracks 可按契约回填；素材到位后仍需编排和实际导出验证。音效绑定具体动作，BGM 可省略，BPM 仅在节拍确有用途时处理。
 5. 执行 `doctor --episode <目录>`，依据缺失能力修复。doctor 不验证外部账号权限；实际服务请求也必须检查。默认按“脚本与配音确认 → 浏览器看全片 → 人工提修改 → 只预览改动片段 → 更新正式镜头 → 快速合成与验收”执行。`preview` 生成并检查编排后启动浏览器；改动后用 `sample --shot <ID>` 或 `sample --start <秒> --end <秒>`，最后 `run`/`resume` 更新失效片段并合成。命令、缓存边界与人工确认方式见 [快速预览指南](../../docs/guides/fast-review-workflow.md)。已授权完整出片时可连续执行；不把preview或prepare当正式交付。
@@ -71,4 +71,4 @@ description: 在本仓库从主题或现有讲稿制作观点型视频，串联�
 
 收尾时按仓库 [AGENTS.md](../../AGENTS.md) 的“用户反馈与技能同步”条目检查本轮修改建议。跨剧集适用的验收规则同时写入仓库约定和对应技能，剧集记录保留本次选用的参数与实际复核结果。
 
-发布与复盘分开：作品中的交付清单只链接本仓可发布文件；跨库试剪、听审与内部资料放工作台复盘清单。定稿时维护工作台 episodes/<ID>/版本索引.md 和 selection.json，写明选择范围、文件、仓库相对路径与 SHA256，未获批不推断。正式 verify 记录 deliverables/release.json，区分制作版本和事后盘点的版本；干净检出后运行 check-workspace 并检查作品库单独打开的发布清单。
+作者仅接收上传成品目录。私有素材包和缓存保留来源、选用范围、已有计费请求及回退所需证据。
