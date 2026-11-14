@@ -9,6 +9,7 @@ from tempfile import TemporaryDirectory
 from .core import StudioError, digest, file_hash, read, require, source, validate_script, write
 from .pipeline import Pipeline, REPO
 from .planning import input_refs
+from .upload_backup import export_cover, write_tags
 
 
 def narration(path):
@@ -103,16 +104,20 @@ def produce(script, assets, destination):
             for src, target in [("output.mp4", "正片.mp4"), ("captions.srt", "中文字幕.zh-Hans.srt")]:
                 shutil.copyfile(out/src, bundle/target)
             # An explicit package poster also supports older projects without a cover shot.
-            cover = assets/"cover.png" if assets and (assets/"cover.png").is_file() else out/"cover.png"
-            require((assets and cover == assets/"cover.png") or
-                    any(s["kind"] == "cover" for u in pipeline.doc["units"] for s in u["shots"]),
-                    "请在素材包提供独立 cover.png 或添加封面分镜")
-            shutil.copyfile(cover, bundle/"封面.png")
-            for name, default in [("标题", title), ("简介", paragraphs[0]), ("标签", None), ("置顶评论", None)]:
+            posters = [assets/name for name in ("cover.jpg", "cover.jpeg", "cover.png")
+                       if assets and (assets/name).is_file()]
+            require(len(posters) <= 1, "请在素材包中指定一个独立封面")
+            require(posters or any(s["kind"] == "cover" for u in pipeline.doc["units"] for s in u["shots"]),
+                    "请在素材包提供独立封面或添加封面分镜")
+            export_cover(posters[0] if posters else out/"cover.png", bundle/"封面.jpg")
+            for name, default in [("标题", title), ("简介", paragraphs[0])]:
                 metadata = assets/(name+".txt") if assets else None
                 if metadata and metadata.is_file():
                     shutil.copyfile(metadata, bundle/(name+".txt"))
-                elif default:
+                else:
                     (bundle/(name+".txt")).write_text(default+"\n", encoding="utf-8")
+            tags = assets/"标签.txt" if assets else None
+            write_tags(bundle/"标签.txt", tags.read_text(encoding="utf-8-sig") if tags and tags.is_file() else None,
+                       (bundle/"标题.txt").read_text(encoding="utf-8-sig"))
             bundle.rename(destination)
     return {"directory": str(destination), "movie_sha256": qa["movie_sha256"]}

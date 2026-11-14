@@ -5,6 +5,7 @@ from unittest.mock import Mock
 
 from youtube_studio.core import Blocked, Cache
 from youtube_studio.portable import narration
+from youtube_studio.upload_backup import export_backup
 
 
 class Portable(unittest.TestCase):
@@ -23,3 +24,21 @@ class Portable(unittest.TestCase):
             with self.assertRaises(Blocked):
                 Cache(Path(tmp)/"empty", prior_root=prior).task("speech", {}, ".wav", action, paid=True)
             action.assert_not_called()
+
+    def test_export_old_upload_package_as_six_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            package = root/"source"/"20260101-示例"
+            package.mkdir(parents=True)
+            for name in ["正片.mp4", "中文字幕.zh-Hans.srt", "简介.txt", "置顶评论.txt"]:
+                (package/name).write_text("保留内容")
+            (package/"标题.txt").write_text("护城河｜面朝北北")
+            (package/"封面.png").write_bytes((Path(__file__).resolve().parents[1]/
+                                          "resources/branding/studio-paper.png").read_bytes())
+            export_backup(root/"backup", source_dir=package.parent)
+            result = root/"backup"/package.name
+            self.assertEqual({p.name for p in result.iterdir()},
+                             {"正片.mp4", "封面.jpg", "中文字幕.zh-Hans.srt", "标题.txt", "简介.txt", "标签.txt"})
+            self.assertTrue((result/"封面.jpg").read_bytes().startswith(bytes.fromhex("ffd8ff")))
+            self.assertEqual((result/"标签.txt").read_text().strip(), "护城河")
+            self.assertEqual((result/"正片.mp4").read_bytes(), (package/"正片.mp4").read_bytes())
