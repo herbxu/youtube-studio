@@ -9,7 +9,7 @@ description: 在本仓库从主题或现有讲稿制作观点型视频，串联�
 
 在本仓库根目录运行 `youtube-studio`，生产源码位于 `src/youtube_studio/`。已停用的旧 skills 和运行时已清理。
 
-作品库维护 Markdown 脚本、知识及忽略的上传成品。制作时显式传入脚本、素材与输出位置；本机缓存由 YOUTUBE_STUDIO_CACHE 指定。高级 JSON 工程使用 --episode。
+作品库维护 Markdown 脚本、投资知识、视频风格学习笔记及忽略的上传成品。参考片的学习笔记放在作品库的 `风格学习/`，由学习地图链接。制作时显式传入脚本、素材与输出位置；本机缓存由 YOUTUBE_STUDIO_CACHE 指定。高级 JSON 工程使用 --episode。
 
 ## 工作方式
 
