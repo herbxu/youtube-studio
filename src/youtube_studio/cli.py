@@ -31,6 +31,17 @@ def main():
     parser.add_argument("--assets", type=Path, help="可选的私有制作素材目录")
     parser.add_argument("--source", type=Path, help="export-upload：上传成品根目录")
     args = parser.parse_args()
+    if args.command == "review" and args.script:
+        if args.episode:
+            parser.error("review 请选择 --script 或 --episode 其中一种输入")
+        from .portable import review_markdown
+        try:
+            result = review_markdown(args.script.expanduser())
+        except (StudioError, OSError, ValueError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 0
     if args.command == "produce":
         if not args.script or not args.destination:
             parser.error("produce 需要 --script 和 --destination")

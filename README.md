@@ -24,6 +24,8 @@ youtube-studio produce --script "/path/to/作品/脚本/本期.md" --assets "/pa
 youtube-studio export-upload --source "/path/to/作品/上传成品" --destination "/path/to/备份/面朝北北-最终上传物-$(date +%Y%m%d)"
 ```
 
+录音前可用 `youtube-studio review --script "/path/to/本期.md"` 校对段数和中文口播预计时长。命令与制作共用正文解析，每个汉字、英文词或数字各计一个单位，按每分钟 250 个单位粗估。章节、引用块和注释不计时，停顿及英文读法以录音为准。
+
 讲稿用一级标题和空行分段。独立标题、引用块和 HTML 注释用于非口播说明。纯文本模式按段生成基础分镜。每段可以提供 001.wav、001.words.json 等录音和时间戳，详见 examples/offline。没有录音时按 config.json 的 voice 配置生成；缺时间戳时按 alignment 配置识别。默认识别模型需预先安装，云服务凭证通过环境变量配置。
 
 私有素材包可带 config.json，以及带有原分镜的 script.json。正文逐段匹配后复用分镜和相对路径素材；改稿后同步对应分镜、配音和字音时间。可附一张独立封面（cover.jpg、cover.jpeg 或 cover.png），以及标题.txt、简介.txt、标签.txt。无单独文案时使用讲稿标题和首段，缺标签时取发布标题的主题部分。手动上传每期一个「日期-选题」目录，只交付六个文件：正片.mp4、封面.jpg、中文字幕.zh-Hans.srt、标题.txt、简介.txt、标签.txt。独立备份的上层目录用「面朝北北-最终上传物-YYYYMMDD」，日期取实际备份日。复杂投资选题沿用已审阅的图片、数据、分镜和声音。私有 request-cache/ 可复用同键同哈希的服务结果及未决记录。历史缓存键变更或缺失时，执行前核对原请求记录、模型与凭证。

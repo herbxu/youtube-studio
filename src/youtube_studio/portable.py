@@ -32,6 +32,17 @@ def narration(path):
     return title, paragraphs
 
 
+def review_markdown(script):
+    require(script.is_file() and script.suffix.lower() == ".md", "请选择 Markdown 脚本")
+    title, paragraphs = narration(script)
+    count = len(re.findall(r"[\u3400-\u9fff]|[A-Za-z]+|\d+(?:\.\d+)?", " ".join(paragraphs)))
+    require(count, "没有可计时的中英文口播内容")
+    # Planning estimate for this Mandarin channel. Timing after recording is authoritative.
+    units_per_minute = 250
+    return {"title": title, "paragraphs": len(paragraphs), "spoken_units": count,
+            "units_per_minute": units_per_minute, "estimated_seconds": round(60 * count / units_per_minute)}
+
+
 def prepare(script, assets, root):
     title, paragraphs = narration(script)
     config = read(assets/"config.json") if assets and (assets/"config.json").is_file() else read(REPO/"config/default.json")

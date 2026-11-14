@@ -4,7 +4,7 @@ from pathlib import Path
 from unittest.mock import Mock
 
 from youtube_studio.core import Blocked, Cache
-from youtube_studio.portable import narration
+from youtube_studio.portable import narration, review_markdown
 from youtube_studio.upload_backup import export_backup
 
 
@@ -14,6 +14,15 @@ class Portable(unittest.TestCase):
             script = Path(tmp)/"s.md"
             script.write_text("# 标题\n\n## 章节\n\n<!-- 灯光 -->\n\n**第一段**。\n\n> 说明\n\n第二段。")
             self.assertEqual(narration(script), ("标题", ["第一段。", "第二段。"]))
+
+    def test_markdown_review_counts_only_spoken_text(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            script = Path(tmp)/"input.md"
+            script.write_text("# 题目\n\n> 备注与链接\n\n## 开场\n\n微软 Claude。\n\n收入 2.5 亿。")
+            result = review_markdown(script)
+            self.assertEqual(result["paragraphs"], 2)
+            self.assertEqual(result["spoken_units"], 7)
+            self.assertEqual(result["estimated_seconds"], 2)
 
     def test_unresolved_request_in_private_pack_blocks_paid_retry(self):
         with tempfile.TemporaryDirectory() as tmp:
