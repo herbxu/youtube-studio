@@ -13,6 +13,9 @@
     "speed": 1,
     "instructions": "用自然清晰的普通话解释观点。语气平实，句群连贯。转折处短暂停顿，避免逐字重读、播报腔和夸张煽情。"
   },
+  "captions": {
+    "punctuation": "none"
+  },
   "alignment": {
     "provider": "faster-whisper",
     "model": "base",

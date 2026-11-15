@@ -109,7 +109,7 @@ def align(unit, data, length, threshold=0.94, minimum_display_seconds=0):
         if "change_time" in s:
             require(s["start"] <= s["change_time"] <= s["end"] - .8, "数字变化锚点需在镜头内，并留至少 0.8 秒变化及结果停留时间")
     captions, index = [], 0
-    for chunk in re.findall(r"[^，。！？；：、,.!?;:\n]+[，。！？；：、,.!?;:]?", spoken):
+    for chunk in re.findall(r"(?:[^，。！？；：、,.!?;:\n]|(?<=\d)[.,:](?=\d))+[，。！？；：、,.!?;:]?", spoken):
         chunk = chunk.strip()
         # Keep readable short subtitles without inventing timing for the entire voice.
         for j in range(0, len(chunk), 22):

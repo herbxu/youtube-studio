@@ -376,7 +376,7 @@ class Pipeline:
                 if "events" in s:
                     s["events"] = [dict(e, at=e['at']+offset) for e in s['events']]
                 shots.append(s)
-            captions += [dict(c,text=caption_text(c['text'],self.config.get('captions',{}).get('punctuation','original'),u.get('display_terms')),
+            captions += [dict(c,text=caption_text(c['text'],self.config.get('captions',{}).get('punctuation','none'),u.get('display_terms')),
                               start=c["start"]+offset,end=c["end"]+offset) for c in data["captions"]]
             offset += length
         require(abs(offset-duration(self.master)) < .05,"母带时长发生改变，字幕时间线无效")
