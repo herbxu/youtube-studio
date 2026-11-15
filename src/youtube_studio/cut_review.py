@@ -12,7 +12,8 @@ from .upload_backup import REQUIRED_INPUTS
 
 FILES = (*REQUIRED_INPUTS, "封面.jpg", "标签.txt")
 BASE_GOALS = ["标题和开头的问题在结尾得到回答，关键证据与口播一致",
-              "连续观看时画面、字幕和声音共同说明当句，重点变化能看懂"]
+              "连续观看时画面、字幕和声音共同说明当句，重点变化能看懂",
+              "独立封面和成片逐镜在手机宽度能读清：短标题按意群排，画内文字有用且不遮证据"]
 
 
 @contextmanager
