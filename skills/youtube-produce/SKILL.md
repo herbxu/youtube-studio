@@ -15,12 +15,12 @@ description: 在本仓库从主题或现有讲稿制作观点型视频，串联�
 
 研究来源与制作职责：投资思想、经验和公司研究按 [trade 研究交接](../youtube-write/references/trade-context.md) 只读选取；本期选题由用户请求确定。仅要求修改技能时停留在技能与文档层，不自行拿历史公司、新主题或样片测试。
 
-1. 新片用 produce 指定 Markdown、素材和输出目录。开发独立 JSON 工程时可用 init --episode 初始化。
+1. 新片用 produce 指定 Markdown、素材、交付目录及本期目标，先生成私有候选。开发独立 JSON 工程时可用 init --episode 初始化。
 2. 需要研究或改稿，使用同级 [youtube-write](../youtube-write/SKILL.md)。先将本期采用的作者立场、真实经历、证据与未知项交给写作，再形成观众问题和论证。口播以作品库 Markdown 为准，高级分镜使用素材包 script.json；`build/script.md` 只是阅读副本。不要把旧 aligned 文件当原稿。先明确对象、动作、结果和论证条件；语义单元边界不要求换画面。
 3. 用 [youtube-visuals](../youtube-visuals/SKILL.md) 确定对象如何持续、变化、落定，再匹配当前模板；新主题不强套街区示例。配音问题使用 [youtube-voice](../youtube-voice/SKILL.md)。依赖、数据格式和 provider 配置见 [运行契约](references/runtime.md)。
 4. 缺少图片、实拍视频、音乐或音效时，先使用 [youtube-media](../youtube-media/SKILL.md) 做素材准备。图片、footage 视频和单元 audio_tracks 可按契约回填；素材到位后仍需编排和实际导出验证。音效绑定具体动作，BGM 可省略，BPM 仅在节拍确有用途时处理。
 5. 执行 `doctor --episode <目录>`，依据缺失能力修复。doctor 不验证外部账号权限；实际服务请求也必须检查。默认按“脚本与配音确认 → 浏览器看全片 → 人工提修改 → 只预览改动片段 → 更新正式镜头 → 快速合成与验收”执行。`preview` 生成并检查编排后启动浏览器；改动后用 `sample --shot <ID>` 或 `sample --start <秒> --end <秒>`，最后 `run`/`resume` 更新失效片段并合成。命令、缓存边界与人工确认方式见 [快速预览指南](../../docs/guides/fast-review-workflow.md)。已授权完整出片时可连续执行；不把preview或prepare当正式交付。
-6. 检查 `deliverables/qa.json`、实际 MP4 抽帧和成片，重点看实拍是否正常运动、原对象是否意外重置、分流/复制方向是否清晰、运动中文字是否碰撞、音画含义是否一致。机器通过不等于事实已经核实或视觉已经人工审阅。报告实际检查范围、未完成项和可播放文件。
+6. 按[当期成片自审与交付](references/quality.md#当期成片的自审返工和交付)连续听看实际成片、登记问题、自主返工并在新版复验，达到本期目标后运行 deliver。检查 `deliverables/qa.json`、实际 MP4 抽帧和成片，重点看实拍是否正常运动、原对象是否意外重置、分流/复制方向是否清晰、运动中文字是否碰撞、音画含义是否一致。机器通过不等于事实已经核实或视觉已经人工审阅。报告实际检查范围、未完成项和可播放文件。
 
 新风格或大幅改版先用一个完整论证选段验证，原剧集保留。时长服务于论证，不为凑时长机械截句。验收三件事：只听声音能否理解、画面是否增加理解、修改观点或配图是否可局部重生成。没有用户要求时不反复重做样片。
 

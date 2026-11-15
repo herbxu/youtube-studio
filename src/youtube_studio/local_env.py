@@ -18,3 +18,18 @@ def load_local_env(path=None):
             value = value[1:-1]
         if value and not os.environ.get(key):
             os.environ[key] = value
+
+
+def default_config(studio):
+    """Resolve the private selected voice before hashing inputs or starting synthesis."""
+    from .core import read, require
+    config = read(studio / "config/default.json")
+    profile = studio / "config/channel-voice.local.json"
+    if profile.is_file():
+        selected = read(profile)
+        require(isinstance(selected, dict) and isinstance(selected.get("settings"), dict),
+                "频道音色配置缺少 settings")
+        config["voice"]["settings"].update(selected["settings"])
+        if selected.get("base_url"):
+            config["voice"]["base_url"] = selected["base_url"]
+    return config

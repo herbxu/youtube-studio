@@ -47,4 +47,4 @@ API 文档入口：[视频上传](https://developers.google.com/youtube/data/gui
 
 ## 两仓交付
 
-使用 produce 从作品库 Markdown 生成上传成品。用 export-upload --source 指定上传成品根目录，--destination 指定新的手动备份目录。私有素材、选版、运行状态和计费请求保存在作者指定的私有空间。旧版交付哈希、回执与人工验收记录随历史资料保存。
+使用 produce 从作品库 Markdown 生成候选；按本期目标自审和返工后用 deliver 交付当前通过的版本。用 export-upload --source 指定上传成品根目录，--destination 指定新的手动备份目录。私有素材、选版、运行状态和计费请求保存在作者指定的私有空间。旧版交付哈希、回执与人工验收记录随历史资料保存。

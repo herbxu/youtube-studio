@@ -15,7 +15,7 @@ from .editorial import review_script
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["produce","export-upload","check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
+    parser.add_argument("command", choices=["produce","register-cut","deliver","export-upload","check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
     parser.add_argument("--episode", type=Path)
     parser.add_argument("--title", default="新一期观点视频")
     parser.add_argument("--mode", choices=["preview","final"], default="final")
@@ -30,6 +30,7 @@ def main():
     parser.add_argument("--script", type=Path, help="Markdown 口播脚本")
     parser.add_argument("--assets", type=Path, help="可选的私有制作素材目录")
     parser.add_argument("--source", type=Path, help="export-upload：上传成品根目录")
+    parser.add_argument("--goal", action="append", help="本期可复验的质量目标，可重复指定")
     args = parser.parse_args()
     if args.command == "review" and args.script:
         if args.episode:
@@ -42,6 +43,20 @@ def main():
             return 2
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
+    if args.command in {"register-cut", "deliver"}:
+        from .cut_review import deliver, register_cut
+        if not args.source or (args.command == "register-cut" and not args.destination):
+            parser.error("register-cut 需要 --source 和 --destination；deliver 需要 --source 审阅轮次")
+        if args.command == "deliver" and args.destination:
+            parser.error("deliver 使用登记候选时的目标目录")
+        try:
+            result = (deliver(args.source) if args.command == "deliver"
+                      else register_cut(args.source, args.destination, args.goal))
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 3 if args.command == "deliver" and result["status"] != "delivered" else 0
+        except (StudioError, OSError, ValueError, KeyError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
     if args.command == "produce":
         if not args.script or not args.destination:
             parser.error("produce 需要 --script 和 --destination")
@@ -49,7 +64,7 @@ def main():
         from .portable import produce
         load_local_env()
         try:
-            result = produce(args.script, args.assets, args.destination)
+            result = produce(args.script, args.assets, args.destination, args.goal)
         except (StudioError, OSError, ValueError, KeyError) as exc:
             print(str(exc), file=sys.stderr)
             return 2
@@ -86,7 +101,8 @@ def main():
             if root.exists() and (not root.is_dir() or any((root/name).exists() for name in ("config.json", "brief.json", "script.json", "production"))):
                 raise StudioError(f"已存在，未覆盖：{root}")
             root.mkdir(parents=True, exist_ok=True)
-            write(root/"config.json",read(REPO/"config/default.json"))
+            from .local_env import default_config
+            write(root/"config.json", default_config(REPO))
             write(root/"brief.json",{"title":args.title,"thesis":"","audience":"普通投资者","sources":[],"constraints":[]})
             result = {"episode":str(root),"next":"填写 brief.json 并用 youtube-write 生成 script.json；配置 providers 后运行 doctor"}
         elif not (root / "config.json").is_file():

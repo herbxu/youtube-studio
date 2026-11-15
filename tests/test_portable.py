@@ -3,12 +3,22 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock
 
-from youtube_studio.core import Blocked, Cache
+from youtube_studio.core import Blocked, Cache, write
+from youtube_studio.local_env import default_config
 from youtube_studio.portable import narration, review_markdown
 from youtube_studio.upload_backup import export_backup
 
 
 class Portable(unittest.TestCase):
+    def test_selected_local_voice_is_used_in_new_episode_config(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            studio = Path(tmp)
+            write(studio/"config/default.json", {"voice": {"provider": "aliyun", "settings": {"model": "configured-model"}}})
+            write(studio/"config/channel-voice.local.json", {"settings": {"voice_id": "selected-id"}})
+            voice = default_config(studio)["voice"]
+            self.assertEqual(voice["provider"], "aliyun")
+            self.assertEqual(voice["settings"], {"model": "configured-model", "voice_id": "selected-id"})
+
     def test_markdown_omits_nonspoken_headings_and_notes(self):
         with tempfile.TemporaryDirectory() as tmp:
             script = Path(tmp)/"s.md"

@@ -15,18 +15,21 @@ youtube-studio check-workspace
 youtube-studio produce --script examples/offline/script.md --assets examples/offline/assets --destination ./build/offline-upload
 ```
 
-安装依赖后，随库的短样例使用预录测试语音和时间戳；制作期间无需云端密钥、识别模型或另一个仓库。输出目录须为新目录。进一步验证可执行 `python -m unittest discover -s tests -v`。
+安装依赖后，随库的短样例使用预录测试语音和时间戳；制作期间无需云端密钥、识别模型或另一个仓库。命令返回私有候选和审阅记录的路径。正式交付目录须为新目录。进一步验证可执行 `python -m unittest discover -s tests -v`。
 
 ## 制作与备份
 
 ```sh
 youtube-studio produce --script "/path/to/作品/脚本/本期.md" --assets "/path/to/私有素材/本期" --destination "/path/to/作品/上传成品/本期"
+youtube-studio deliver --source "/path/to/produce返回的round目录"
 youtube-studio export-upload --source "/path/to/作品/上传成品" --destination "/path/to/备份/面朝北北-最终上传物-$(date +%Y%m%d)"
 ```
 
+制作时可重复指定 `--goal "本期可观察的验收目标"`。每次导出先生成待审候选。制作助手连续听看、记录问题、针对原因修复，再运行同一制作命令。在新版记录逐项目标和复测依据后，deliver 才写入六件套。自定义编排产生的私有六件套通过 register-cut 接入相同流程。字段、退出状态和返工步骤见[质量验收](skills/youtube-produce/references/quality.md#当期成片的自审返工和交付)。
+
 录音前可用 `youtube-studio review --script "/path/to/本期.md"` 校对段数和中文口播预计时长。命令与制作共用正文解析，每个汉字、英文词或数字各计一个单位，按每分钟 250 个单位粗估。章节、引用块和注释不计时，停顿及英文读法以录音为准。
 
-讲稿用一级标题和空行分段。独立标题、引用块和 HTML 注释用于非口播说明。纯文本模式按段生成基础分镜。每段可以提供 001.wav、001.words.json 等录音和时间戳，详见 examples/offline。没有录音时按 config.json 的 voice 配置生成；缺时间戳时按 alignment 配置识别。默认识别模型需预先安装，云服务凭证通过环境变量配置。
+讲稿用一级标题和空行分段。独立标题、引用块和 HTML 注释用于非口播说明。纯文本模式按段生成基础分镜。每段可以提供 001.wav、001.words.json 等录音和时间戳，详见 examples/offline。频道默认用阿里云 TTS 生成正文，本机已选模型、voice_id 和表达指令保存在 Git 忽略的 config/channel-voice.local.json（顶层 settings，可选 base_url）。密钥从环境变量或 .env.local 读取。本期显式提供的 config.json 优先；缺时间戳时按 alignment 配置识别。默认识别模型需预先安装，云服务凭证通过环境变量配置。
 
 私有素材包可带 config.json，以及带有原分镜的 script.json。正文逐段匹配后复用分镜和相对路径素材；改稿后同步对应分镜、配音和字音时间。可附一张独立封面（cover.jpg、cover.jpeg 或 cover.png），以及标题.txt、简介.txt、标签.txt。无单独文案时使用讲稿标题和首段，缺标签时取发布标题的主题部分。手动上传每期一个「日期-选题」目录，只交付六个文件：正片.mp4、封面.jpg、中文字幕.zh-Hans.srt、标题.txt、简介.txt、标签.txt。独立备份的上层目录用「面朝北北-最终上传物-YYYYMMDD」，日期取实际备份日。复杂投资选题沿用已审阅的图片、数据、分镜和声音。私有 request-cache/ 可复用同键同哈希的服务结果及未决记录。历史缓存键变更或缺失时，执行前核对原请求记录、模型与凭证。
 

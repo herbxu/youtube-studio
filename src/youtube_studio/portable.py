@@ -7,6 +7,8 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from .core import StudioError, digest, file_hash, read, require, source, validate_script, write
+from .cut_review import review_root, stage
+from .local_env import default_config
 from .pipeline import Pipeline, REPO
 from .planning import input_refs
 from .upload_backup import export_cover, write_tags
@@ -45,7 +47,7 @@ def review_markdown(script):
 
 def prepare(script, assets, root):
     title, paragraphs = narration(script)
-    config = read(assets/"config.json") if assets and (assets/"config.json").is_file() else read(REPO/"config/default.json")
+    config = read(assets/"config.json") if assets and (assets/"config.json").is_file() else default_config(REPO)
     if assets and (assets/"script.json").is_file():
         doc = read(assets/"script.json")
         require(paragraphs == [u["text"] for u in doc["units"]],
@@ -85,7 +87,7 @@ def prepare(script, assets, root):
     return title, paragraphs
 
 
-def produce(script, assets, destination):
+def produce(script, assets, destination, goals=None):
     script = script.expanduser().resolve()
     assets = assets.expanduser().resolve() if assets else None
     destination = destination.expanduser().absolute()
@@ -108,8 +110,7 @@ def produce(script, assets, destination):
         out = pipeline.output_dir
         qa = read(out/"qa.json")
         require(qa["movie_sha256"] == file_hash(out/"output.mp4"), "成片与 QA 不匹配")
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        with TemporaryDirectory(dir=destination.parent) as tmp:
+        with TemporaryDirectory(dir=root) as tmp:
             bundle = Path(tmp)/"bundle"
             bundle.mkdir()
             for src, target in [("output.mp4", "正片.mp4"), ("captions.srt", "中文字幕.zh-Hans.srt")]:
@@ -130,5 +131,4 @@ def produce(script, assets, destination):
             tags = assets/"标签.txt" if assets else None
             write_tags(bundle/"标签.txt", tags.read_text(encoding="utf-8-sig") if tags and tags.is_file() else None,
                        (bundle/"标题.txt").read_text(encoding="utf-8-sig"))
-            bundle.rename(destination)
-    return {"directory": str(destination), "movie_sha256": qa["movie_sha256"]}
+            return stage(review_root(destination), bundle, destination, goals, qa, qa["input_signature"])

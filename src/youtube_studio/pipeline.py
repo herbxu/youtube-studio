@@ -28,6 +28,32 @@ RUNTIME = REPO
 STAGES = ["script", "voice", "align", "assets", "compose", "render", "verify"]
 
 
+def inspect_movie(movie, expected_duration=None, target_lufs=-18):
+    streams = probe(movie)["streams"]
+    audio = next((stream for stream in streams if stream["codec_type"] == "audio"), None)
+    video = next((stream for stream in streams if stream["codec_type"] == "video"), None)
+    require(audio, "成片缺少声音")
+    require(video and (video["width"], video["height"]) == (1920, 1080), "视频尺寸错误")
+    video_seconds, audio_seconds = float(video["duration"]), float(audio["duration"])
+    reference = audio_seconds if expected_duration is None else expected_duration
+    drift = max(abs(video_seconds - reference), abs(audio_seconds - reference), abs(audio_seconds - video_seconds))
+    require(drift <= .15, "成片时长与声音不同步")
+    signal_check = subprocess.run(["ffmpeg","-xerror","-hide_banner","-nostats","-i",str(movie),
+                                   "-vf","blackdetect=d=0.3:pix_th=0.1",
+                                   "-af","loudnorm=I=-18:TP=-1.5:LRA=9:print_format=json","-f","null","-"],
+                                  capture_output=True,text=True,timeout=600)
+    require(signal_check.returncode == 0,"实际成片解码/信号检查失败")
+    measured, _ = json.JSONDecoder().raw_decode(signal_check.stderr[signal_check.stderr.rfind('{'):])
+    loudness, peak = float(measured["input_i"]), float(measured["input_tp"])
+    require(math.isfinite(loudness),"成片音轨静默")
+    require(abs(loudness - target_lufs) <= 2, f"成片响度 {loudness:.2f} LUFS，目标 {target_lufs} LUFS，偏差超过 2 LU")
+    require(peak <= -.5,"成片真峰值过高")
+    black_intervals = re.findall(r"black_start:([\d.]+) black_end:([\d.]+) black_duration:([\d.]+)",signal_check.stderr)
+    require(not black_intervals, f"成片检测到持续黑场（起止秒、时长）：{black_intervals}")
+    return {"drift_seconds": drift, "duration": video_seconds, "audio_lufs": loudness,
+            "true_peak_dbfs": peak, "black_intervals": black_intervals}
+
+
 def browser_for(config):
     explicit = config.get("render",{}).get("browser") or os.environ.get("HYPERFRAMES_BROWSER_PATH")
     if explicit:
@@ -124,6 +150,8 @@ def doctor(root, through="verify", mode="final"):
         if p == "openai" and not os.environ.get(c.get("key_env", "OPENAI_API_KEY")):
             issues.append(f"{name} 缺少环境变量 {c.get('key_env','OPENAI_API_KEY')}")
         elif p == "aliyun":
+            if not c.get("settings", {}).get("voice_id"):
+                issues.append("阿里云 TTS 缺少已选 voice_id，请配置本期 voice 或本机 config/channel-voice.local.json")
             from .aliyun_voice import credentials, endpoint
             try:
                 credentials(c); endpoint(c)
@@ -565,31 +593,13 @@ class Pipeline:
         if self.mode=='preview' and hasattr(self,'render_report'):
             from .incremental import verify_preview
             return verify_preview(self)
-        metadata = probe(self.movie)
-        streams = metadata["streams"]
-        require(any(s["codec_type"] == "audio" for s in streams),"成片缺少声音")
-        video = next((s for s in streams if s["codec_type"] == "video"),None)
-        require(video and (video["width"],video["height"]) == (1920,1080),"视频尺寸错误")
-        drift = abs(float(metadata["format"]["duration"])-self.timeline["duration"])
-        require(drift <= .15,"成片时长与声音不同步")
-        signal_check = subprocess.run(["ffmpeg","-hide_banner","-nostats","-i",str(self.movie),
-                                       "-vf","blackdetect=d=0.3:pix_th=0.1",
-                                       "-af","loudnorm=I=-18:TP=-1.5:LRA=9:print_format=json","-f","null","-"],
-                                      capture_output=True,text=True,timeout=600)
-        require(signal_check.returncode == 0,"实际成片解码/信号检查失败")
-        measured, _ = json.JSONDecoder().raw_decode(signal_check.stderr[signal_check.stderr.rfind('{'):])
-        loudness, peak = float(measured["input_i"]), float(measured["input_tp"])
-        require(math.isfinite(loudness),"成片音轨静默")
-        require(abs(loudness-self.config.get("audio",{}).get("lufs",-18)) <= 2,"成片响度偏离目标超过 2 LU")
-        require(peak <= -.5,"成片真峰值过高")
-        black_intervals = re.findall(r"black_start:([\d.]+) black_end:([\d.]+) black_duration:([\d.]+)",signal_check.stderr)
-        require(not black_intervals,"检测到持续黑场，请检查渲染和媒体")
+        signal = inspect_movie(self.movie, self.timeline["duration"], self.config.get("audio", {}).get("lufs", -18))
         edge_checks, frames, visual_qa_reused = self.verify_visuals()
-        report = {"machine_checks":"passed","mode":self.mode,"duration":self.timeline["duration"],"drift_seconds":drift,
+        report = {"machine_checks":"passed","mode":self.mode,**signal,
                   "coverage_basis":"reference-constrained timings; independent ASR differences in build/voice-review.json" if any(u.get('reference_constrained') for u in self.timeline['units']) else "independent ASR",
                   "minimum_text_coverage":min(u["coverage"] for u in self.timeline["units"]),
                   "editorial_review":"not_automatically_certified","visual_review":"inspect frames and movie",
-                  "audio_lufs":loudness,"true_peak_dbfs":peak,"black_intervals":black_intervals,"visual_qa_reused":visual_qa_reused,
+                  "visual_qa_reused":visual_qa_reused,
                   "exported_paper_edges":edge_checks,
                   "frames":str(frames),"movie":str(self.movie),"movie_sha256":file_hash(self.movie),
                   "input_signature":input_signature(self.root)}

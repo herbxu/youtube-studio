@@ -14,3 +14,4 @@ state.json
 build/
 dist/
 .pytest_cache/
+/config/channel-voice.local.json
