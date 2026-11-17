@@ -12,7 +12,7 @@ python3 -m venv .venv
 python -m pip install -e .
 npm ci
 youtube-studio check-workspace
-youtube-studio produce --script examples/offline/script.md --assets examples/offline/assets --destination ./build/offline-upload
+youtube-studio produce --technical-preview --script examples/offline/script.md --assets examples/offline/assets --destination ./build/offline-upload
 ```
 
 安装依赖后，随库的短样例使用预录测试语音和时间戳；制作期间无需云端密钥、识别模型或另一个仓库。命令返回私有候选和审阅记录的路径。正式交付目录须为新目录。进一步验证可执行 `python -m unittest discover -s tests -v`。
@@ -26,6 +26,8 @@ youtube-studio export-upload --source "/path/to/作品/上传成品" --destinati
 ```
 
 制作时可重复指定 `--goal "本期可观察的验收目标"`。每次导出先生成待审候选。制作助手连续听看、记录问题、针对原因修复，再运行同一制作命令。在新版记录逐项目标和复测依据后，deliver 才写入六件套。自定义编排产生的私有六件套通过 register-cut 接入相同流程。字段、退出状态和返工步骤见[质量验收](skills/youtube-produce/references/quality.md#当期成片的自审返工和交付)。
+
+正式配音前使用 `review --script 本期.md --init-review` 建立同名审稿表，填写逐段证据后再制作。历史脚本另存修订稿。已编排的多章片用 `rsi --script 本期.md --source 私有六件 --destination 新交付目录 --av-manifest 清单.json --repair-with 本期修复程序` 自动验收、返工、复验。
 
 录音前可用 `youtube-studio review --script "/path/to/本期.md"` 校对段数和中文口播预计时长。命令与制作共用正文解析，每个汉字、英文词或数字各计一个单位，按每分钟 250 个单位粗估。章节、引用块和注释不计时，停顿及英文读法以录音为准。
 

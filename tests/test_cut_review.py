@@ -18,7 +18,7 @@ class CutReview(unittest.TestCase):
             (self.bundle / name).write_bytes(name.encode())
 
     def candidate(self, goals=None, machine='passed'):
-        report = {'duration': 12, 'machine_checks': machine,
+        report = {'duration': 12, 'machine_checks': machine, 'editorial': {'status':'passed'},
                   'movie_sha256': file_hash(self.bundle / '正片.mp4')}
         result = stage(self.root / 'review', self.bundle, self.dest, goals, report, 'inputs')
         return Path(result['round'])

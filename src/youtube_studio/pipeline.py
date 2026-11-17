@@ -304,6 +304,13 @@ class Pipeline:
         self.voices = []
         performance_records = []
         config = self.config["voice"]
+        if config.get("provider") in {"aliyun", "command"} and any(not u.get("audio") for u in self.doc["units"]):
+            from .script_review import admit
+            from .portable import narration
+            script = self.root/"admitted.md"
+            require(script.is_file(), "正式配音前需在剧集保存已审稿 admitted.md 和 admitted.review.json")
+            admit(script)
+            require(narration(script)[1] == [u["text"] for u in self.doc["units"]], "已审稿与当前口播不符")
         speed = self.config.get("audio", {}).get("voice_speed", 1.0)
         require(isinstance(speed, (int, float)) and not isinstance(speed, bool) and .75 <= speed <= 1.25,
                 "audio.voice_speed 必须在 0.75–1.25 之间")

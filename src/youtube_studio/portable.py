@@ -34,14 +34,15 @@ def narration(path):
     return title, paragraphs
 
 
-def review_markdown(script):
+def review_markdown(script, review=None):
+    from .script_review import assess
     require(script.is_file() and script.suffix.lower() == ".md", "请选择 Markdown 脚本")
     title, paragraphs = narration(script)
     count = len(re.findall(r"[\u3400-\u9fff]|[A-Za-z]+|\d+(?:\.\d+)?", " ".join(paragraphs)))
     require(count, "没有可计时的中英文口播内容")
     # Planning estimate for this Mandarin channel. Timing after recording is authoritative.
     units_per_minute = 250
-    return {"title": title, "paragraphs": len(paragraphs), "spoken_units": count,
+    return {"editorial": assess(script, paragraphs, review), "title": title, "paragraphs": len(paragraphs), "spoken_units": count,
             "units_per_minute": units_per_minute, "estimated_seconds": round(60 * count / units_per_minute)}
 
 
@@ -87,7 +88,8 @@ def prepare(script, assets, root):
     return title, paragraphs
 
 
-def produce(script, assets, destination, goals=None):
+def produce(script, assets, destination, goals=None, review=None, manifest=None, technical_preview=False):
+    from .script_review import admit
     script = script.expanduser().resolve()
     assets = assets.expanduser().resolve() if assets else None
     destination = destination.expanduser().absolute()
@@ -102,13 +104,23 @@ def produce(script, assets, destination, goals=None):
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
             raise StudioError("同一脚本正在制作") from None
+        from .script_review import review_path, multi_chapter
+        approved = ({"status":"technical_preview", "script_sha256":file_hash(script), "review_digest":None}
+                    if technical_preview else admit(script, review))
         title, paragraphs = prepare(script, assets, root)
+        require(file_hash(script) == approved["script_sha256"], "准备期间脚本已修改")
+        if technical_preview:
+            require(all(u.get("audio") and u.get("words") for u in read(root/"script.json")["units"]),
+                    "技术候选需要逐段预录音和既有时间戳")
+        else:
+            shutil.copyfile(script, root/"admitted.md")
+            shutil.copyfile(review or review_path(script), root/"admitted.review.json")
         pipeline = Pipeline(root, "final")
         if assets and (assets/"request-cache").is_dir():
             pipeline.cache.prior_root = assets/"request-cache"
         pipeline.execute("verify")
         out = pipeline.output_dir
-        qa = read(out/"qa.json")
+        qa = {**read(out/"qa.json"), "editorial": approved}
         require(qa["movie_sha256"] == file_hash(out/"output.mp4"), "成片与 QA 不匹配")
         with TemporaryDirectory(dir=root) as tmp:
             bundle = Path(tmp)/"bundle"
@@ -131,4 +143,9 @@ def produce(script, assets, destination, goals=None):
             tags = assets/"标签.txt" if assets else None
             write_tags(bundle/"标签.txt", tags.read_text(encoding="utf-8-sig") if tags and tags.is_file() else None,
                        (bundle/"标题.txt").read_text(encoding="utf-8-sig"))
-            return stage(review_root(destination), bundle, destination, goals, qa, qa["input_signature"])
+            qa["chapter_checks_required"] = multi_chapter(script)
+            if manifest:
+                from .av_review import inspect_av
+                require(read(manifest).get("script_sha256") == approved["script_sha256"], "声画清单的口播版本不符")
+                qa["audiovisual"] = inspect_av(bundle, manifest)
+            return stage(review_root(destination), bundle, destination, goals, qa, digest([qa["input_signature"], approved["review_digest"], qa.get("audiovisual")]))

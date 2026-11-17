@@ -15,7 +15,7 @@ from .editorial import review_script
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["produce","register-cut","deliver","export-upload","check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
+    parser.add_argument("command", choices=["rsi","produce","register-cut","deliver","export-upload","check-workspace","init","doctor","validate","review","quality","run","resume","status","preview","sample"])
     parser.add_argument("--episode", type=Path)
     parser.add_argument("--title", default="新一期观点视频")
     parser.add_argument("--mode", choices=["preview","final"], default="final")
@@ -31,18 +31,42 @@ def main():
     parser.add_argument("--assets", type=Path, help="可选的私有制作素材目录")
     parser.add_argument("--source", type=Path, help="export-upload：上传成品根目录")
     parser.add_argument("--goal", action="append", help="本期可复验的质量目标，可重复指定")
+    parser.add_argument("--script-review", type=Path, help="逐条引用口播的审稿记录，默认与脚本同名的 .review.json")
+    parser.add_argument("--init-review", action="store_true", help="为当前脚本生成待填写审稿表")
+    parser.add_argument("--av-manifest", type=Path, help="实测章节、导航参考图和音频分轨清单")
+    parser.add_argument("--repair-with", type=Path, help="本期修复程序，接收本轮带时间点的问题记录")
+    parser.add_argument("--technical-preview", action="store_true", help="仅用预录音、既有时间戳生成离线技术候选")
+    parser.add_argument("--build-with", type=Path, help="脚本通过后首次制作候选的本地程序")
     args = parser.parse_args()
+    if args.command == "rsi":
+        from .rsi import cycle
+        if not all([args.script, args.source, args.destination, args.av_manifest]):
+            parser.error("rsi 需要 --script、--source、--destination 和 --av-manifest")
+        try:
+            result = cycle(args.script, args.script_review, args.source, args.destination, args.av_manifest, args.repair_with, args.goal, args.build_with)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0 if result["status"] == "delivered" else 3
+        except (StudioError, ValueError, OSError, KeyError, subprocess.SubprocessError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
     if args.command == "review" and args.script:
         if args.episode:
             parser.error("review 请选择 --script 或 --episode 其中一种输入")
         from .portable import review_markdown
         try:
-            result = review_markdown(args.script.expanduser())
+            script = args.script.expanduser()
+            if args.init_review:
+                from .portable import narration
+                from .script_review import template, review_path
+                report = args.script_review or review_path(script)
+                with report.open("x", encoding="utf-8") as out:
+                    json.dump(template(script, narration(script)[1]), out, ensure_ascii=False, indent=2)
+            result = review_markdown(script, args.script_review)
         except (StudioError, OSError, ValueError) as exc:
             print(str(exc), file=sys.stderr)
             return 2
         print(json.dumps(result, ensure_ascii=False, indent=2))
-        return 0
+        return 0 if args.init_review or result["editorial"]["status"] == "passed" else 3
     if args.command in {"register-cut", "deliver"}:
         from .cut_review import deliver, register_cut
         if not args.source or (args.command == "register-cut" and not args.destination):
@@ -51,7 +75,7 @@ def main():
             parser.error("deliver 使用登记候选时的目标目录")
         try:
             result = (deliver(args.source) if args.command == "deliver"
-                      else register_cut(args.source, args.destination, args.goal))
+                      else register_cut(args.source, args.destination, args.goal, args.script, args.script_review, args.av_manifest))
             print(json.dumps(result, ensure_ascii=False, indent=2))
             return 3 if args.command == "deliver" and result["status"] != "delivered" else 0
         except (StudioError, OSError, ValueError, KeyError) as exc:
@@ -64,7 +88,7 @@ def main():
         from .portable import produce
         load_local_env()
         try:
-            result = produce(args.script, args.assets, args.destination, args.goal)
+            result = produce(args.script, args.assets, args.destination, args.goal, args.script_review, args.av_manifest, args.technical_preview)
         except (StudioError, OSError, ValueError, KeyError) as exc:
             print(str(exc), file=sys.stderr)
             return 2
